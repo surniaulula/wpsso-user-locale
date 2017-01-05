@@ -49,6 +49,7 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 		public function filter_get_defaults( $def_opts ) {
 			$def_opts = array_merge( $def_opts, self::$cf['opt']['defaults'] );
 
+			// if the locale is different, use the text domain translated string as the default value
 			if ( ( $opt_key = SucomUtil::get_key_locale( 'ul_menu_title' ) ) !== 'ul_menu_title' )
 				$def_opts[$opt_key] = __( 'User Locale (%s)', 'wpsso-user-locale' );
 
@@ -125,6 +126,7 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 			$menu_locale = $user_locale === 'site-default' ? 
 				__( 'default', 'wpsso-user-locale' ) : $user_locale;
 
+			// add locale value to title and apply filters
 			$menu_title = apply_filters( 'wpsso_user_locale_menu_title', 
 				sprintf( SucomUtil::get_locale_opt( 'ul_menu_title', $wpsso->options ), 
 					$menu_locale ), $user_locale );

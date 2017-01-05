@@ -25,15 +25,15 @@ msgid ""
 "admin back-end and front-end toolbar menus."
 msgstr ""
 
-#: lib/filters.php:53
+#: lib/filters.php:54
 msgid "User Locale (%s)"
 msgstr ""
 
-#: lib/filters.php:126
+#: lib/filters.php:127
 msgid "default"
 msgstr ""
 
-#: lib/filters.php:148
+#: lib/filters.php:150
 msgid "Default Locale"
 msgstr ""
 
