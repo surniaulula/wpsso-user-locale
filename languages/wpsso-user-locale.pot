@@ -25,15 +25,15 @@ msgid ""
 "admin back-end and front-end toolbar menus."
 msgstr ""
 
-#: lib/filters.php:120
-msgid "default"
-msgstr ""
-
-#: lib/filters.php:123
+#: lib/filters.php:53
 msgid "User Locale (%s)"
 msgstr ""
 
-#: lib/filters.php:142
+#: lib/filters.php:126
+msgid "default"
+msgstr ""
+
+#: lib/filters.php:148
 msgid "Default Locale"
 msgstr ""
 
@@ -44,7 +44,12 @@ msgstr ""
 
 #: lib/submenu/ul-general.php:44
 msgctxt "option label"
-msgid "Select User Locale on Front-End"
+msgid "Toolbar Menu Title"
+msgstr ""
+
+#: lib/submenu/ul-general.php:48
+msgctxt "option label"
+msgid "Add User Locale on Front-End"
 msgstr ""
 
 #: wpsso-user-locale.php:90

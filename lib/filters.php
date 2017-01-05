@@ -18,6 +18,7 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 			'opt' => array(				// options
 				'defaults' => array(
 					'ul_front_end' => 1,
+					'ul_menu_title' => 'User Locale (%s)',
 				),
 			),
 		);
@@ -47,6 +48,10 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 
 		public function filter_get_defaults( $def_opts ) {
 			$def_opts = array_merge( $def_opts, self::$cf['opt']['defaults'] );
+
+			if ( ( $opt_key = SucomUtil::get_key_locale( 'ul_menu_title' ) ) !== 'ul_menu_title' )
+				$def_opts[$opt_key] = __( 'User Locale (%s)', 'wpsso-user-locale' );
+
 			return $def_opts;
 		}
 
@@ -109,6 +114,7 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 
 			global $wp_admin_bar;
 			require_once( ABSPATH.'wp-admin/includes/translation-install.php' );
+			$wpsso = Wpsso::get_instance();
 			$translations = wp_get_available_translations();	// since wp 4.0
 			$languages = array_merge( array( 'site-default' ), get_available_languages() );	// since wp 3.0
 			$user_locale = get_user_meta( $user_id, 'locale', true );
@@ -119,8 +125,8 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 			$menu_locale = $user_locale === 'site-default' ? 
 				__( 'default', 'wpsso-user-locale' ) : $user_locale;
 
-			$menu_title = apply_filters( 'wpsso_user_locale_menu_title',
-				sprintf( __( 'User Locale (%s)', 'wpsso-user-locale' ),
+			$menu_title = apply_filters( 'wpsso_user_locale_menu_title', 
+				sprintf( SucomUtil::get_locale_opt( 'ul_menu_title', $wpsso->options ), 
 					$menu_locale ), $user_locale );
 
 			$wp_admin_bar->add_node( array(	// since wp 3.1

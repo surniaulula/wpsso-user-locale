@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 			'plugin' => array(
 				'wpssoul' => array(
 					'version' => '0.0.1-1',		// plugin version
-					'opt_version' => '2',		// increment when changing default options
+					'opt_version' => '3',		// increment when changing default options
 					'short' => 'WPSSO UL',		// short plugin name
 					'name' => 'WPSSO Select User Locale (WPSSO UL)',
 					'desc' => 'WPSSO extension to add a user locale / language selector in the WordPress admin back-end and front-end toolbar menus.',

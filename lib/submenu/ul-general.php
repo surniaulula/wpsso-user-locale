@@ -41,7 +41,11 @@ if ( ! class_exists( 'WpssoUlSubmenuUlGeneral' ) && class_exists( 'WpssoAdmin' )
 			switch ( $metabox.'-'.$key ) {
 				case 'ul-general':
 
-					$table_rows['ul_front_end'] = $this->form->get_th_html( _x( 'Select User Locale on Front-End',
+					$table_rows['ul_menu_title'] = $this->form->get_th_html( _x( 'Toolbar Menu Title',
+						'option label', 'nextgen-facebook' ), null, 'ul_menu_title', array( 'is_locale' => true ) ).
+					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'ul_menu_title', $this->p->options ) ).'</td>';
+
+					$table_rows['ul_front_end'] = $this->form->get_th_html( _x( 'Add User Locale on Front-End',
 						'option label', 'wpsso-user-locale' ), '', 'ul_front_end' ).
 					'<td>'.$this->form->get_checkbox( 'ul_front_end' ).'</td>';
 
