@@ -17,7 +17,7 @@ WPSSO extension to add a user locale / language selector in the WordPress admin 
 
 == Description ==
 
-Add a "User Locale" menu item for users in the WordPress back-end (admin) and front-end toolbar menus.
+<p><img src="https://surniaulula.github.io/wpsso-user-locale/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" />Add a "User Locale" menu item for users in the WordPress back-end (admin) and front-end toolbar menus.</p>
 
 Allow users to easily change their preferred locale / language instead of having to update their profile page.
 
@@ -72,13 +72,13 @@ See the plugin [Other Notes](https://wordpress.org/plugins/wpsso-user-locale/oth
 To exclude the "User Locale" menu item from the front-end toolbar menu, *and ignore the user locale / language preference in the front-end webpage*, add the following to your functions.php file:
 
 `
-add_filter( 'jsm_user_locale_front_end', '__return_false' );
+add_filter( 'wpsso_user_locale_front_end', '__return_false' );
 `
 
-To modify the "User Locale" menu title, you can hook the 'jsm_user_locale_menu_title' filter:
+To modify the "User Locale" menu title, you can hook the 'wpsso_user_locale_menu_title' filter:
 
 `
-add_filter( 'jsm_user_locale_menu_title', 
+add_filter( 'wpsso_user_locale_menu_title', 
 	'customize_user_locale_menu_title', 10, 2 );
 
 function customize_user_locale_menu_title( $title, $user_locale ) {
@@ -92,10 +92,10 @@ function customize_user_locale_menu_title( $title, $user_locale ) {
 }
 `
 
-You can also modify the URL used to reload the page after selecting a locale by hooking the 'jsm_user_locale_redirect_url' filter.
+You can also modify the URL used to reload the page after selecting a locale by hooking the 'wpsso_user_locale_redirect_url' filter.
 
 `
-add_filter( 'jsm_user_locale_redirect_url', 
+add_filter( 'wpsso_user_locale_redirect_url', 
 	'customize_user_locale_redirect_url', 10, 2 );
 
 function customize_user_locale_redirect_url( $url, $user_locale ) {
