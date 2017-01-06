@@ -12,7 +12,7 @@
  * Description: WPSSO extension to add a user locale / language selector in the WordPress admin back-end and front-end toolbar menus.
  * Requires At Least: 4.7
  * Tested Up To: 4.7
- * Version: 0.0.1-1
+ * Version: 1.0.0-dev1
  *
  * Version Components: {major}.{minor}.{bugfix}-{stage}{level}
  *
@@ -59,8 +59,9 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 			WpssoUlConfig::require_libs( __FILE__ );	// includes the register.php class library
 			$this->reg = new WpssoUlRegister();		// activate, deactivate, uninstall hooks
 
+			add_action( 'plugins_loaded', array( __CLASS__, 'load_textdomain' ) );
+
 			if ( is_admin() ) {
-				load_plugin_textdomain( 'wpsso-user-locale', false, 'wpsso-user-locale/languages/' );
 				add_action( 'admin_init', array( __CLASS__, 'required_check' ) );
 				add_action( 'admin_init', array( __CLASS__, 'check_wp_version' ) );
 			}
@@ -75,6 +76,10 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 			if ( ! isset( self::$instance ) )
 				self::$instance = new self;
 			return self::$instance;
+		}
+
+		public static function load_textdomain() {
+			load_plugin_textdomain( 'wpsso-user-locale', false, 'wpsso-user-locale/languages/' );
 		}
 
 		public static function required_check() {

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Select User Locale (WPSSO UL) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Select User Locale (WPSSO UL) 0.0.1-1\n"
+"Project-Id-Version: WPSSO Select User Locale (WPSSO UL) 1.0.0-dev1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-user-"
 "locale\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
@@ -37,15 +37,15 @@ msgstr ""
 
 #: lib/filters.php:76
 msgid ""
-"Add the user locale selector to the front-end toolbar menu, and define the "
-"user locale value as the current WordPress locale."
+"Add the user locale selector to the front-end toolbar menu, and define "
+"current WordPress locale as the user locale value."
 msgstr ""
 
 #: lib/locale.php:104
 msgid "default"
 msgstr ""
 
-#: lib/locale.php:127
+#: lib/locale.php:126
 msgid "Default Locale"
 msgstr ""
 
@@ -64,28 +64,28 @@ msgctxt "option label"
 msgid "Add User Locale on Front-End"
 msgstr ""
 
-#: wpsso-user-locale.php:91
+#: wpsso-user-locale.php:96
 msgid ""
 "%1$s is an extension for the %2$s plugin &mdash; please install and activate "
 "the %3$s plugin before activating the %4$s extension."
 msgstr ""
 
-#: wpsso-user-locale.php:93
+#: wpsso-user-locale.php:98
 msgid ""
 "The %1$s extension requires the %2$s plugin &mdash; please install and "
 "activate the %3$s plugin."
 msgstr ""
 
-#: wpsso-user-locale.php:106
+#: wpsso-user-locale.php:111
 msgid ""
 "%1$s requires WordPress version %2$s or higher and has been deactivated."
 msgstr ""
 
-#: wpsso-user-locale.php:108
+#: wpsso-user-locale.php:113
 msgid "Please upgrade WordPress before trying to reactivate the %1$s plugin."
 msgstr ""
 
-#: wpsso-user-locale.php:172
+#: wpsso-user-locale.php:177
 msgid ""
 "The %1$s extension v%2$s requires %3$s v%4$s or newer (v%5$s currently "
 "installed)."

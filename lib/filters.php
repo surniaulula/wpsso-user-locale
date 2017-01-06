@@ -73,7 +73,7 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 					$text = __( 'A title string used for the WordPress toolbar menu. The "%s" parameter is replaced by the current user locale value.', 'wpsso-user-locale' );
 					break;
 				case 'tooltip-ul_front_end':	// Add User Locale on Front-End
-					$text = __( 'Add the user locale selector to the front-end toolbar menu, and define the user locale value as the current WordPress locale.', 'wpsso-user-locale' );
+					$text = __( 'Add the user locale selector to the front-end toolbar menu, and define current WordPress locale as the user locale value.', 'wpsso-user-locale' );
 					break;
 			}
 			return $text;
