@@ -11,7 +11,7 @@ Tags: user, locale, language, select, admin, back-end, front-end
 Contributors: jsmoriss
 Requires At Least: 4.7
 Tested Up To: 4.7
-Stable Tag: 0.0.1-1
+Stable Tag: 1.0.0-1
 
 WPSSO extension to add a user locale / language selector in the WordPress admin back-end and front-end toolbar menus.
 
@@ -128,7 +128,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 0.0.1-1 (TBD)**
+**Version 1.0.0-1 (TBD)**
 
 * *New Features*
 	* Initial release.
@@ -141,7 +141,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 0.0.1-1 =
+= 1.0.0-1 =
 
 (TBD) Initial release.
 
