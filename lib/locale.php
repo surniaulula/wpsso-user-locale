@@ -103,9 +103,9 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			$menu_locale = $user_locale === 'site-default' ? 
 				__( 'default', 'wpsso-user-locale' ) : $user_locale;
 
-			// add locale value to title and apply filters
-			$menu_title = sprintf( SucomUtil::get_locale_opt( 'ul_menu_title', $wpsso->options ), $menu_locale );
-			$menu_title = apply_filters( 'wpsso_user_locale_menu_title', $menu_title, $user_locale );
+			$menu_title = SucomUtil::get_locale_opt( 'ul_menu_title', $wpsso->options );
+			$menu_title = apply_filters( 'wpsso_user_locale_menu_title', $menu_title, $menu_locale );
+			$menu_title = sprintf( $menu_title, $menu_locale );
 
 			$wp_admin_bar->add_node( array(	// since wp 3.1
 				'id' => 'wpsso-user-locale',

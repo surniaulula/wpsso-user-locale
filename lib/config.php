@@ -48,6 +48,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 						'codex' => 'https://wpsso.com/codex/plugins/wpsso-user-locale/',
 						'faq' => '',
 						'notes' => '',
+						'support' => '',
 					),
 					'lib' => array(
 						// submenu items must have unique keys
