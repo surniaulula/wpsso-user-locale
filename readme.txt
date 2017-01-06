@@ -26,7 +26,7 @@ The default WordPress behavior is to apply the user locale / language preference
 If the Polylang plugin is available, the "User Locale" menu will use Polylang language URLs for that locale.
 
 <blockquote>
-<p>There are no plugin settings &mdash; simply install and activate the plugin.</p>
+<p><strong>Prerequisite</strong> &mdash; WPSSO Select User Locale (WPSSO UL) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, which <em>automatically</em> creates complete and accurate meta tags and Schema markup for Social Sharing Optimization (SSO) and SEO.</p>
 </blockquote>
 
 = Developers =
@@ -128,7 +128,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.0.0-1 (TBD)**
+**Version 1.0.0-1 (2017/01/06)**
 
 * *New Features*
 	* Initial release.
@@ -143,5 +143,5 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 1.0.0-1 =
 
-(TBD) Initial release.
+(2017/01/06) Initial release.
 
