@@ -79,6 +79,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 
 			require_once( WPSSOUL_PLUGINDIR.'lib/register.php' );
 			require_once( WPSSOUL_PLUGINDIR.'lib/filters.php' );
+			require_once( WPSSOUL_PLUGINDIR.'lib/locale.php' );
 
 			add_filter( 'wpssoul_load_lib', array( 'WpssoUlConfig', 'load_lib' ), 10, 3 );
 		}

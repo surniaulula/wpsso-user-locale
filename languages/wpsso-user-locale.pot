@@ -25,15 +25,27 @@ msgid ""
 "admin back-end and front-end toolbar menus."
 msgstr ""
 
-#: lib/filters.php:54
+#: lib/filters.php:48
 msgid "User Locale (%s)"
 msgstr ""
 
-#: lib/filters.php:127
+#: lib/filters.php:73
+msgid ""
+"A title string used for the WordPress toolbar menu. The \"%s\" parameter is "
+"replaced by the current user locale value."
+msgstr ""
+
+#: lib/filters.php:76
+msgid ""
+"Add the user locale selector to the front-end toolbar menu, and define the "
+"user locale value as the current WordPress locale."
+msgstr ""
+
+#: lib/locale.php:104
 msgid "default"
 msgstr ""
 
-#: lib/filters.php:150
+#: lib/locale.php:127
 msgid "Default Locale"
 msgstr ""
 
@@ -52,28 +64,28 @@ msgctxt "option label"
 msgid "Add User Locale on Front-End"
 msgstr ""
 
-#: wpsso-user-locale.php:90
+#: wpsso-user-locale.php:91
 msgid ""
 "%1$s is an extension for the %2$s plugin &mdash; please install and activate "
 "the %3$s plugin before activating the %4$s extension."
 msgstr ""
 
-#: wpsso-user-locale.php:92
+#: wpsso-user-locale.php:93
 msgid ""
 "The %1$s extension requires the %2$s plugin &mdash; please install and "
 "activate the %3$s plugin."
 msgstr ""
 
-#: wpsso-user-locale.php:105
+#: wpsso-user-locale.php:106
 msgid ""
 "%1$s requires WordPress version %2$s or higher and has been deactivated."
 msgstr ""
 
-#: wpsso-user-locale.php:107
+#: wpsso-user-locale.php:108
 msgid "Please upgrade WordPress before trying to reactivate the %1$s plugin."
 msgstr ""
 
-#: wpsso-user-locale.php:170
+#: wpsso-user-locale.php:172
 msgid ""
 "The %1$s extension v%2$s requires %3$s v%4$s or newer (v%5$s currently "
 "installed)."

@@ -43,9 +43,10 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 
 	class WpssoUl {
 
-		public $p;			// Wpsso
-		public $reg;			// WpssoUlRegister
-		public $filters;		// WpssoUlFilters
+		public $p;		// Wpsso
+		public $reg;		// WpssoUlRegister
+		public $filters;	// WpssoUlFilters
+		public $locale;		// WpssoUlLocale
 
 		private static $instance;
 		private static $have_min = true;
@@ -147,6 +148,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 				return;		// stop here
 
 			$this->filters = new WpssoUlFilters( $this->p );
+			$this->locale = new WpssoUlLocale( $this->p );
 		}
 
 		public function wpsso_init_plugin() {

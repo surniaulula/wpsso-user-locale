@@ -17,32 +17,26 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 		public static $cf = array(
 			'opt' => array(				// options
 				'defaults' => array(
-					'ul_front_end' => 1,
-					'ul_menu_title' => 'User Locale (%s)',
+					'ul_menu_title' => 'User Locale (%s)',	// Toolbar Menu Title
+					'ul_front_end' => 1,			// Add User Locale on Front-End
 				),
 			),
 		);
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			$is_admin = is_admin();
-			$on_front = apply_filters( 'wpsso_user_locale_front_end',
-				( empty( $this->p->options['ul_front_end'] ) ? false : true ) );
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
 
 			$this->p->util->add_plugin_filters( $this, array( 
 				'get_defaults' => 1,			// option defaults
 			) );
 
-			if ( ! $is_admin && $on_front )	// apply user locale value to front-end
-				add_filter( 'locale', array( __CLASS__, 'get_user_locale' ) );
-
-			if ( $is_admin || $on_front ) {
-				load_plugin_textdomain( 'wpsso-user-locale', false, 'wpsso-user-locale/languages/' );
-
-				add_action( 'wp_before_admin_bar_render', array( __CLASS__, 'add_locale_toolbar' ) );
-
-				if ( isset( $_GET['update-user-locale'] ) )	// new user locale value selected
-					add_action( 'wp_loaded', array( __CLASS__, 'update_user_locale' ), -1000 );
+			if ( is_admin() ) {
+				$this->p->util->add_plugin_filters( $this, array( 
+					'option_type' => 2,			// define the value type for each option
+					'messages_tooltip' => 2,		// tooltip messages filter
+				) );
 			}
 		}
 
@@ -56,114 +50,33 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 			return $def_opts;
 		}
 
-		public static function get_user_locale( $locale ) {
-			if ( $user_id = get_current_user_id() )	{
-				if ( $user_locale = get_user_meta( $user_id, 'locale', true ) ) {
-					return $user_locale;
-				}
+		public function filter_option_type( $type, $key ) {
+			if ( ! empty( $type ) )
+				return $type;
+			elseif ( strpos( $key, 'ul_' ) !== 0 )
+				return $type;
+
+			switch ( $key ) {
+				case 'ul_menu_title':
+					return 'not_blank';
+					break;
 			}
-			return $locale;
+			return $type;
 		}
 
-		public static function update_user_locale() {
-			$is_admin = is_admin();
+		public function filter_messages_tooltip( $text, $idx ) {
+			if ( strpos( $idx, 'tooltip-ul_' ) !== 0 )
+				return $text;
 
-			if ( isset( $_GET['update-user-locale'] ) ) {
-				$user_locale = sanitize_text_field( $_GET['update-user-locale'] );
-			} else return;
-
-			$url = remove_query_arg( 'update-user-locale' );
-
-			if ( $user_id = get_current_user_id() ) {
-				if ( $user_locale === 'site-default' )
-					delete_user_meta( $user_id, 'locale' );
-				else update_user_meta( $user_id, 'locale', $user_locale );
+			switch ( $idx ) {
+				case 'tooltip-ul_menu_title':	// Toolbar Menu Title
+					$text = __( 'A title string used for the WordPress toolbar menu. The "%s" parameter is replaced by the current user locale value.', 'wpsso-user-locale' );
+					break;
+				case 'tooltip-ul_front_end':	// Add User Locale on Front-End
+					$text = __( 'Add the user locale selector to the front-end toolbar menu, and define the user locale value as the current WordPress locale.', 'wpsso-user-locale' );
+					break;
 			}
-
-			if ( $user_locale === 'site-default' )
-				$user_locale = SucomUtil::get_locale( 'default' );
-
-			/*
-			 * Redirect to Polylang URLs
-			 */
-			if ( ! $is_admin && function_exists( 'pll_the_languages' ) ) {
-				$pll_languages = pll_the_languages( array( 'echo' => 0, 'raw' => 1 ) );
-				$pll_def_locale = pll_default_language( 'locale' );
-				$pll_urls = array();	// associative array of locales and their url
-
-				foreach ( $pll_languages as $pll_lang ) {
-					if ( ! empty( $pll_lang['locale'] ) && ! empty( $pll_lang['url'] ) ) {
-						$pll_locale = str_replace( '-', '_', $pll_lang['locale'] );	// wp compatibility
-						$pll_urls[$pll_locale] = $pll_lang['url'];
-					}
-				}
-
-				if ( isset( $pll_urls[$user_locale] ) )
-					$url = $pll_urls[$user_locale];
-				elseif ( isset( $pll_urls[$pll_def_locale] ) )
-					$url = $pll_urls[$pll_def_locale];
-			}
-
-			wp_redirect( apply_filters( 'wpsso_user_locale_redirect_url', $url, $user_locale ) );
-
-			exit;
-		}
-
-		public static function add_locale_toolbar() {
-			if ( ! $user_id = get_current_user_id() )
-				return;
-
-			global $wp_admin_bar;
-			require_once( ABSPATH.'wp-admin/includes/translation-install.php' );
-			$wpsso = Wpsso::get_instance();
-			$translations = wp_get_available_translations();	// since wp 4.0
-			$languages = array_merge( array( 'site-default' ), get_available_languages() );	// since wp 3.0
-			$user_locale = get_user_meta( $user_id, 'locale', true );
-
-			if ( empty( $user_locale ) )
-				$user_locale = 'site-default';
-
-			$menu_locale = $user_locale === 'site-default' ? 
-				__( 'default', 'wpsso-user-locale' ) : $user_locale;
-
-			// add locale value to title and apply filters
-			$menu_title = apply_filters( 'wpsso_user_locale_menu_title', 
-				sprintf( SucomUtil::get_locale_opt( 'ul_menu_title', $wpsso->options ), 
-					$menu_locale ), $user_locale );
-
-			$wp_admin_bar->add_node( array(	// since wp 3.1
-				'id' => 'wpsso-user-locale',
-				'title' => $menu_title,
-				'parent' => false,
-				'href' => false,
-				'group' => false,
-				'meta' => false,
-			) );
-
-			foreach ( $languages as $locale ) {
-				$meta = array();
-				if ( isset( $translations[$locale]['native_name'] ) ) {
-					$native_name = $translations[$locale]['native_name'];
-				} elseif ( $locale === 'en_US' ) {
-					$native_name = 'English (United States)';
-				} elseif ( $locale === 'site-default' ) {
-					$native_name = __( 'Default Locale', 'wpsso-user-locale' );
-				} else {
-					$native_name = $locale;
-				}
-				if ( $locale === $user_locale ) {
-					$native_name = '<strong>'.$native_name.'</strong>';
-					$meta['class'] = 'current_locale';
-				}
-				$wp_admin_bar->add_node( array(	// since wp 3.1
-					'id' => 'wpsso-user-locale-'.$locale,
-					'title' => $native_name,
-					'parent' => 'wpsso-user-locale',
-					'href' => add_query_arg( 'update-user-locale', rawurlencode( $locale ) ),
-					'group' => false,
-					'meta' => $meta,
-				) );
-			}
+			return $text;
 		}
 	}
 }
