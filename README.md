@@ -14,11 +14,11 @@
 
 <h2>Description</h2>
 
-<p align="center"><img src="https://surniaulula.github.io/wpsso-user-locale/assets/icon-256x256.png" width="256" height="256" /></p><p>Add a "User Locale" menu item for users in the WordPress back-end (admin) and front-end toolbar menus.</p>
+<p align="center"><img src="https://surniaulula.github.io/wpsso-user-locale/assets/icon-256x256.png" width="256" height="256" /></p><p>Add a "User Locale" menu item for users in the WordPress admin back-end admin and front-end toolbar menus.</p>
 
 <p>Allow users to easily change their preferred locale / language instead of having to update their profile page.</p>
 
-<p>The default WordPress behavior is to apply the user locale / language preference to the back-end only &mdash; this plugin extends the user locale / language preference to the front-end webpage as well.</p>
+<p>The default WordPress behavior is to apply the user locale / language preference to the back-end only &mdash; this plugin can optionally extend the user locale / language preference to the front-end webpage as well (enabled by default).</p>
 
 <p>If the Polylang plugin is available, the "User Locale" menu will use Polylang language URLs for that locale.</p>
 

@@ -17,11 +17,11 @@ WPSSO extension to add a user locale / language selector in the WordPress admin 
 
 == Description ==
 
-<p><img src="https://surniaulula.github.io/wpsso-user-locale/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" />Add a "User Locale" menu item for users in the WordPress back-end (admin) and front-end toolbar menus.</p>
+<p><img src="https://surniaulula.github.io/wpsso-user-locale/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" />Add a "User Locale" menu item for users in the WordPress admin back-end admin and front-end toolbar menus.</p>
 
 Allow users to easily change their preferred locale / language instead of having to update their profile page.
 
-The default WordPress behavior is to apply the user locale / language preference to the back-end only &mdash; this plugin extends the user locale / language preference to the front-end webpage as well.
+The default WordPress behavior is to apply the user locale / language preference to the back-end only &mdash; this plugin can optionally extend the user locale / language preference to the front-end webpage as well (enabled by default).
 
 If the Polylang plugin is available, the "User Locale" menu will use Polylang language URLs for that locale.
 
