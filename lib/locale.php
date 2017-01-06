@@ -61,9 +61,9 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				$user_locale = SucomUtil::get_locale( 'default' );
 
 			/*
-			 * Redirect to Polylang URLs
+			 * Prefer Polylang URLs
 			 */
-			if ( is_admin() && function_exists( 'pll_the_languages' ) ) {
+			if ( ! is_admin() && function_exists( 'pll_the_languages' ) ) {
 				$pll_languages = pll_the_languages( array( 'echo' => 0, 'raw' => 1 ) );
 				$pll_def_locale = pll_default_language( 'locale' );
 				$pll_urls = array();	// associative array of locales and their url
