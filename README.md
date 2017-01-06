@@ -33,31 +33,12 @@
 
 <h2>Installation</h2>
 
-<h4>Automated Install</h4>
+<h4>Install and Uninstall</h4>
 
-<ol>
-<li>Go to the wp-admin/ section of your website.</li>
-<li>Select the <em>Plugins</em> menu item.</li>
-<li>Select the <em>Add New</em> sub-menu item.</li>
-<li>In the <em>Search</em> box, enter the plugin name.</li>
-<li>Click the <em>Search Plugins</em> button.</li>
-<li>Click the <em>Install Now</em> link for the plugin.</li>
-<li>Click the <em>Activate Plugin</em> link.</li>
-</ol>
-
-<h4>Semi-Automated Install</h4>
-
-<ol>
-<li>Download the plugin archive file.</li>
-<li>Go to the wp-admin/ section of your website.</li>
-<li>Select the <em>Plugins</em> menu item.</li>
-<li>Select the <em>Add New</em> sub-menu item.</li>
-<li>Click on <em>Upload</em> link (just under the Install Plugins page title).</li>
-<li>Click the <em>Browse...</em> button.</li>
-<li>Navigate your local folders / directories and choose the zip file you downloaded previously.</li>
-<li>Click on the <em>Install Now</em> button.</li>
-<li>Click the <em>Activate Plugin</em> link.</li>
-</ol>
+<ul>
+<li><a href="https://wpsso.com/codex/plugins/wpsso-user-locale/installation/install-the-plugin/">Install the Plugin</a></li>
+<li><a href="https://wpsso.com/codex/plugins/wpsso-user-locale/installation/uninstall-the-plugin/">Uninstall the Plugin</a></li>
+</ul>
 
 
 <h2>Frequently Asked Questions</h2>
@@ -74,37 +55,15 @@
 <h3>Other Notes</h3>
 <h4>Additional Documentation</h4>
 
-<p><strong>Developer Filters</strong></p>
+<ul>
+<li><a href="https://wpsso.com/codex/plugins/wpsso-user-locale/notes/developer/">Developer Resources</a>
 
-<p>To exclude the "User Locale" menu item from the front-end toolbar menu, <em>and ignore the user locale / language preference in the front-end webpage</em>, add the following to your functions.php file:</p>
+<ul>
+<li><a href="https://wpsso.com/codex/plugins/wpsso-user-locale/notes/developer/filters/">Filters</a>
 
-<pre><code>add_filter( 'wpsso_user_locale_front_end', '__return_false' );
-</code></pre>
-
-<p>To modify the "User Locale" menu title, you can hook the 'wpsso_user_locale_menu_title' filter:</p>
-
-<pre><code>add_filter( 'wpsso_user_locale_menu_title', 
-    'customize_user_locale_menu_title', 10, 2 );
-
-function customize_user_locale_menu_title( $title, $user_locale ) {
-    $menu_locale = $user_locale === 'site-default' ? 
-        __( 'default', 'wpsso-user-locale' ) : $user_locale;
-
-    $title = sprintf( __( 'Select Locale (%s)',
-        'wpsso-user-locale' ), $menu_locale );
-
-    return $title;
-}
-</code></pre>
-
-<p>You can also modify the URL used to reload the page after selecting a locale by hooking the 'wpsso_user_locale_redirect_url' filter.</p>
-
-<pre><code>add_filter( 'wpsso_user_locale_redirect_url', 
-    'customize_user_locale_redirect_url', 10, 2 );
-
-function customize_user_locale_redirect_url( $url, $user_locale ) {
-    // modify the redirect url here
-    return $url;
-}
-</code></pre>
+<ul>
+<li><a href="https://wpsso.com/codex/plugins/wpsso-user-locale/notes/developer/filters/by-name/">Filters by Name</a></li>
+</ul></li>
+</ul></li>
+</ul>
 
