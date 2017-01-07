@@ -20,6 +20,10 @@
 
 <p>The default WordPress behavior is to apply the user locale / language preference to the back-end only &mdash; this plugin can optionally extend the user locale / language preference to the front-end webpage as well (enabled by default).</p>
 
+<h4>Developers</h4>
+
+<p>See the plugin <a href="https://wordpress.org/plugins/wpsso-user-locale/other_notes/">Other Notes</a> page for information on available filters.</p>
+
 <h4>Do you use the Polylang plugin?</h4>
 
 <p>If the Polylang plugin is active, the "User Locale" menu will automatically use the correct Polylang language URLs for the current webpage.</p>
@@ -27,10 +31,6 @@
 <blockquote>
 <p><strong>Prerequisite</strong> &mdash; WPSSO User Locale (WPSSO UL) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, which <em>automatically</em> creates complete and accurate meta tags and Schema markup for Social Sharing Optimization (SSO) and SEO.</p>
 </blockquote>
-
-<h4>Developers</h4>
-
-<p>See the plugin <a href="https://wordpress.org/plugins/wpsso-user-locale/other_notes/">Other Notes</a> page for information on available filters.</p>
 
 
 <h2>Installation</h2>
