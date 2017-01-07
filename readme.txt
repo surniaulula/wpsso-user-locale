@@ -1,4 +1,4 @@
-=== WPSSO User Locale - Select a Language in the WordPress Toolbar Menu ===
+=== WPSSO User Locale - Select a Region / Language in the WordPress Toolbar Menu ===
 Plugin Name: WPSSO User Locale (WPSSO UL)
 Plugin Slug: wpsso-user-locale
 Text Domain: wpsso-user-locale
@@ -7,21 +7,21 @@ License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Donate Link: https://www.paypal.me/jsmoriss
 Assets URI: https://jsmoriss.github.io/wpsso-user-locale/assets/
-Tags: user, locale, language, select, admin, back-end, front-end, polylang
+Tags: user, locale, language, region, select, admin, back-end, front-end, polylang
 Contributors: jsmoriss
 Requires At Least: 4.7
 Tested Up To: 4.7
 Stable Tag: 1.0.0-1
 
-WPSSO extension to add a user locale / language selector in the WordPress admin back-end and front-end toolbar menus.
+WPSSO extension to add a user locale / region / language selector in the WordPress back-end and front-end toolbar menus.
 
 == Description ==
 
 <p><img src="https://surniaulula.github.io/wpsso-user-locale/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" />Add a "User Locale" menu item for users in the WordPress admin back-end admin and front-end toolbar menus.</p>
 
-Allow users to easily change their preferred locale / language instead of having to update their profile page.
+Allow users to easily change their preferred locale / region / language instead of having to update their profile page.
 
-The default WordPress behavior is to apply the user locale / language preference to the back-end only &mdash; this plugin can optionally extend the user locale / language preference to the front-end webpage as well (enabled by default).
+The default WordPress behavior is to apply the user locale preference to the back-end only &mdash; this plugin can optionally extend the user locale preference to the front-end webpage as well (enabled by default).
 
 = Power-Users / Developers =
 
@@ -62,7 +62,7 @@ If the Polylang plugin is active, the "User Locale" menu will automatically use 
 
 == Screenshots ==
 
-01. An example "User Locale" language selector in the WordPress front-end toolbar menu.
+01. An example "User Locale" selector in the WordPress front-end toolbar menu.
 
 == Changelog ==
 
