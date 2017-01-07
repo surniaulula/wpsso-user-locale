@@ -1,5 +1,5 @@
-=== WPSSO Select User Locale / Language in the WordPress Toolbar Menu ===
-Plugin Name: WPSSO Select User Locale (WPSSO UL)
+=== WPSSO User Locale - Select a Language in the WordPress Toolbar Menu ===
+Plugin Name: WPSSO User Locale (WPSSO UL)
 Plugin Slug: wpsso-user-locale
 Text Domain: wpsso-user-locale
 Domain Path: /languages
@@ -26,7 +26,7 @@ The default WordPress behavior is to apply the user locale / language preference
 If the Polylang plugin is available, the "User Locale" menu will use Polylang language URLs for that locale.
 
 <blockquote>
-<p><strong>Prerequisite</strong> &mdash; WPSSO Select User Locale (WPSSO UL) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, which <em>automatically</em> creates complete and accurate meta tags and Schema markup for Social Sharing Optimization (SSO) and SEO.</p>
+<p><strong>Prerequisite</strong> &mdash; WPSSO User Locale (WPSSO UL) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, which <em>automatically</em> creates complete and accurate meta tags and Schema markup for Social Sharing Optimization (SSO) and SEO.</p>
 </blockquote>
 
 = Developers =
