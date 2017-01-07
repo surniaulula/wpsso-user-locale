@@ -1,4 +1,4 @@
-=== WPSSO User Locale - Select a Region / Language in the WordPress Toolbar Menu ===
+=== WPSSO User Locale - Select a Language / Region in the WordPress Toolbar Menu ===
 Plugin Name: WPSSO User Locale (WPSSO UL)
 Plugin Slug: wpsso-user-locale
 Text Domain: wpsso-user-locale
@@ -13,15 +13,15 @@ Requires At Least: 4.7
 Tested Up To: 4.7
 Stable Tag: 1.0.0-1
 
-WPSSO extension to add a user locale / region / language selector in the WordPress back-end and front-end toolbar menus.
+WPSSO extension to add a user locale / language / region selector in the WordPress admin back-end and front-end toolbar menus.
 
 == Description ==
 
 <p><img src="https://surniaulula.github.io/wpsso-user-locale/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" />Add a "User Locale" menu item for users in the WordPress admin back-end admin and front-end toolbar menus.</p>
 
-Allow users to easily change their preferred locale / region / language instead of having to update their profile page.
+Allow users to easily change their preferred locale / language / region instead of having to update their profile page.
 
-The default WordPress behavior is to apply the user locale preference to the back-end only &mdash; this plugin can optionally extend the user locale preference to the front-end webpage as well (enabled by default).
+The default WordPress behavior is to apply the user locale preference to the admin back-end only &mdash; this plugin can optionally extend the user locale preference to the front-end webpage as well (enabled by default).
 
 = Power-Users / Developers =
 
