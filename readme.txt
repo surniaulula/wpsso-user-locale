@@ -52,6 +52,10 @@ See the plugin [Other Notes](https://wordpress.org/plugins/wpsso-user-locale/oth
 
 * [Developer Resources](https://wpsso.com/codex/plugins/wpsso-user-locale/notes/developer/)
 	* [Filters](https://wpsso.com/codex/plugins/wpsso-user-locale/notes/developer/filters/)
+		* [Filter Examples](https://wpsso.com/codex/plugins/wpsso-user-locale/notes/developer/filters/examples/)
+			* [Disable User Locale on Front-End](https://wpsso.com/codex/plugins/wpsso-user-locale/notes/developer/filters/examples/disable-user-locale-on-front-end/)
+			* [Modify the Menu Title](https://wpsso.com/codex/plugins/wpsso-user-locale/notes/developer/filters/examples/modify-the-menu-title/)
+			* [Modify the Redirect URL](https://wpsso.com/codex/plugins/wpsso-user-locale/notes/developer/filters/examples/modify-the-redirect-url/)
 		* [Filters by Name](https://wpsso.com/codex/plugins/wpsso-user-locale/notes/developer/filters/by-name/)
 
 == Screenshots ==
