@@ -23,7 +23,7 @@ Allow users to easily change their preferred locale / language instead of having
 
 The default WordPress behavior is to apply the user locale / language preference to the back-end only &mdash; this plugin can optionally extend the user locale / language preference to the front-end webpage as well (enabled by default).
 
-= Developers =
+= Power-Users / Developers =
 
 See the plugin [Other Notes](https://wordpress.org/plugins/wpsso-user-locale/other_notes/) page for information on available filters.
 
