@@ -1,6 +1,6 @@
 <?php
 /*
- * Plugin Name: WPSSO Select User Locale (WPSSO UL)
+ * Plugin Name: WPSSO User Locale (WPSSO UL)
  * Text Domain: wpsso-user-locale
  * Domain Path: /languages
  * Plugin URI: https://surniaulula.com/extend/plugins/wpsso-user-locale/
