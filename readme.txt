@@ -7,7 +7,7 @@ License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Donate Link: https://www.paypal.me/jsmoriss
 Assets URI: https://jsmoriss.github.io/wpsso-user-locale/assets/
-Tags: user, locale, language, select, admin, back-end, front-end
+Tags: user, locale, language, select, admin, back-end, front-end, polylang
 Contributors: jsmoriss
 Requires At Least: 4.7
 Tested Up To: 4.7
@@ -84,7 +84,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.0.0-1 (2017/01/06)**
+**Version 1.0.0-1 (2017/01/07)**
 
 * *New Features*
 	* Initial release.
@@ -99,5 +99,5 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 1.0.0-1 =
 
-(2017/01/06) Initial release.
+(2017/01/07) Initial release.
 
