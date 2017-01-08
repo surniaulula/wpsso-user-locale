@@ -68,7 +68,7 @@ If the Polylang plugin is active, the "User Locale" menu will automatically use 
 
 = Repositories =
 
-* [GitHub](https://github.com/jsmoriss/wpsso-user-locale)
+* [GitHub](https://surniaulula.github.io/wpsso-user-locale/)
 * [WordPress.org](https://wordpress.org/plugins/wpsso-user-locale/developers/)
 
 = Version Numbering Scheme =
