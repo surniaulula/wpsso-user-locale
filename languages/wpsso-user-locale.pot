@@ -53,7 +53,7 @@ msgstr ""
 msgid "default"
 msgstr ""
 
-#: lib/locale.php:140
+#: lib/locale.php:144
 msgid "Default Locale"
 msgstr ""
 

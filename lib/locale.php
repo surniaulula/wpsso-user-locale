@@ -61,7 +61,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				$user_locale = SucomUtil::get_locale( 'default' );
 
 			/*
-			 * Prefer Polylang URLs
+			 * Use Polylang URLs
 			 */
 			if ( ! is_admin() && function_exists( 'pll_the_languages' ) ) {
 				$pll_languages = pll_the_languages( array( 'echo' => 0, 'raw' => 1 ) );
@@ -106,11 +106,15 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			/*
 			 * Menu Icon and Title
 			 */
-			if ( ! empty( $wpsso->options['ul_menu_icon'] ) &&
-				$wpsso->options['ul_menu_icon'] !== 'none' ) {
-				$dashicons = SucomUtil::get_dashicons();
-				$menu_icon = '<style type="text/css">#wp-admin-bar-wpsso-user-locale .dashicons-before:before { vertical-align:middle; }</style>'.
-					'<span class="dashicons-before dashicons-'.$dashicons[$wpsso->options['ul_menu_icon']].'"></span> ';
+			$dashicon = apply_filters( 'wpsso_user_locale_menu_dashicon', 
+				( empty( $wpsso->options['ul_menu_icon'] ) ? 
+					null : $wpsso->options['ul_menu_icon'] ), $menu_locale );
+
+			if ( ! empty( $dashicon ) && $dashicon !== 'none' ) {
+				$dashicons = SucomUtil::get_dashicons();	// get the raw / unsorted dashicons array
+				if ( isset( $dashicons[$dashicon] ) ) {		// just in case
+					$menu_icon = '<span class="ab-icon dashicons-'.$dashicons[$dashicon].'"></span>';
+				} else $menu_icon = '';
 			} else $menu_icon = '';
 
 			$menu_title = SucomUtil::get_locale_opt( 'ul_menu_title', $wpsso->options );
