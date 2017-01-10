@@ -17,8 +17,9 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 		public static $cf = array(
 			'opt' => array(				// options
 				'defaults' => array(
-					'ul_menu_title' => 'User Locale (%s)',	// Toolbar Menu Title
-					'ul_front_end' => 1,			// Add User Locale on Front-End
+					'ul_menu_icon' => 326,		// Toolbar Menu Icon (dashicons-translation)
+					'ul_menu_title' => '%s',	// Toolbar Menu Title
+					'ul_front_end' => 1,		// Add User Locale on Front-End
 				),
 			),
 		);
@@ -45,7 +46,7 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 
 			// if the locale is different, use the text domain translated string as the default value
 			if ( ( $opt_key = SucomUtil::get_key_locale( 'ul_menu_title' ) ) !== 'ul_menu_title' )
-				$def_opts[$opt_key] = __( 'User Locale (%s)', 'wpsso-user-locale' );
+				$def_opts[$opt_key] = __( '%s', 'wpsso-user-locale' );
 
 			return $def_opts;
 		}
@@ -69,8 +70,11 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 				return $text;
 
 			switch ( $idx ) {
+				case 'tooltip-ul_menu_icon':	// Toolbar Menu Icon
+					$text = __( 'An icon to prefix the user locale title string in the WordPress toolbar menu (uses the "translation" icon by default). Select "[None]" to disable the toolbar menu icon.', 'wpsso-user-locale' );
+					break;
 				case 'tooltip-ul_menu_title':	// Toolbar Menu Title
-					$text = __( 'A title string used for the WordPress toolbar menu. The "%s" parameter is replaced by the current user locale value.', 'wpsso-user-locale' );
+					$text = __( 'The user locale title string in the WordPress toolbar menu. The "%s" parameter is replaced by the current user locale value (example: "User Locale (%s)").', 'wpsso-user-locale' );
 					break;
 				case 'tooltip-ul_front_end':	// Add User Locale on Front-End
 					$text = __( 'Add the user locale selector to the front-end toolbar menu, and define current WordPress locale as the user locale value.', 'wpsso-user-locale' );

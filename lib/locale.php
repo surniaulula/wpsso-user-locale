@@ -103,19 +103,33 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			$menu_locale = $user_locale === 'site-default' ? 
 				__( 'default', 'wpsso-user-locale' ) : $user_locale;
 
+			/*
+			 * Menu Icon and Title
+			 */
+			if ( ! empty( $wpsso->options['ul_menu_icon'] ) &&
+				$wpsso->options['ul_menu_icon'] !== 'none' ) {
+				$dashicons = SucomUtil::get_dashicons();
+				$menu_icon = '<style type="text/css">#wp-admin-bar-wpsso-user-locale .dashicons-before:before { vertical-align:middle; }</style>'.
+					'<span class="dashicons-before dashicons-'.$dashicons[$wpsso->options['ul_menu_icon']].'"></span> ';
+			} else $menu_icon = '';
+
 			$menu_title = SucomUtil::get_locale_opt( 'ul_menu_title', $wpsso->options );
 			$menu_title = apply_filters( 'wpsso_user_locale_menu_title', $menu_title, $menu_locale );
 			$menu_title = sprintf( $menu_title, $menu_locale );
 
 			$wp_admin_bar->add_node( array(	// since wp 3.1
 				'id' => 'wpsso-user-locale',
-				'title' => $menu_title,
+				'title' => $menu_icon.$menu_title,
 				'parent' => false,
 				'href' => false,
 				'group' => false,
-				'meta' => false,
+				'meta' => array(),
 			) );
 
+			/*
+			 * Menu Drop-down Items
+			 */
+			$menu_items = array();
 			foreach ( $languages as $locale ) {
 				$meta = array();
 				if ( isset( $translations[$locale]['native_name'] ) ) {
@@ -131,15 +145,19 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 					$native_name = '<strong>'.$native_name.'</strong>';
 					$meta['class'] = 'current_locale';
 				}
-				$wp_admin_bar->add_node( array(	// since wp 3.1
+				$menu_items[] = array(
 					'id' => 'wpsso-user-locale-'.$locale,
 					'title' => $native_name,
 					'parent' => 'wpsso-user-locale',
 					'href' => add_query_arg( 'update-user-locale', rawurlencode( $locale ) ),
 					'group' => false,
 					'meta' => $meta,
-				) );
+				);
 			}
+			$menu_items = apply_filters( 'wpsso_user_locale_menu_items', $menu_items, $menu_locale );
+
+			foreach ( $menu_items as $menu_item )
+				$wp_admin_bar->add_node( $menu_item );
 		}
 	}
 }

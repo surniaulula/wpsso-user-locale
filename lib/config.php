@@ -15,8 +15,8 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoul' => array(
-					'version' => '1.0.0-1',		// plugin version
-					'opt_version' => '3',		// increment when changing default options
+					'version' => '1.1.0-dev1',		// plugin version
+					'opt_version' => '6',		// increment when changing default options
 					'short' => 'WPSSO UL',		// short plugin name
 					'name' => 'WPSSO User Locale (WPSSO UL)',
 					'desc' => 'WPSSO extension to add a user locale / language selector in the WordPress admin back-end and front-end toolbar menus.',
@@ -28,7 +28,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO',
 						'name' => 'WordPress Social Sharing Optimization (WPSSO)',
-						'min_version' => '3.38.2-1',
+						'min_version' => '3.38.4-dev1',
 					),
 					'img' => array(
 						'icon_small' => 'images/icon-128x128.png',
