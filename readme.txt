@@ -17,9 +17,9 @@ WPSSO extension to add a user locale / language / region selector in the WordPre
 
 == Description ==
 
-<p><img src="https://surniaulula.github.io/wpsso-user-locale/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" />Add a "User Locale" menu item for users in the WordPress admin back-end admin and front-end toolbar menus.</p>
+<p><img src="https://surniaulula.github.io/wpsso-user-locale/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" />Add a user locale drop-down menu item in the WordPress admin back-end admin and front-end toolbar menus.</p>
 
-Allows users to easily change their preferred locale / language / region setting from the toolbar instead of having to update their WordPress profile page.
+Allows users to easily change their preferred locale / language / region setting from the toolbar menu instead of having to update their WordPress profile page.
 
 The default WordPress behavior is to apply the user locale preference to the admin back-end only &mdash; this plugin can optionally extend the user locale preference to the front-end webpage as well (enabled by default in the SSO &gt; User Locale settings page).
 
@@ -29,7 +29,7 @@ See the plugin [Other Notes](https://wordpress.org/plugins/wpsso-user-locale/oth
 
 = Do you use the Polylang plugin? =
 
-If the Polylang plugin is active, the "User Locale" menu will automatically use the correct Polylang language URLs for the current webpage.
+If the Polylang plugin is active, the user locale menu will automatically use the correct Polylang language URLs for the current webpage.
 
 <blockquote>
 <p><strong>Prerequisite</strong> &mdash; WPSSO User Locale (WPSSO UL) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, which <em>automatically</em> creates complete and accurate meta tags and Schema markup for Social Sharing Optimization (SSO) and SEO.</p>
@@ -62,7 +62,7 @@ If the Polylang plugin is active, the "User Locale" menu will automatically use 
 
 == Screenshots ==
 
-01. An example "User Locale" selector in the WordPress front-end toolbar menu.
+01. An example user locale selector in the WordPress front-end toolbar menu.
 
 == Changelog ==
 
@@ -93,6 +93,7 @@ Note that the production stage level can be incremented on occasion for simple t
 * *Bugfixes*
 	* None
 * *Developer Notes*
+	* Added a new 'wpsso_user_locale_menu_dashicon' filter.
 	* Added a new 'wpsso_user_locale_menu_items' filter.
 
 **Version 1.0.0-1 (2017/01/08)**
