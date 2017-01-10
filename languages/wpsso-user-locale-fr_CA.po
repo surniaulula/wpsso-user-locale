@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO User Locale (WPSSO UL) 1.0.0-1\n"
+"Project-Id-Version: WPSSO User Locale (WPSSO UL) 1.1.0-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-user-locale\n"
-"POT-Creation-Date: 2017-01-07 14:58+1100\n"
-"PO-Revision-Date: 2017-01-07 15:01+1100\n"
+"POT-Creation-Date: 2017-01-10 18:46+1100\n"
+"PO-Revision-Date: 2017-01-10 18:48+1100\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -24,13 +24,13 @@ msgctxt "plugin description"
 msgid "WPSSO extension to add a user locale / language selector in the WordPress admin back-end and front-end toolbar menus."
 msgstr "Extension WPSSO pour ajouté un sélecteur de langue pour les utilisateurs dans la barre d'outils WordPress d'avant et arrière."
 
-#: lib/filters.php:48
-msgid "User Locale (%s)"
-msgstr "Langue utilisateur (%s)"
+#: lib/filters.php:70
+msgid "An icon to prefix the title string used in the WordPress toolbar menu (uses the \"translation\" icon by default). Select \"[None]\" to disable the toolbar menu icon."
+msgstr "Un icône devant le titre utilisé dans le menu de barre d'outils WordPress (utilise l'icône de \"traduction\" par défaut). Sélectionnez \"[Aucun]\" pour désactiver l'utilisation d'un icône dans de menu de barre d'outils."
 
 #: lib/filters.php:73
-msgid "A title string used for the WordPress toolbar menu. The \"%s\" parameter is replaced by the current user locale value."
-msgstr "Le titre utilisé dans le menu de barre d’outils WordPress. Le paramètre \"%s\" est remplacé par la valeur actuel de la langue utilisateur."
+msgid "The title string used in the WordPress toolbar menu. The \"%s\" parameter is replaced by the current user locale value (example: \"User Locale (%s)\")."
+msgstr "Le titre utilisé dans le menu de barre d'outils WordPress. Le paramètre \"%s\" est remplacé par la valeur actuel de la langue utilisateur (exemple: \"Langue utilisateur (%s)\")."
 
 #: lib/filters.php:76
 msgid "Add the user locale selector to the front-end toolbar menu, and define current WordPress locale as the user locale value."
@@ -40,7 +40,7 @@ msgstr "Ajouter le sélecteur de langue utilisateur dans le menu de barre d'outi
 msgid "default"
 msgstr "défaut"
 
-#: lib/locale.php:126
+#: lib/locale.php:144
 msgid "Default Locale"
 msgstr "Langue par défaut"
 
@@ -51,10 +51,15 @@ msgstr "Réglages langue utilisateur"
 
 #: lib/submenu/ul-general.php:44
 msgctxt "option label"
+msgid "Toolbar Menu Icon"
+msgstr "Icône dans la barre d'outils"
+
+#: lib/submenu/ul-general.php:48
+msgctxt "option label"
 msgid "Toolbar Menu Title"
 msgstr "Titre dans la barre d'outils"
 
-#: lib/submenu/ul-general.php:48
+#: lib/submenu/ul-general.php:52
 msgctxt "option label"
 msgid "Add User Locale on Front-End"
 msgstr "Ajouter langue utilisateur à l'avant"
@@ -98,3 +103,6 @@ msgstr "JS Morisset"
 #. Author URI of the plugin/theme
 msgid "https://surniaulula.com/"
 msgstr "https://surniaulula.com/"
+
+#~ msgid "User Locale (%s)"
+#~ msgstr "Langue utilisateur (%s)"
