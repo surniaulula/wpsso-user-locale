@@ -84,6 +84,17 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 1.1.0-dev1 (2017/01/10)**
+
+* *New Features*
+	* Added a new "Toolbar Menu Icon" option in the User Locale settings page.
+* *Improvements*
+	* Changed the "Toolbar Menu Title" default value from "User Locale (%s)" to "%s".
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Added a new 'wpsso_user_locale_menu_items' filter.
+
 **Version 1.0.0-1 (2017/01/08)**
 
 * *New Features*
@@ -96,6 +107,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* None
 
 == Upgrade Notice ==
+
+= 1.1.0-dev1 =
+
+(2017/01/10) Added a new "Toolbar Menu Icon" option in the User Locale settings page. Added a new 'wpsso_user_locale_menu_items' filter.
 
 = 1.0.0-1 =
 
