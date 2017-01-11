@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO User Locale (WPSSO UL) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO User Locale (WPSSO UL) 1.1.0-dev1\n"
+"Project-Id-Version: WPSSO User Locale (WPSSO UL) 1.1.0-b1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-user-"
 "locale\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
