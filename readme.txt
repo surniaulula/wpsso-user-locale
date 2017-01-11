@@ -84,7 +84,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.1.0-dev1 (2017/01/10)**
+**Version 1.1.0-b1 (2017/01/11)**
 
 * *New Features*
 	* Added a new "Toolbar Menu Icon" option in the User Locale settings page.
@@ -109,9 +109,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 1.1.0-dev1 =
+= 1.1.0-b1 =
 
-(2017/01/10) Added a new "Toolbar Menu Icon" option in the User Locale settings page. Added a new 'wpsso_user_locale_menu_items' filter.
+(2017/01/11) Added a new "Toolbar Menu Icon" option in the User Locale settings page. Added a new 'wpsso_user_locale_menu_items' filter.
 
 = 1.0.0-1 =
 
