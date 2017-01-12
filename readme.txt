@@ -11,7 +11,7 @@ Tags: user, locale, language, region, select, admin, back-end, front-end, polyla
 Contributors: jsmoriss
 Requires At Least: 4.7
 Tested Up To: 4.7.1
-Stable Tag: 1.0.0-1
+Stable Tag: 1.1.0-1
 
 WPSSO extension to add a user locale / language / region selector in the WordPress admin back-end and front-end toolbar menus.
 
