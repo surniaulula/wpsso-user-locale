@@ -38,7 +38,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 						// wordpress
 						'download' => 'https://wordpress.org/plugins/wpsso-user-locale/',
 						'forum' => 'https://wordpress.org/support/plugin/wpsso-user-locale',
-						'review' => 'https://wordpress.org/support/view/plugin-reviews/wpsso-user-locale?filter=5&rate=5#postform',
+						'review' => 'https://wordpress.org/support/plugin/wpsso-user-locale/reviews/?rate=5#new-post',
 						// github
 						'readme_txt' => 'https://raw.githubusercontent.com/SurniaUlula/wpsso-user-locale/master/readme.txt',
 						// wpsso
