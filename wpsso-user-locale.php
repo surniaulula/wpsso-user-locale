@@ -10,7 +10,7 @@
  * License: GPLv3
  * License URI: http://www.gnu.org/licenses/gpl.txt
  * Description: WPSSO extension to add a user locale / language selector in the WordPress admin back-end and front-end toolbar menus.
- * Requires At Least: 4.7
+ * Requires At Least: 3.8
  * Tested Up To: 4.7.2
  * Version: 1.1.0-1
  *
