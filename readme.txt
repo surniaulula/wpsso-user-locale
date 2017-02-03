@@ -9,7 +9,7 @@ Donate Link: https://www.paypal.me/surniaulula
 Assets URI: https://surniaulula.github.io/wpsso-user-locale/assets/
 Tags: user, locale, language, region, select, admin, back-end, front-end, polylang
 Contributors: jsmoriss
-Requires At Least: 4.7
+Requires At Least: 3.8
 Tested Up To: 4.7.2
 Stable Tag: 1.1.0-1
 
