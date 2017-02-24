@@ -72,24 +72,24 @@ msgctxt "option label"
 msgid "Add User Locale on Front-End"
 msgstr ""
 
-#: wpsso-user-locale.php:93
+#: wpsso-user-locale.php:89
 msgid ""
 "%1$s is an extension for the %2$s plugin &mdash; please install and activate "
 "the %3$s plugin before activating %4$s."
 msgstr ""
 
-#: wpsso-user-locale.php:95
+#: wpsso-user-locale.php:91
 msgid ""
 "The %1$s extension requires the %2$s plugin &mdash; please install and "
 "activate the %3$s plugin."
 msgstr ""
 
-#: wpsso-user-locale.php:115
+#: wpsso-user-locale.php:111
 msgid ""
 "%1$s requires WordPress version %2$s or higher and has been deactivated."
 msgstr ""
 
-#: wpsso-user-locale.php:117
+#: wpsso-user-locale.php:113
 msgid "Please upgrade WordPress before trying to reactivate the %1$s plugin."
 msgstr ""
 

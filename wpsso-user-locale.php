@@ -64,7 +64,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 				add_action( 'admin_init', array( __CLASS__, 'check_wp_version' ) );
 			}
 
-			add_action( 'wpsso_init_debug', array( __CLASS__, 'load_textdomain' ) );
+			add_action( 'wpsso_init_textdomain', array( __CLASS__, 'wpsso_init_textdomain' ) );
 			add_filter( 'wpsso_get_config', array( &$this, 'wpsso_get_config' ), 10, 2 );
 			add_action( 'wpsso_init_options', array( &$this, 'wpsso_init_options' ), 10 );
 			add_action( 'wpsso_init_objects', array( &$this, 'wpsso_init_objects' ), 10 );
@@ -77,10 +77,6 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 			return self::$instance;
 		}
 
-		public static function load_textdomain() {
-			load_plugin_textdomain( 'wpsso-user-locale', false, 'wpsso-user-locale/languages/' );
-		}
-
 		public static function required_check() {
 			if ( ! class_exists( 'Wpsso' ) )
 				add_action( 'all_admin_notices', array( __CLASS__, 'required_notice' ) );
@@ -88,7 +84,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 
 		// also called from the activate_plugin method with $deactivate = true
 		public static function required_notice( $deactivate = false ) {
-			self::load_textdomain();
+			self::wpsso_init_textdomain();
 			$info = WpssoUlConfig::$cf['plugin']['wpssoul'];
 			$die_msg = __( '%1$s is an extension for the %2$s plugin &mdash; please install and activate the %3$s plugin before activating %4$s.',
 				'wpsso-user-locale' );
@@ -119,6 +115,10 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 					);
 				}
 			}
+		}
+
+		public static function wpsso_init_textdomain() {
+			load_plugin_textdomain( 'wpsso-user-locale', false, 'wpsso-user-locale/languages/' );
 		}
 
 		public function wpsso_get_config( $cf, $plugin_version = 0 ) {
