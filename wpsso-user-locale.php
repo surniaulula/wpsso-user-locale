@@ -59,13 +59,12 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 			WpssoUlConfig::require_libs( __FILE__ );	// includes the register.php class library
 			$this->reg = new WpssoUlRegister();		// activate, deactivate, uninstall hooks
 
-			add_action( 'plugins_loaded', array( __CLASS__, 'load_textdomain' ) );
-
 			if ( is_admin() ) {
 				add_action( 'admin_init', array( __CLASS__, 'required_check' ) );
 				add_action( 'admin_init', array( __CLASS__, 'check_wp_version' ) );
 			}
 
+			add_action( 'wpsso_init_debug', array( __CLASS__, 'load_textdomain' ) );
 			add_filter( 'wpsso_get_config', array( &$this, 'wpsso_get_config' ), 10, 2 );
 			add_action( 'wpsso_init_options', array( &$this, 'wpsso_init_options' ), 10 );
 			add_action( 'wpsso_init_objects', array( &$this, 'wpsso_init_objects' ), 10 );
@@ -87,16 +86,21 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 				add_action( 'all_admin_notices', array( __CLASS__, 'required_notice' ) );
 		}
 
+		// also called from the activate_plugin method with $deactivate = true
 		public static function required_notice( $deactivate = false ) {
+			self::load_textdomain();
 			$info = WpssoUlConfig::$cf['plugin']['wpssoul'];
+			$die_msg = __( '%1$s is an extension for the %2$s plugin &mdash; please install and activate the %3$s plugin before activating %4$s.',
+				'wpsso-user-locale' );
+			$err_msg = __( 'The %1$s extension requires the %2$s plugin &mdash; please install and activate the %3$s plugin.',
+				'wpsso-user-locale' );
 
 			if ( $deactivate === true ) {
 				require_once( ABSPATH.'wp-admin/includes/plugin.php' );
 				deactivate_plugins( $info['base'] );
-				wp_die( '<p>'.sprintf( __( '%1$s is an extension for the %2$s plugin &mdash; please install and activate the %3$s plugin before activating the %4$s extension.', 'wpsso-user-locale' ), $info['name'], $info['req']['name'], $info['req']['short'], $info['short'] ).'</p>' );
+				wp_die( '<p>'.sprintf( $die_msg, $info['name'], $info['req']['name'], $info['req']['short'], $info['short'] ).'</p>' );
 			} else echo '<div class="notice notice-error error"><p>'.
-				sprintf( __( 'The %1$s extension requires the %2$s plugin &mdash; please install and activate the %3$s plugin.',
-					'wpsso-user-locale' ), $info['name'], $info['req']['name'], $info['req']['short'] ).'</p></div>';
+				sprintf( $err_msg, $info['name'], $info['req']['name'], $info['req']['short'] ).'</p></div>';
 		}
 
 		public static function check_wp_version() {
