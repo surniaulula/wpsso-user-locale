@@ -17,9 +17,9 @@ WPSSO extension to add a user locale / language / region selector in the WordPre
 
 == Description ==
 
-<p><img src="https://surniaulula.github.io/wpsso-user-locale/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" />Add a user locale drop-down menu item in the WordPress admin back-end admin and front-end toolbar menus.</p>
+<p><img src="https://surniaulula.github.io/wpsso-user-locale/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" /><strong>Add a user locale drop-down menu item in the WordPress admin back-end admin and front-end toolbar menus.</strong></p>
 
-Allows users to easily change their preferred locale / language / region setting from the toolbar menu instead of having to update their WordPress profile page.
+<strong>Perfect for translators or anyone who needs to switch languages quickly and easily</strong> &mdash; allows logged-in users to change their preferred locale / language setting right from the toolbar menu (instead of having to update their WordPress user profile page).
 
 The default WordPress behavior is to apply the user locale preference to the admin back-end only &mdash; this plugin can optionally extend the user locale preference to the front-end webpage as well (enabled by default in the SSO &gt; User Locale settings page).
 
