@@ -5,7 +5,6 @@ Text Domain: wpsso-user-locale
 Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
-Donate Link: https://www.paypal.me/surniaulula
 Assets URI: https://surniaulula.github.io/wpsso-user-locale/assets/
 Tags: user, locale, language, region, select, admin, back-end, front-end, polylang
 Contributors: jsmoriss
