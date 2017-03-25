@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO User Locale (WPSSO UL) 1.1.0-1\n"
+"Project-Id-Version: WPSSO User Locale (WPSSO UL) 1.1.1-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-user-locale\n"
-"POT-Creation-Date: 2017-02-24 17:07+0700\n"
-"PO-Revision-Date: 2017-02-24 17:07+0700\n"
+"POT-Creation-Date: 2017-03-25 10:50+0200\n"
+"PO-Revision-Date: 2017-03-25 10:51+0200\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -64,23 +64,23 @@ msgctxt "option label"
 msgid "Add User Locale on Front-End"
 msgstr "Ajouter langue utilisateur à l'avant"
 
-#: wpsso-user-locale.php:93
+#: wpsso-user-locale.php:90
 msgid "%1$s is an extension for the %2$s plugin &mdash; please install and activate the %3$s plugin before activating %4$s."
 msgstr "%1$s est une extension pour %2$s &mdash; s'il vous plaît installer et activer %3$s avant d'activer l'extension %4$s."
 
-#: wpsso-user-locale.php:95
+#: wpsso-user-locale.php:92
 msgid "The %1$s extension requires the %2$s plugin &mdash; please install and activate the %3$s plugin."
 msgstr "L'extension %1$s requiert %2$s &mdash; s'il vous plaît installer et activer l'extension %3$s."
 
-#: wpsso-user-locale.php:115
-msgid "%1$s requires WordPress version %2$s or higher and has been deactivated."
-msgstr "%1$s nécessite WordPress version %2$s ou supérieure et a été désactivé."
+#: wpsso-user-locale.php:118
+msgid "%1$s requires %2$s version %3$s or higher and has been deactivated."
+msgstr "%1$s nécessite %2$s version %3$s ou supérieure et a été désactivé."
 
-#: wpsso-user-locale.php:117
-msgid "Please upgrade WordPress before trying to reactivate the %1$s plugin."
-msgstr "Veuillez mettre à jour WordPress avant d'essayer de réactiver l'extension %1$s."
+#: wpsso-user-locale.php:120
+msgid "Please upgrade %1$s before trying to reactivate the %2$s plugin."
+msgstr "Veuillez mettre à jour %1$s avant d'essayer de réactiver l'extension %2$s."
 
-#: wpsso-user-locale.php:181
+#: wpsso-user-locale.php:188
 msgid "The %1$s extension v%2$s requires %3$s v%4$s or newer (v%5$s currently installed)."
 msgstr "L'extension %1$s v%2$s requiert l'utilisation de %3$s v%4$s ou plus récente (v%5$s est actuellement installée)."
 
