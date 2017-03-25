@@ -93,7 +93,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 				'wpsso-user-locale' );
 			if ( $deactivate === true ) {
 				if ( ! function_exists( 'deactivate_plugins' ) ) {
-					require_once ABSPATH.'wp-admin/includes/plugin.php';
+					require_once trailingslashit( ABSPATH ).'wp-admin/includes/plugin.php';
 				}
 				deactivate_plugins( $info['base'], true );	// $silent = true
 				wp_die( '<p>'.sprintf( $die_msg, $info['name'], $info['req']['name'], $info['req']['short'], $info['short'] ).'</p>' );
@@ -110,7 +110,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 				if ( is_plugin_active( $plugin ) ) {
 					self::wpsso_init_textdomain();
 					if ( ! function_exists( 'deactivate_plugins' ) ) {
-						require_once ABSPATH.'wp-admin/includes/plugin.php';
+						require_once trailingslashit( ABSPATH ).'wp-admin/includes/plugin.php';
 					}
 					$plugin_data = get_plugin_data( __FILE__, false );	// $markup = false
 					deactivate_plugins( $plugin, true );	// $silent = true
