@@ -78,9 +78,9 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 
 		public static function require_libs( $plugin_filepath ) {
 
-			require_once( WPSSOUL_PLUGINDIR.'lib/register.php' );
-			require_once( WPSSOUL_PLUGINDIR.'lib/filters.php' );
-			require_once( WPSSOUL_PLUGINDIR.'lib/locale.php' );
+			require_once WPSSOUL_PLUGINDIR.'lib/register.php';
+			require_once WPSSOUL_PLUGINDIR.'lib/filters.php';
+			require_once WPSSOUL_PLUGINDIR.'lib/locale.php';
 
 			add_filter( 'wpssoul_load_lib', array( 'WpssoUlConfig', 'load_lib' ), 10, 3 );
 		}
@@ -89,7 +89,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 			if ( $ret === false && ! empty( $filespec ) ) {
 				$filepath = WPSSOUL_PLUGINDIR.'lib/'.$filespec.'.php';
 				if ( file_exists( $filepath ) ) {
-					require_once( $filepath );
+					require_once $filepath;
 					if ( empty( $classname ) )
 						return SucomUtil::sanitize_classname( 'wpssoul'.$filespec, false );	// $underscore = false
 					else return $classname;

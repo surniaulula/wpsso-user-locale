@@ -91,7 +91,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				return;
 
 			global $wp_admin_bar;
-			require_once( ABSPATH.'wp-admin/includes/translation-install.php' );
+			require_once ABSPATH.'wp-admin/includes/translation-install.php';
 			$wpsso = Wpsso::get_instance();
 			$translations = wp_get_available_translations();	// since wp 4.0
 			$languages = array_merge( array( 'site-default' ), get_available_languages() );	// since wp 3.0

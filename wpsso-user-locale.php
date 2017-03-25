@@ -10,7 +10,7 @@
  * License: GPLv3
  * License URI: http://www.gnu.org/licenses/gpl.txt
  * Description: WPSSO extension to add a user locale / language selector in the WordPress admin back-end and front-end toolbar menus.
- * Requires At Least: 3.8
+ * Requires At Least: 3.7
  * Tested Up To: 4.7.3
  * Version: 1.1.0-1
  *
@@ -61,7 +61,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 
 			if ( is_admin() ) {
 				add_action( 'admin_init', array( __CLASS__, 'required_check' ) );
-				add_action( 'admin_init', array( __CLASS__, 'check_wp_version' ) );
+				add_action( 'admin_init', array( __CLASS__, 'check_wp_version' ) );	// requires wp v4.7+
 			}
 
 			add_action( 'wpsso_init_textdomain', array( __CLASS__, 'wpsso_init_textdomain' ) );
@@ -78,8 +78,9 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 		}
 
 		public static function required_check() {
-			if ( ! class_exists( 'Wpsso' ) )
+			if ( ! class_exists( 'Wpsso' ) ) {
 				add_action( 'all_admin_notices', array( __CLASS__, 'required_notice' ) );
+			}
 		}
 
 		// also called from the activate_plugin method with $deactivate = true
@@ -90,13 +91,16 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 				'wpsso-user-locale' );
 			$err_msg = __( 'The %1$s extension requires the %2$s plugin &mdash; please install and activate the %3$s plugin.',
 				'wpsso-user-locale' );
-
 			if ( $deactivate === true ) {
-				require_once( ABSPATH.'wp-admin/includes/plugin.php' );
-				deactivate_plugins( $info['base'] );
+				if ( ! function_exists( 'deactivate_plugins' ) ) {
+					require_once ABSPATH.'wp-admin/includes/plugin.php';
+				}
+				deactivate_plugins( $info['base'], true );	// $silent = true
 				wp_die( '<p>'.sprintf( $die_msg, $info['name'], $info['req']['name'], $info['req']['short'], $info['short'] ).'</p>' );
-			} else echo '<div class="notice notice-error error"><p>'.
-				sprintf( $err_msg, $info['name'], $info['req']['name'], $info['req']['short'] ).'</p></div>';
+			} else {
+				echo '<div class="notice notice-error error"><p>'.
+					sprintf( $err_msg, $info['name'], $info['req']['name'], $info['req']['short'] ).'</p></div>';
+			}
 		}
 
 		public static function check_wp_version() {
@@ -104,14 +108,17 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 			if ( version_compare( $wp_version, self::$wp_min_version, '<' ) ) {
 				$plugin = plugin_basename( __FILE__ );
 				if ( is_plugin_active( $plugin ) ) {
-					require_once( ABSPATH.'wp-admin/includes/plugin.php' );	// just in case
+					self::wpsso_init_textdomain();
+					if ( ! function_exists( 'deactivate_plugins' ) ) {
+						require_once ABSPATH.'wp-admin/includes/plugin.php';
+					}
 					$plugin_data = get_plugin_data( __FILE__, false );	// $markup = false
-					deactivate_plugins( $plugin );
+					deactivate_plugins( $plugin, true );	// $silent = true
 					wp_die( 
-						sprintf( __( '%1$s requires WordPress version %2$s or higher and has been deactivated.',
-							'wpsso-user-locale' ), $plugin_data['Name'], self::$wp_min_version ).'<br/><br/>'.
-						sprintf( __( 'Please upgrade WordPress before trying to reactivate the %1$s plugin.',
-							'wpsso-user-locale' ), $plugin_data['Name'] )
+						'<p>'.sprintf( __( '%1$s requires WordPress version %2$s or higher and has been deactivated.',
+							'wpsso-user-locale' ), $plugin_data['Name'], self::$wp_min_version ).'</p>'.
+						'<p>'.sprintf( __( 'Please upgrade WordPress before trying to reactivate the %1$s plugin.',
+							'wpsso-user-locale' ), $plugin_data['Name'] ).'</p>'
 					);
 				}
 			}

@@ -67,9 +67,11 @@ if ( ! class_exists( 'WpssoUlRegister' ) ) {
 
 		private function activate_plugin() {
 			$version = WpssoUlConfig::$cf['plugin']['wpssoul']['version'];	// only our config
-			if ( class_exists( 'WpssoUtil' ) )
+			if ( class_exists( 'WpssoUtil' ) ) {
 				WpssoUtil::save_all_times( 'wpssoul', $version );
-			else WpssoUl::required_notice( true );			// $deactivate = true
+			} else {
+				WpssoUl::required_notice( true );			// $deactivate = true
+			}
 		}
 
 		private function deactivate_plugin() {
