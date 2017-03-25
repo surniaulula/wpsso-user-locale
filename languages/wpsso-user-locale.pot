@@ -85,12 +85,11 @@ msgid ""
 msgstr ""
 
 #: wpsso-user-locale.php:118
-msgid ""
-"%1$s requires WordPress version %2$s or higher and has been deactivated."
+msgid "%1$s requires %2$s version %3$s or higher and has been deactivated."
 msgstr ""
 
 #: wpsso-user-locale.php:120
-msgid "Please upgrade WordPress before trying to reactivate the %1$s plugin."
+msgid "Please upgrade %1$s before trying to reactivate the %2$s plugin."
 msgstr ""
 
 #: wpsso-user-locale.php:188
