@@ -72,8 +72,9 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 		}
 
 		public static function &get_instance() {
-			if ( ! isset( self::$instance ) )
+			if ( ! isset( self::$instance ) ) {
 				self::$instance = new self;
+			}
 			return self::$instance;
 		}
 
@@ -140,39 +141,44 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 		}
 
 		public function wpsso_init_options() {
-			if ( method_exists( 'Wpsso', 'get_instance' ) )
+			if ( method_exists( 'Wpsso', 'get_instance' ) ) {
 				$this->p =& Wpsso::get_instance();
-			else $this->p =& $GLOBALS['wpsso'];
+			} else {
+				$this->p =& $GLOBALS['wpsso'];
+			}
 
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 
-			if ( self::$have_req_min === false )
+			if ( self::$have_req_min === false ) {
 				return;		// stop here
+			}
 
 			$this->p->is_avail['ul'] = true;
-
-			if ( is_admin() )
-				$this->p->is_avail['admin']['ul-general'] = true;
 		}
 
 		public function wpsso_init_objects() {
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 
-			if ( self::$have_req_min === false )
+			if ( self::$have_req_min === false ) {
 				return;		// stop here
+			}
 
 			$this->filters = new WpssoUlFilters( $this->p );
 			$this->locale = new WpssoUlLocale( $this->p );
 		}
 
 		public function wpsso_init_plugin() {
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 
-			if ( self::$have_req_min === false )
+			if ( self::$have_req_min === false ) {
 				return $this->min_version_notice();
+			}
 		}
 
 		private function min_version_notice() {
