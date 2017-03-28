@@ -1,4 +1,4 @@
-=== WPSSO User Locale Selector - Select a Locale / Language / Region in the WordPress Toolbar Menu ===
+=== WPSSO User Locale Selector - Select a Locale / Language / Region in the WP Toolbar Menu ===
 Plugin Name: WPSSO User Locale Selector (WPSSO UL)
 Plugin Slug: wpsso-user-locale
 Text Domain: wpsso-user-locale
