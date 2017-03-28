@@ -1,6 +1,6 @@
 <?php
 /*
- * Plugin Name: WPSSO User Locale (WPSSO UL)
+ * Plugin Name: WPSSO User Locale Selector (WPSSO UL)
  * Text Domain: wpsso-user-locale
  * Domain Path: /languages
  * Plugin URI: https://surniaulula.com/extend/plugins/wpsso-user-locale/
@@ -9,7 +9,7 @@
  * Author URI: https://surniaulula.com/
  * License: GPLv3
  * License URI: http://www.gnu.org/licenses/gpl.txt
- * Description: WPSSO extension to add a user locale / language selector in the WordPress admin back-end and front-end toolbar menus.
+ * Description: WPSSO extension to add a user locale / language / region selector in the WordPress admin back-end and front-end toolbar menus.
  * Requires At Least: 3.7
  * Tested Up To: 4.7.3
  * Version: 1.1.1-1
