@@ -48,11 +48,11 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 		}
 
 		public function filter_option_type( $type, $key ) {
-			if ( ! empty( $type ) )
+			if ( ! empty( $type ) ) {
 				return $type;
-			elseif ( strpos( $key, 'ul_' ) !== 0 )
+			} elseif ( strpos( $key, 'ul_' ) !== 0 ) {
 				return $type;
-
+			}
 			switch ( $key ) {
 				case 'ul_menu_title':
 					return 'not_blank';
