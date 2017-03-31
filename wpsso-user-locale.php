@@ -118,7 +118,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 					wp_die( 
 						'<p>'.sprintf( __( '%1$s requires %2$s version %3$s or higher and has been deactivated.',
 							'wpsso-user-locale' ), $plugin_data['Name'], 'WordPress', self::$wp_min_version ).'</p>'.
-						'<p>'.sprintf( __( 'Please upgrade %1$s before trying to reactivate the %2$s plugin.',
+						'<p>'.sprintf( __( 'Please upgrade %1$s before trying to re-activate the %2$s plugin.',
 							'wpsso-user-locale' ), 'WordPress', $plugin_data['Name'] ).'</p>'
 					);
 				}
