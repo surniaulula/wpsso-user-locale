@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoul' => array(
-					'version' => '1.1.1-1',		// plugin version
+					'version' => '1.1.2-dev1',		// plugin version
 					'opt_version' => '6',		// increment when changing default options
 					'short' => 'WPSSO UL',		// short plugin name
 					'name' => 'WPSSO User Locale Selector (WPSSO UL)',
@@ -45,7 +45,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 						'latest' => 'https://wpsso.com/extend/plugins/wpsso-user-locale/latest/',
 						'update' => 'https://wpsso.com/extend/plugins/wpsso-user-locale/update/',
 						'changelog' => 'https://wpsso.com/extend/plugins/wpsso-user-locale/changelog/',
-						'codex' => 'https://wpsso.com/codex/plugins/wpsso-user-locale/',
+						'docs' => 'https://wpsso.com/docs/plugins/wpsso-user-locale/',
 						'faqs' => '',
 						'notes' => '',
 						'support' => '',
