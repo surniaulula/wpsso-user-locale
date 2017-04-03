@@ -40,8 +40,8 @@ If the Polylang plugin is active, the user locale menu will automatically use th
 
 = Install and Uninstall =
 
-* [Install the Plugin](https://wpsso.com/codex/plugins/wpsso-user-locale/installation/install-the-plugin/)
-* [Uninstall the Plugin](https://wpsso.com/codex/plugins/wpsso-user-locale/installation/uninstall-the-plugin/)
+* [Install the Plugin](https://wpsso.com/docs/plugins/wpsso-user-locale/installation/install-the-plugin/)
+* [Uninstall the Plugin](https://wpsso.com/docs/plugins/wpsso-user-locale/installation/uninstall-the-plugin/)
 
 == Frequently Asked Questions ==
 
@@ -53,13 +53,13 @@ If the Polylang plugin is active, the user locale menu will automatically use th
 
 = Additional Documentation =
 
-* [Developer Resources](https://wpsso.com/codex/plugins/wpsso-user-locale/notes/developer/)
-	* [Filters](https://wpsso.com/codex/plugins/wpsso-user-locale/notes/developer/filters/)
-		* [Filter Examples](https://wpsso.com/codex/plugins/wpsso-user-locale/notes/developer/filters/examples/)
-			* [Disable User Locale on Front-End](https://wpsso.com/codex/plugins/wpsso-user-locale/notes/developer/filters/examples/disable-user-locale-on-front-end/)
-			* [Modify the Menu Title](https://wpsso.com/codex/plugins/wpsso-user-locale/notes/developer/filters/examples/modify-the-menu-title/)
-			* [Modify the Redirect URL](https://wpsso.com/codex/plugins/wpsso-user-locale/notes/developer/filters/examples/modify-the-redirect-url/)
-		* [Filters by Name](https://wpsso.com/codex/plugins/wpsso-user-locale/notes/developer/filters/by-name/)
+* [Developer Resources](https://wpsso.com/docs/plugins/wpsso-user-locale/notes/developer/)
+	* [Filters](https://wpsso.com/docs/plugins/wpsso-user-locale/notes/developer/filters/)
+		* [Filter Examples](https://wpsso.com/docs/plugins/wpsso-user-locale/notes/developer/filters/examples/)
+			* [Disable User Locale on Front-End](https://wpsso.com/docs/plugins/wpsso-user-locale/notes/developer/filters/examples/disable-user-locale-on-front-end/)
+			* [Modify the Menu Title](https://wpsso.com/docs/plugins/wpsso-user-locale/notes/developer/filters/examples/modify-the-menu-title/)
+			* [Modify the Redirect URL](https://wpsso.com/docs/plugins/wpsso-user-locale/notes/developer/filters/examples/modify-the-redirect-url/)
+		* [Filters by Name](https://wpsso.com/docs/plugins/wpsso-user-locale/notes/developer/filters/by-name/)
 
 == Screenshots ==
 
@@ -84,6 +84,17 @@ Version components: `{major}.{minor}.{bugfix}-{stage}{level}`
 Note that the production stage level can be incremented on occasion for simple text revisions and/or translation updates. See [PHP's version_compare()](http://php.net/manual/en/function.version-compare.php) documentation for additional information on "PHP-standardized" version numbering.
 
 = Changelog / Release Notes =
+
+**Version 1.1.2-dev1 (2017/04/03)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Updated the plugin documentation and FAQ URLs.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
 
 **Version 1.1.1-1 (2017/03/25)**
 
@@ -120,6 +131,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* None
 
 == Upgrade Notice ==
+
+= 1.1.2-dev1 =
+
+(2017/04/03) Updated the plugin documentation and FAQ URLs.
 
 = 1.1.1-1 =
 
