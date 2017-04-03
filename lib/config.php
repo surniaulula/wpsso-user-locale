@@ -46,7 +46,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 						'update' => 'https://wpsso.com/extend/plugins/wpsso-user-locale/update/',
 						'changelog' => 'https://wpsso.com/extend/plugins/wpsso-user-locale/changelog/',
 						'codex' => 'https://wpsso.com/codex/plugins/wpsso-user-locale/',
-						'faq' => '',
+						'faqs' => '',
 						'notes' => '',
 						'support' => '',
 					),
