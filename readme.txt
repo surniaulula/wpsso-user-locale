@@ -72,7 +72,7 @@ If the Polylang plugin is active, the user locale menu will automatically use th
 * [GitHub](https://surniaulula.github.io/wpsso-user-locale/)
 * [WordPress.org](https://wordpress.org/plugins/wpsso-user-locale/developers/)
 
-= Version Numbering Scheme =
+= Version Numbering =
 
 Version components: `{major}.{minor}.{bugfix}-{stage}{level}`
 
