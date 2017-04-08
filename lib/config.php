@@ -34,22 +34,6 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 						'icon_small' => 'images/icon-128x128.png',
 						'icon_medium' => 'images/icon-256x256.png',
 					),
-					'url' => array(
-						// wordpress
-						'download' => 'https://wordpress.org/plugins/wpsso-user-locale/',
-						'forum' => 'https://wordpress.org/support/plugin/wpsso-user-locale',
-						'review' => 'https://wordpress.org/support/plugin/wpsso-user-locale/reviews/?rate=5#new-post',
-						// github
-						'readme_txt' => 'https://raw.githubusercontent.com/SurniaUlula/wpsso-user-locale/master/readme.txt',
-						// wpsso
-						'latest' => 'https://wpsso.com/extend/plugins/wpsso-user-locale/latest/',
-						'update' => 'https://wpsso.com/extend/plugins/wpsso-user-locale/update/',
-						'changelog' => 'https://wpsso.com/extend/plugins/wpsso-user-locale/changelog/',
-						'docs' => 'https://wpsso.com/docs/plugins/wpsso-user-locale/',
-						'faqs' => '',
-						'notes' => '',
-						'support' => '',
-					),
 					'lib' => array(
 						// submenu items must have unique keys
 						'submenu' => array (
