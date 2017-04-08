@@ -10,7 +10,7 @@ Tags: user locale, user language, user region, locale, language, region, select,
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.7.3
-Stable Tag: 1.1.3
+Stable Tag: 1.1.4
 
 WPSSO extension to add a user locale / language / region selector in the WordPress admin back-end and front-end toolbar menus.
 
@@ -83,7 +83,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.1.3 (2017/04/08)**
+**Version 1.1.4 (2017/04/08)**
 
 * *New Features*
 	* None
@@ -129,20 +129,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new 'wpsso_user_locale_menu_dashicon' filter.
 	* Added a new 'wpsso_user_locale_menu_items' filter.
 
-**Version 1.0.0-1 (2017/01/08)**
-
-* *New Features*
-	* Initial release.
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
 == Upgrade Notice ==
 
-= 1.1.3 =
+= 1.1.4 =
 
 (2017/04/08) Minor revision to move URLs in the extension config to the main WPSSO plugin config.
 
@@ -157,8 +146,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 1.1.0-1 =
 
 (2017/01/13) Added a new "Toolbar Menu Icon" option in the User Locale settings page. Added a new 'wpsso_user_locale_menu_items' filter.
-
-= 1.0.0-1 =
-
-(2017/01/08) Initial release.
 
