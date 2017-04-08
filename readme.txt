@@ -16,7 +16,7 @@ WPSSO extension to add a user locale / language / region selector in the WordPre
 
 == Description ==
 
-<img src="https://surniaulula.github.io/wpsso-user-locale/assets/icon-256x256.png" style="width:33%;min-width:128px;max-width:256px;height:auto;float:left;margin:10px 40px 40px 0;" />
+<img src="https://surniaulula.github.io/wpsso-user-locale/assets/icon-256x256.png" width="128" height="128" class="plugin_icon">
 
 <p><strong>Add a user locale drop-down menu item in the WordPress admin back-end admin and front-end toolbar menus.</strong></p>
 
