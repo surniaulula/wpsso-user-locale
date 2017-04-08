@@ -83,6 +83,18 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 1.1.3 (2017/04/08)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Minor revision to move URLs in the extension config to the main WPSSO plugin config.
+	* Dropped the package number from the production version string.
+
 **Version 1.1.2-1 (2017/04/05)**
 
 * *New Features*
@@ -129,6 +141,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 
 == Upgrade Notice ==
+
+= 1.1.3 =
+
+(2017/04/08) Minor revision to move URLs in the extension config to the main WPSSO plugin config.
 
 = 1.1.2-1 =
 
