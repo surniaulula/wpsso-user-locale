@@ -12,7 +12,7 @@
  * Description: WPSSO extension to add a user locale / language / region selector in the WordPress admin back-end and front-end toolbar menus.
  * Requires At Least: 3.7
  * Tested Up To: 4.7.3
- * Version: 1.1.4
+ * Version: 1.1.5-a.1
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -37,7 +37,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 		public $locale;		// WpssoUlLocale
 
 		private static $instance;
-		private static $have_req_min = true;	// have at least minimum wpsso version
+		private static $have_req_min = true;	// have minimum wpsso version
 		private static $wp_min_version = 4.7;
 
 		public function __construct() {
@@ -139,11 +139,11 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( self::$have_req_min === false ) {
-				return;		// stop here
+			if ( self::$have_req_min ) {
+				$this->p->is_avail['p_ext']['ul'] = true;
+			} else {
+				$this->p->is_avail['p_ext']['ul'] = false;	// just in case
 			}
-
-			$this->p->is_avail['ul'] = true;
 		}
 
 		public function wpsso_init_objects() {
@@ -151,12 +151,10 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( self::$have_req_min === false ) {
-				return;		// stop here
+			if ( self::$have_req_min ) {
+				$this->filters = new WpssoUlFilters( $this->p );
+				$this->locale = new WpssoUlLocale( $this->p );
 			}
-
-			$this->filters = new WpssoUlFilters( $this->p );
-			$this->locale = new WpssoUlLocale( $this->p );
 		}
 
 		public function wpsso_init_plugin() {
@@ -164,8 +162,8 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( self::$have_req_min === false ) {
-				return $this->min_version_notice();
+			if ( ! self::$have_req_min ) {
+				return $this->min_version_notice();	// stop here
 			}
 		}
 
