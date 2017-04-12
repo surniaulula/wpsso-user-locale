@@ -28,7 +28,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO',
 						'name' => 'WordPress Social Sharing Optimization (WPSSO)',
-						'min_version' => '3.40.12',
+						'min_version' => '3.40.13-a.1',
 					),
 					'img' => array(
 						'icons' => array(
