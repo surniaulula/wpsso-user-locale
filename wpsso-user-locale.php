@@ -12,7 +12,7 @@
  * Description: WPSSO extension to add a user locale / language / region selector in the WordPress admin back-end and front-end toolbar menus.
  * Requires At Least: 3.7
  * Tested Up To: 4.7.3
- * Version: 1.1.5-rc.1
+ * Version: 1.1.5-rc.2
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
