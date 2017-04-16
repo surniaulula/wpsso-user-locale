@@ -3,7 +3,7 @@
  * Plugin Name: WPSSO User Locale Selector (WPSSO UL)
  * Text Domain: wpsso-user-locale
  * Domain Path: /languages
- * Plugin URI: https://surniaulula.com/extend/plugins/wpsso-user-locale/
+ * Plugin URI: https://wpsso.com/extend/plugins/wpsso-user-locale/
  * Assets URI: https://jsmoriss.github.io/wpsso-user-locale/assets/
  * Author: JS Morisset
  * Author URI: https://surniaulula.com/
@@ -37,8 +37,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 		public $locale;		// WpssoUlLocale
 
 		private static $instance;
-		private static $have_req_min = true;	// have minimum wpsso version
-		private static $wp_min_version = 4.7;
+		private static $have_min = true;	// have minimum wpsso version
 
 		public function __construct() {
 
@@ -94,7 +93,9 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 
 		public static function check_wp_version() {
 			global $wp_version;
-			if ( version_compare( $wp_version, self::$wp_min_version, '<' ) ) {
+			$wp_min_version = 4.7;
+
+			if ( version_compare( $wp_version, $wp_min_version, '<' ) ) {
 				$plugin = plugin_basename( __FILE__ );
 				if ( is_plugin_active( $plugin ) ) {
 					self::wpsso_init_textdomain();
@@ -105,7 +106,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 					deactivate_plugins( $plugin, true );	// $silent = true
 					wp_die( 
 						'<p>'.sprintf( __( '%1$s requires %2$s version %3$s or higher and has been deactivated.',
-							'wpsso-user-locale' ), $plugin_data['Name'], 'WordPress', self::$wp_min_version ).'</p>'.
+							'wpsso-user-locale' ), $plugin_data['Name'], 'WordPress', $wp_min_version ).'</p>'.
 						'<p>'.sprintf( __( 'Please upgrade %1$s before trying to re-activate the %2$s plugin.',
 							'wpsso-user-locale' ), 'WordPress', $plugin_data['Name'] ).'</p>'
 					);
@@ -121,7 +122,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 			$info = WpssoUlConfig::$cf['plugin']['wpssoul'];
 
 			if ( version_compare( $plugin_version, $info['req']['min_version'], '<' ) ) {
-				self::$have_req_min = false;
+				self::$have_min = false;
 				return $cf;
 			}
 
@@ -139,7 +140,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( self::$have_req_min ) {
+			if ( self::$have_min ) {
 				$this->p->is_avail['p_ext']['ul'] = true;
 			} else {
 				$this->p->is_avail['p_ext']['ul'] = false;	// just in case
@@ -151,7 +152,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( self::$have_req_min ) {
+			if ( self::$have_min ) {
 				$this->filters = new WpssoUlFilters( $this->p );
 				$this->locale = new WpssoUlLocale( $this->p );
 			}
@@ -162,7 +163,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( ! self::$have_req_min ) {
+			if ( ! self::$have_min ) {
 				return $this->min_version_notice();	// stop here
 			}
 		}
