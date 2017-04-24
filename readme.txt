@@ -83,6 +83,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 1.1.6-dev.1 (2017/04/24)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Renamed the $is_avail array to $avail for WPSSO v3.42.0.
+
 **Version 1.1.5 (2017/04/16)**
 
 * *New Features*
@@ -141,6 +152,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new 'wpsso_user_locale_menu_items' filter.
 
 == Upgrade Notice ==
+
+= 1.1.6-dev.1 =
+
+(2017/04/24) Renamed the $is_avail array to $avail for WPSSO v3.42.0.
 
 = 1.1.5 =
 
