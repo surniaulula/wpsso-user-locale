@@ -1,6 +1,7 @@
 <?php
 /*
  * Plugin Name: WPSSO User Locale Selector (WPSSO UL)
+ * Plugin Slug: wpsso-user-locale
  * Text Domain: wpsso-user-locale
  * Domain Path: /languages
  * Plugin URI: https://wpsso.com/extend/plugins/wpsso-user-locale/
@@ -12,7 +13,7 @@
  * Description: WPSSO extension to add a user locale / language / region selector in the WordPress admin back-end and front-end toolbar menus.
  * Requires At Least: 3.7
  * Tested Up To: 4.7.4
- * Version: 1.1.5
+ * Version: 1.1.6-dev.1
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -141,9 +142,9 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 			}
 
 			if ( self::$have_min ) {
-				$this->p->is_avail['p_ext']['ul'] = true;
+				$this->p->avail['p_ext']['ul'] = true;
 			} else {
-				$this->p->is_avail['p_ext']['ul'] = false;	// just in case
+				$this->p->avail['p_ext']['ul'] = false;	// just in case
 			}
 		}
 
