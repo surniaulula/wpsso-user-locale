@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoul' => array(
-					'version' => '1.1.6-dev.4',		// plugin version
+					'version' => '1.1.6-b.1',		// plugin version
 					'opt_version' => '6',		// increment when changing default options
 					'short' => 'WPSSO UL',		// short plugin name
 					'name' => 'WPSSO User Locale Selector (WPSSO UL)',
@@ -28,7 +28,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO',
 						'name' => 'WordPress Social Sharing Optimization (WPSSO)',
-						'min_version' => '3.42.0-dev.4',
+						'min_version' => '3.42.0-b.1',
 					),
 					'img' => array(
 						'icons' => array(
