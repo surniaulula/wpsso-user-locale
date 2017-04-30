@@ -83,7 +83,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.1.6-rc.1 (2017/04/30)**
+**Version 1.1.6 (2017/04/30)**
 
 * *New Features*
 	* None
@@ -153,7 +153,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.1.6-rc.1 =
+= 1.1.6 =
 
 (2017/04/30) Code refactoring to rename the $is_avail array to $avail for WPSSO v3.42.0.
 
