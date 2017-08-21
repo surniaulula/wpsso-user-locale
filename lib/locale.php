@@ -115,8 +115,12 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				$dashicons = SucomUtil::get_dashicons();	// get the raw / unsorted dashicons array
 				if ( isset( $dashicons[$dashicon] ) ) {		// just in case
 					$menu_icon = '<span class="ab-icon dashicons-'.$dashicons[$dashicon].'"></span>';
-				} else $menu_icon = '';
-			} else $menu_icon = '';
+				} else {
+					$menu_icon = '';
+				}
+			} else {
+				$menu_icon = '';
+			}
 
 			$menu_title = SucomUtil::get_locale_opt( 'ul_menu_title', $wpsso->options );
 			$menu_title = apply_filters( 'wpsso_user_locale_menu_title', $menu_title, $menu_locale );

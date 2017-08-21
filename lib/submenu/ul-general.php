@@ -46,7 +46,9 @@ if ( ! class_exists( 'WpssoUlSubmenuUlGeneral' ) && class_exists( 'WpssoAdmin' )
 
 					$table_rows['ul_menu_icon'] = $this->form->get_th_html( _x( 'Toolbar Menu Icon',
 						'option label', 'wpsso-user-locale' ), null, 'ul_menu_icon' ).
-					'<td>'.$this->form->get_select( 'ul_menu_icon', SucomUtil::get_dashicons( true, true ), '', '', true ).'</td>';
+					'<td>'.$this->form->get_select( 'ul_menu_icon', 
+						SucomUtil::get_dashicons( true, true ),	// sort by name and add 'none'
+							'', '', true ).'</td>';
 
 					$table_rows['ul_menu_title'] = $this->form->get_th_html( _x( 'Toolbar Menu Title',
 						'option label', 'wpsso-user-locale' ), null, 'ul_menu_title', array( 'is_locale' => true ) ).

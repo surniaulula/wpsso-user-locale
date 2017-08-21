@@ -48,7 +48,7 @@ msgstr ""
 msgid "default"
 msgstr ""
 
-#: lib/locale.php:145
+#: lib/locale.php:149
 msgid "Default Locale"
 msgstr ""
 
@@ -62,12 +62,12 @@ msgctxt "option label"
 msgid "Toolbar Menu Icon"
 msgstr ""
 
-#: lib/submenu/ul-general.php:51
+#: lib/submenu/ul-general.php:53
 msgctxt "option label"
 msgid "Toolbar Menu Title"
 msgstr ""
 
-#: lib/submenu/ul-general.php:55
+#: lib/submenu/ul-general.php:57
 msgctxt "option label"
 msgid "Add User Locale on Front-End"
 msgstr ""
