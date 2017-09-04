@@ -41,8 +41,8 @@ If the Polylang plugin is active, the user locale menu will automatically use th
 
 = Install and Uninstall =
 
-* [Install the Plugin](https://wpsso.com/docs/plugins/wpsso-user-locale/installation/install-the-plugin/)
-* [Uninstall the Plugin](https://wpsso.com/docs/plugins/wpsso-user-locale/installation/uninstall-the-plugin/)
+* [Install the WPSSO UL Plugin](https://wpsso.com/docs/plugins/wpsso-user-locale/installation/install-the-plugin/)
+* [Uninstall the WPSSO UL Plugin](https://wpsso.com/docs/plugins/wpsso-user-locale/installation/uninstall-the-plugin/)
 
 == Frequently Asked Questions ==
 
