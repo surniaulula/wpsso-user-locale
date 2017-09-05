@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO User Locale Selector 1.1.7\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-user-locale\n"
-"POT-Creation-Date: 2017-09-05 14:00-0400\n"
-"PO-Revision-Date: 2017-09-05 14:00-0400\n"
+"POT-Creation-Date: 2017-09-05 15:20-0400\n"
+"PO-Revision-Date: 2017-09-05 15:20-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -36,11 +36,13 @@ msgstr "Le titre utilisé dans le menu de barre d'outils WordPress. Le paramètr
 msgid "Add the user locale selector to the front-end toolbar menu, and define current WordPress locale as the user locale value."
 msgstr "Ajouter le sélecteur de langue utilisateur dans le menu de barre d'outils d'avant, et définir la langue courante WordPress comme celle de la langue utilisateur."
 
-#: lib/locale.php:105
+#: lib/locale.php:108
+msgctxt "toolbar menu title"
 msgid "default"
 msgstr "défaut"
 
-#: lib/locale.php:149
+#: lib/locale.php:152
+msgctxt "toolbar menu item"
 msgid "Default Locale"
 msgstr "Langue par défaut"
 
