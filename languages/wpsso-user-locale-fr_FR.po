@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO User Locale Selector 1.1.6\n"
+"Project-Id-Version: WPSSO User Locale Selector 1.1.7\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-user-locale\n"
-"POT-Creation-Date: 2017-05-23 07:53-0400\n"
-"PO-Revision-Date: 2017-05-24 22:48-0400\n"
+"POT-Creation-Date: 2017-09-05 14:00-0400\n"
+"PO-Revision-Date: 2017-09-05 14:00-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -24,63 +24,63 @@ msgctxt "plugin description"
 msgid "WPSSO extension to add a user locale / language / region selector in the WordPress admin back-end and front-end toolbar menus."
 msgstr "Extension WPSSO pour ajouté un sélecteur de langue / région pour les utilisateurs dans la barre d'outils WordPress d'avant et arrière."
 
-#: lib/filters.php:70
+#: lib/filters.php:71
 msgid "An icon to prefix the title string used in the WordPress toolbar menu (uses the \"translation\" icon by default). Select \"[None]\" to disable the toolbar menu icon."
 msgstr "Un icône devant le titre utilisé dans le menu de barre d'outils WordPress (utilise l'icône de \"traduction\" par défaut). Sélectionnez \"[Aucun]\" pour désactiver l'utilisation d'un icône dans de menu de barre d'outils."
 
-#: lib/filters.php:73
+#: lib/filters.php:74
 msgid "The title string used in the WordPress toolbar menu. The \"%s\" parameter is replaced by the current user locale value (example: \"User Locale (%s)\")."
 msgstr "Le titre utilisé dans le menu de barre d'outils WordPress. Le paramètre \"%s\" est remplacé par la valeur actuel de la langue utilisateur (exemple: \"Langue utilisateur (%s)\")."
 
-#: lib/filters.php:76
+#: lib/filters.php:77
 msgid "Add the user locale selector to the front-end toolbar menu, and define current WordPress locale as the user locale value."
 msgstr "Ajouter le sélecteur de langue utilisateur dans le menu de barre d'outils d'avant, et définir la langue courante WordPress comme celle de la langue utilisateur."
 
-#: lib/locale.php:104
+#: lib/locale.php:105
 msgid "default"
 msgstr "défaut"
 
-#: lib/locale.php:144
+#: lib/locale.php:149
 msgid "Default Locale"
 msgstr "Langue par défaut"
 
-#: lib/submenu/ul-general.php:30
+#: lib/submenu/ul-general.php:32
 msgctxt "metabox title"
 msgid "User Locale Settings"
 msgstr "Réglages langue utilisateur"
 
-#: lib/submenu/ul-general.php:46
+#: lib/submenu/ul-general.php:48
 msgctxt "option label"
 msgid "Toolbar Menu Icon"
 msgstr "Icône dans la barre d'outils"
 
-#: lib/submenu/ul-general.php:50
+#: lib/submenu/ul-general.php:54
 msgctxt "option label"
 msgid "Toolbar Menu Title"
 msgstr "Titre dans la barre d'outils"
 
-#: lib/submenu/ul-general.php:54
+#: lib/submenu/ul-general.php:58
 msgctxt "option label"
 msgid "Add User Locale on Front-End"
 msgstr "Ajouter langue utilisateur à l'avant"
 
-#: wpsso-user-locale.php:79
+#: wpsso-user-locale.php:81
 msgid "%1$s is an extension for the %2$s plugin &mdash; please install and activate the %3$s plugin before activating %4$s."
 msgstr "%1$s est une extension pour %2$s &mdash; s'il vous plaît installer et activer %3$s avant d'activer l'extension %4$s."
 
-#: wpsso-user-locale.php:81
+#: wpsso-user-locale.php:83
 msgid "The %1$s extension requires the %2$s plugin &mdash; please install and activate the %3$s plugin."
 msgstr "L'extension %1$s requiert %2$s &mdash; s'il vous plaît installer et activer l'extension %3$s."
 
-#: wpsso-user-locale.php:109
+#: wpsso-user-locale.php:111
 msgid "%1$s requires %2$s version %3$s or higher and has been deactivated."
 msgstr "%1$s nécessite %2$s version %3$s ou supérieure et a été désactivé."
 
-#: wpsso-user-locale.php:111
+#: wpsso-user-locale.php:113
 msgid "Please upgrade %1$s before trying to re-activate the %2$s plugin."
 msgstr "Veuillez mettre à jour %1$s avant d'essayer de réactiver l'extension %2$s."
 
-#: wpsso-user-locale.php:182
+#: wpsso-user-locale.php:184
 msgid "The %1$s extension v%2$s requires %3$s v%4$s or newer (v%5$s currently installed)."
 msgstr "L'extension %1$s v%2$s requiert l'utilisation de %3$s v%4$s ou plus récente (v%5$s est actuellement installée)."
 
