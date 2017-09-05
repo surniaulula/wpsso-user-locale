@@ -84,6 +84,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 1.1.7-dev.1 (2017/09/05)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Minor code refactoring for WPSSO v3.45.10.
+
 **Version 1.1.6 (2017/04/30)**
 
 * *New Features*
@@ -153,6 +164,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new 'wpsso_user_locale_menu_items' filter.
 
 == Upgrade Notice ==
+
+= 1.1.7-dev.1 =
+
+(2017/09/05) Minor code refactoring for WPSSO v3.45.10.
 
 = 1.1.6 =
 
