@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoul' => array(
-					'version' => '1.1.7-dev.3',		// plugin version
+					'version' => '1.1.7-b.1',		// plugin version
 					'opt_version' => '6',		// increment when changing default options
 					'short' => 'WPSSO UL',		// short plugin name
 					'name' => 'WPSSO User Locale Selector',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO',
 						'name' => 'WPSSO',
-						'min_version' => '3.45.10-dev.3',
+						'min_version' => '3.45.10-b.1',
 					),
 					'img' => array(
 						'icons' => array(
@@ -56,6 +56,10 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 		}
 
 		public static function set_constants( $plugin_filepath ) { 
+			if ( defined( 'WPSSOUL_VERSION' ) ) {			// execute and define constants only once
+				return;
+			}
+			define( 'WPSSOUL_VERSION', self::$cf['plugin']['wpssoul']['version'] );						
 			define( 'WPSSOUL_FILEPATH', $plugin_filepath );						
 			define( 'WPSSOUL_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
 			define( 'WPSSOUL_PLUGINSLUG', self::$cf['plugin']['wpssoul']['slug'] );		// wpsso-user-locale
