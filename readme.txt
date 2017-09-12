@@ -39,9 +39,9 @@ See the plugin [Other Notes](https://wordpress.org/plugins/wpsso-user-locale/oth
 
 If the Polylang plugin is active, the user locale menu will automatically use the correct Polylang language URLs for the current webpage.
 
-<blockquote>
-<p><strong>Prerequisite</strong> &mdash; WPSSO User Locale Selector is an extension for the WPSSO (Core Plugin), which <em>automatically</em> generates complete and accurate meta tags and Schema markup from your content for Social Media Optimization (SMO) and Search Engine Optimization (SEO).</p>
-</blockquote>
+= WPSSO (Core Plugin) Prerequisite =
+
+WPSSO User Locale Selector is an extension for the WPSSO (Core Plugin), which automatically generates complete and accurate meta tags and Schema markup from your content for Social Media Optimization (SMO) and Search Engine Optimization (SEO).
 
 == Installation ==
 
