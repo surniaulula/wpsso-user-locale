@@ -41,7 +41,7 @@ If the Polylang plugin is active, the user locale menu will automatically use th
 
 = WPSSO (Core Plugin) Prerequisite =
 
-WPSSO User Locale Selector is an extension for the WPSSO (Core Plugin), which automatically generates complete and accurate meta tags and Schema markup from your content for Social Media Optimization (SMO) and Search Engine Optimization (SEO).
+WPSSO User Locale Selector is an extension for the WPSSO (Core Plugin) &mdash; which creates complete and accurate meta tags and Schema markup from your content for social sharing, social media, search / SEO and rich cards.
 
 == Installation ==
 
