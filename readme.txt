@@ -25,7 +25,7 @@ WPSSO extension to add a user locale / language / region selector in the WordPre
 
 The default WordPress behavior is to apply the user locale preference to the admin back-end only &mdash; this plugin can optionally extend the user locale preference to the front-end webpage as well (enabled by default in the SSO &gt; User Locale settings page).
 
-**WPSSO UL is *fast* and coded for performance:**
+**WPSSO UL is *super fast* and coded for performance:**
 
 WPSSO and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light.
 
