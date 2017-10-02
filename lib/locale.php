@@ -17,8 +17,10 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			if ( $this->p->debug->enabled )
+
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 
 			$is_admin = is_admin();
 			$on_front = apply_filters( 'wpsso_user_locale_front_end',
