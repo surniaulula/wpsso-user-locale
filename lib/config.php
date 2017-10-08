@@ -28,7 +28,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 					'domain_path' => '/languages',
 					'req' => array(
 						'short' => 'WPSSO',
-						'name' => 'WPSSO',
+						'name' => 'WPSSO (Core Plugin)',
 						'min_version' => '3.46.0',
 					),
 					'img' => array(
