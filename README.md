@@ -27,22 +27,22 @@
 
 <p>WPSSO and its extensions are fully tested and compatible with PHP v7.x (PHP v5.3 or better required).</p>
 
-<h4>Power-Users / Developers</h4>
+<h3>Power-Users / Developers</h3>
 
 <p>See the plugin <a href="https://wordpress.org/plugins/wpsso-user-locale/other_notes/">Other Notes</a> page for information on available filters.</p>
 
-<h4>Do you use the Polylang plugin?</h4>
+<h3>Do you use the Polylang plugin?</h3>
 
 <p>If the Polylang plugin is active, the user locale menu will automatically use the correct Polylang language URLs for the current webpage.</p>
 
-<h4>WPSSO (Core Plugin) Prerequisite</h4>
+<h3>WPSSO Core Plugin Prerequisite</h3>
 
-<p>WPSSO User Locale Selector is an extension for the WPSSO (Core Plugin) &mdash; which creates complete &amp; accurate meta tags and Schema markup from your content for social sharing, social media / SMO, search / SEO / rich cards, and more.</p>
+<p>WPSSO User Locale Selector is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your content for social sharing, social media / SMO, search / SEO / rich cards, and more.</p>
 
 
 <h2>Installation</h2>
 
-<h4>Install and Uninstall</h4>
+<h3>Install and Uninstall</h3>
 
 <ul>
 <li><a href="https://wpsso.com/docs/plugins/wpsso-user-locale/installation/install-the-plugin/">Install the WPSSO UL Plugin</a></li>
@@ -52,7 +52,7 @@
 
 <h2>Frequently Asked Questions</h2>
 
-<h4>Frequently Asked Questions</h4>
+<h3>Frequently Asked Questions</h3>
 
 <ul>
 <li>None</li>
@@ -62,7 +62,7 @@
 <h2>Other Notes</h2>
 
 <h3>Other Notes</h3>
-<h4>Additional Documentation</h4>
+<h3>Additional Documentation</h3>
 
 <ul>
 <li><a href="https://wpsso.com/docs/plugins/wpsso-user-locale/notes/developer/">Developer Resources</a>
