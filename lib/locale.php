@@ -127,7 +127,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				$menu_icon = '';
 			}
 
-			$menu_title = SucomUtil::get_locale_opt( 'ul_menu_title', $wpsso->options );
+			$menu_title = SucomUtil::get_key_value( 'ul_menu_title', $wpsso->options );
 			$menu_title = apply_filters( 'wpsso_user_locale_menu_title', $menu_title, $menu_locale );
 			$menu_title = sprintf( $menu_title, $menu_locale );
 
