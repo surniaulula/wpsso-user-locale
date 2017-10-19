@@ -21,8 +21,8 @@ msgstr ""
 #: lib/config-gettext-extract.php:4
 msgctxt "plugin description"
 msgid ""
-"WPSSO extension to add a user locale / language / region selector in the "
-"WordPress admin back-end and front-end toolbar menus."
+"WPSSO Core extension to add a user locale / language / region selector in "
+"the WordPress admin back-end and front-end toolbar menus."
 msgstr ""
 
 #: lib/filters.php:73
@@ -110,8 +110,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"WPSSO extension to add a user locale / language / region selector in the "
-"WordPress admin back-end and front-end toolbar menus."
+"WPSSO Core extension to add a user locale / language / region selector in "
+"the WordPress admin back-end and front-end toolbar menus."
 msgstr ""
 
 #. Author of the plugin/theme
