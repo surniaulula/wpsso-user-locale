@@ -13,7 +13,7 @@ Tested Up To: 4.8.2
 Requires PHP: 5.3
 Stable Tag: 1.1.8
 
-WPSSO extension to add a user locale / language / region selector in the WordPress admin back-end and front-end toolbar menus.
+WPSSO Core extension to add a user locale / language / region selector in the WordPress admin back-end and front-end toolbar menus.
 
 == Description ==
 
@@ -25,11 +25,11 @@ WPSSO extension to add a user locale / language / region selector in the WordPre
 
 The default WordPress behavior is to apply the user locale preference to the admin back-end only &mdash; this plugin can optionally extend the user locale preference to the front-end webpage as well (enabled by default in the SSO &gt; User Locale settings page).
 
-**WPSSO UL is *super fast* and coded for performance:**
+**WPSSO UL is *incredibly fast* and coded for performance:**
 
-WPSSO and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light.
+WPSSO Core and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light.
 
-WPSSO and its extensions are fully tested and compatible with PHP v7.x (PHP v5.3 or better required).
+WPSSO Core and its extensions are fully tested and compatible with PHP v7.x (PHP v5.3 or better required).
 
 <h3>Power-Users / Developers</h3>
 
