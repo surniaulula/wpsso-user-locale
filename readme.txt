@@ -8,9 +8,9 @@ License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-user-locale/assets/
 Tags: user locale, user language, user region, locale, language, region, select, toolbar, menu, polylang
 Contributors: jsmoriss
-Requires At Least: 3.7
-Tested Up To: 4.8.2
 Requires PHP: 5.3
+Requires At Least: 3.7
+Tested Up To: 4.8.3
 Stable Tag: 1.1.8
 
 WPSSO Core extension to add a user locale / language / region selector in the WordPress admin back-end and front-end toolbar menus.
