@@ -90,6 +90,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.1.9-dev.7 (2017/11/07)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added a method call to clear WPSSO notifications when switching languages.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.1.8 (2017/10/15)**
 
 * *New Features*
@@ -182,6 +193,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new 'wpsso_user_locale_menu_items' filter.
 
 == Upgrade Notice ==
+
+= 1.1.9-dev.7 =
+
+(2017/11/07) Added a method call to clear WPSSO notifications when switching languages.
 
 = 1.1.8 =
 
