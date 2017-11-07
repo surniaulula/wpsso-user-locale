@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO User Locale Selector package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO User Locale Selector 1.1.8\n"
+"Project-Id-Version: WPSSO User Locale Selector 1.1.9-dev.7\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-user-"
 "locale\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
@@ -44,12 +44,12 @@ msgid ""
 "current WordPress locale as the user locale value."
 msgstr ""
 
-#: lib/locale.php:110
+#: lib/locale.php:120
 msgctxt "toolbar menu title"
 msgid "default"
 msgstr ""
 
-#: lib/locale.php:154
+#: lib/locale.php:164
 msgctxt "toolbar menu item"
 msgid "Default Locale"
 msgstr ""

@@ -50,23 +50,29 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 			if ( isset( $_GET['update-user-locale'] ) ) {
 				$user_locale = sanitize_text_field( $_GET['update-user-locale'] );
-			} else return;
+			} else {
+				return;
+			}
 
 			$url = remove_query_arg( 'update-user-locale' );
 
 			if ( $user_id = get_current_user_id() ) {
-				if ( $user_locale === 'site-default' )
+				if ( $user_locale === 'site-default' ) {
 					delete_user_meta( $user_id, 'locale' );
-				else update_user_meta( $user_id, 'locale', $user_locale );
+				} else {
+					update_user_meta( $user_id, 'locale', $user_locale );
+				}
 			}
 
-			if ( $user_locale === 'site-default' )
+			if ( $user_locale === 'site-default' ) {
 				$user_locale = SucomUtil::get_locale( 'default' );
+			}
 
 			/*
 			 * Use Polylang URLs
 			 */
 			if ( ! is_admin() && function_exists( 'pll_the_languages' ) ) {
+
 				$pll_languages = pll_the_languages( array( 'echo' => 0, 'raw' => 1 ) );
 				$pll_def_locale = pll_default_language( 'locale' );
 				$pll_urls = array();	// associative array of locales and their url
@@ -78,11 +84,15 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 					}
 				}
 
-				if ( isset( $pll_urls[$user_locale] ) )
+				if ( isset( $pll_urls[$user_locale] ) ) {
 					$url = $pll_urls[$user_locale];
-				elseif ( isset( $pll_urls[$pll_def_locale] ) )
+				} elseif ( isset( $pll_urls[$pll_def_locale] ) ) {
 					$url = $pll_urls[$pll_def_locale];
+				}
 			}
+
+			$wpsso = Wpsso::get_instance();
+			$wpsso->notice->trunc();	// clear all notification messages
 
 			wp_redirect( apply_filters( 'wpsso_user_locale_redirect_url', $url, $user_locale ) );
 
