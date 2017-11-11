@@ -90,7 +90,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.1.9-b.6 (2017/11/11)**
+**Version 1.1.9-b.7 (2017/11/11)**
 
 * *New Features*
 	* None
@@ -194,7 +194,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.1.9-b.6 =
+= 1.1.9-b.7 =
 
 (2017/11/11) Added a method call to clear WPSSO notifications when switching languages.
 
