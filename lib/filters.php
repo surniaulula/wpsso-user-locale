@@ -84,4 +84,3 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 	}
 }
 
-?>

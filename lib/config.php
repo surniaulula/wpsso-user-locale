@@ -91,4 +91,3 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 	}
 }
 
-?>

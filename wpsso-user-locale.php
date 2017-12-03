@@ -193,4 +193,3 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 	WpssoUl::get_instance();
 }
 
-?>

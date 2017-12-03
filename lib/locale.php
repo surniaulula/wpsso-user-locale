@@ -187,4 +187,3 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 	}
 }
 
-?>
