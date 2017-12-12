@@ -51,8 +51,14 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 			),
 		);
 
-		public static function get_version() { 
-			return self::$cf['plugin']['wpssoul']['version'];
+		public static function get_version( $add_slug = false ) {
+			$ext = 'wpssoul';
+			$info =& self::$cf['plugin'][$ext];
+			if ( $add_slug ) {
+				return $info['slug'].'-'.$info['version'];
+			} else {
+				return $info['version'];
+			}
 		}
 
 		public static function set_constants( $plugin_filepath ) { 
