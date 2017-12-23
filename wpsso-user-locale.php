@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Plugin Name: WPSSO User Locale Selector
  * Plugin Slug: wpsso-user-locale
