@@ -45,7 +45,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 
 		public function __construct() {
 
-			require_once ( dirname( __FILE__ ).'/lib/config.php' );
+			require_once ( dirname( __FILE__ ) . '/lib/config.php' );
 			WpssoUlConfig::set_constants( __FILE__ );
 			WpssoUlConfig::require_libs( __FILE__ );	// includes the register.php class library
 			$this->reg = new WpssoUlRegister();		// activate, deactivate, uninstall hooks
@@ -86,14 +86,14 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 					require_once trailingslashit( ABSPATH ) . 'wp-admin/includes/plugin.php';
 				}
 				deactivate_plugins( $info['base'], true );	// $silent = true
-				wp_die( '<p>'.sprintf( $die_msg, $info['name'], $info['req']['name'], $info['req']['short'], $info['short'] ).'</p>' );
+				wp_die( '<p>' . sprintf( $die_msg, $info['name'], $info['req']['name'], $info['req']['short'], $info['short'] ) . '</p>' );
 			} else {
-				$deactivate_url = wp_nonce_url( 'plugins.php?action=deactivate&amp;'.
-					'plugin=' . $info['base'].'&amp;plugin_status=active&amp;paged=1&amp;s=',
+				$deactivate_url = wp_nonce_url( 'plugins.php?action=deactivate&amp;' . 
+					'plugin=' . $info['base'] . '&amp;plugin_status=active&amp;paged=1&amp;s=',
 						'deactivate-plugin_' . $info['base'] );
-				echo '<div class="notice notice-error error"><p>'.
+				echo '<div class="notice notice-error error"><p>' . 
 					sprintf( $err_msg, $info['name'], $info['req']['name'],
-						$info['req']['short'], $deactivate_url, $info['short'] ).'</p></div>';
+						$info['req']['short'], $deactivate_url, $info['short'] ) . '</p></div>';
 			}
 		}
 
@@ -111,10 +111,10 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 					$plugin_data = get_plugin_data( __FILE__, false );	// $markup = false
 					deactivate_plugins( $plugin, true );	// $silent = true
 					wp_die( 
-						'<p>'.sprintf( __( '%1$s requires %2$s version %3$s or higher and has been deactivated.',
-							'wpsso-user-locale' ), $plugin_data['Name'], 'WordPress', $wp_min_version ).'</p>'.
-						'<p>'.sprintf( __( 'Please upgrade %1$s before trying to re-activate the %2$s plugin.',
-							'wpsso-user-locale' ), 'WordPress', $plugin_data['Name'] ).'</p>'
+						'<p>' . sprintf( __( '%1$s requires %2$s version %3$s or higher and has been deactivated.',
+							'wpsso-user-locale' ), $plugin_data['Name'], 'WordPress', $wp_min_version ) . '</p>' . 
+						'<p>' . sprintf( __( 'Please upgrade %1$s before trying to re-activate the %2$s plugin.',
+							'wpsso-user-locale' ), 'WordPress', $plugin_data['Name'] ) . '</p>'
 					);
 				}
 			}
@@ -179,7 +179,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 			$wpsso_version = $this->p->cf['plugin']['wpsso']['version'];
 
 			if ( $this->p->debug->enabled ) {
-				$this->p->debug->log( $info['name'] . ' requires ' . $info['req']['short'] . ' v'.
+				$this->p->debug->log( $info['name'] . ' requires ' . $info['req']['short'] . ' v' . 
 					$info['req']['min_version'] . ' or newer (' . $wpsso_version . ' installed)' );
 			}
 
