@@ -1,5 +1,4 @@
 <?php
-
 /**
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
@@ -69,7 +68,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				$user_locale = SucomUtil::get_locale( 'default' );
 			}
 
-			/*
+			/**
 			 * Use Polylang URLs
 			 */
 			if ( ! is_admin() && function_exists( 'pll_the_languages' ) ) {
@@ -120,7 +119,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			$menu_locale = $user_locale === 'site-default' ? 
 				_x( 'default', 'toolbar menu title', 'wpsso-user-locale' ) : $user_locale;
 
-			/*
+			/**
 			 * Menu Icon and Title
 			 */
 			$dashicon = apply_filters( 'wpsso_user_locale_menu_dashicon', 
@@ -151,7 +150,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				'meta' => array(),
 			) );
 
-			/*
+			/**
 			 * Menu Drop-down Items
 			 */
 			$menu_items = array();
