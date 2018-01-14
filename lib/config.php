@@ -15,10 +15,10 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 
 		public static $cf = array(
 			'plugin' => array(
-				'wpssoul' => array(
-					'version' => '1.1.9',		// plugin version
-					'opt_version' => '6',		// increment when changing default options
-					'short' => 'WPSSO UL',		// short plugin name
+				'wpssoul' => array(			// Plugin acronym.
+					'version' => '1.1.9',		// Plugin version.
+					'opt_version' => '6',		// Increment when changing default option values.
+					'short' => 'WPSSO UL',		// Short plugin name.
 					'name' => 'WPSSO User Locale Selector',
 					'desc' => 'WPSSO Core extension to add a user locale / language / region selector in the WordPress admin back-end and front-end toolbar menus.',
 					'slug' => 'wpsso-user-locale',
@@ -38,9 +38,8 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 						),
 					),
 					'lib' => array(
-						// submenu items must have unique keys
-						'submenu' => array (
-							'ul-general' => 'User Locale',	// general settings
+						'submenu' => array(	// Note that submenu elements must have unique keys.
+							'ul-general' => 'User Locale',
 						),
 						'gpl' => array(
 						),
