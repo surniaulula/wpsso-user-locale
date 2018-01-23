@@ -70,7 +70,7 @@ WPSSO User Locale Selector is an extension for the WPSSO Core plugin &mdash; whi
 
 == Screenshots ==
 
-01. An example user locale selector in the WordPress front-end toolbar menu.
+01. WPSSO User Locale selector in the WordPress toolbar menu.
 
 == Changelog ==
 
