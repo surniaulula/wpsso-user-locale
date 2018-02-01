@@ -74,11 +74,6 @@ WPSSO User Locale Selector is an extension for the WPSSO Core plugin &mdash; whi
 
 == Changelog ==
 
-<h3>Free / Standard Version Repositories</h3>
-
-* [GitHub](https://surniaulula.github.io/wpsso-user-locale/)
-* [WordPress.org](https://plugins.trac.wordpress.org/browser/wpsso-user-locale/)
-
 <h3>Version Numbering</h3>
 
 Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
@@ -87,6 +82,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * {minor} = New functionality was added or improved in a backwards-compatible manner.
 * {bugfix} = Backwards-compatible bug fixes or small improvements.
 * {stage}.{level} = Pre-production release: dev < a (alpha) < b (beta) < rc (release candidate).
+
+<h3>Free / Standard Version Repositories</h3>
+
+* [GitHub](https://surniaulula.github.io/wpsso-user-locale/)
+* [WordPress.org](https://plugins.trac.wordpress.org/browser/wpsso-user-locale/)
 
 <h3>Changelog / Release Notes</h3>
 
