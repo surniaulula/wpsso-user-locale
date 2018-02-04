@@ -41,14 +41,14 @@ If the Polylang plugin is active, the user locale menu will automatically use th
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO User Locale Selector is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your content for social sharing, social media / SMO, search / SEO / rich cards, and more.
+WPSSO User Locale Selector is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.
 
 == Installation ==
 
 <h3>Install and Uninstall</h3>
 
-* [Install the WPSSO UL Plugin](https://wpsso.com/docs/plugins/wpsso-user-locale/installation/install-the-plugin/)
-* [Uninstall the WPSSO UL Plugin](https://wpsso.com/docs/plugins/wpsso-user-locale/installation/uninstall-the-plugin/)
+* [Install the WPSSO UL Extension](https://wpsso.com/docs/plugins/wpsso-user-locale/installation/install-the-plugin/)
+* [Uninstall the WPSSO UL Extension](https://wpsso.com/docs/plugins/wpsso-user-locale/installation/uninstall-the-plugin/)
 
 == Frequently Asked Questions ==
 
