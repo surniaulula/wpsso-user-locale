@@ -90,18 +90,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.1.9 (2017/11/14)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added a method call to clear WPSSO notifications when switching languages.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
-**Version 1.1.8 (2017/10/15)**
+**Version 1.1.10 (2018/02/04)**
 
 * *New Features*
 	* None
@@ -110,123 +99,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Minor code refactoring for WPSSO v3.47.0.
-		* Renamed the SucomUtil get_locale_opt() call to get_key_value.
-
-**Version 1.1.7 (2017/09/10)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Minor code refactoring for WPSSO v3.46.0.
-
-**Version 1.1.6 (2017/04/30)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Code refactoring to rename the $is_avail array to $avail for WPSSO v3.42.0.
-
-**Version 1.1.5 (2017/04/16)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Refactored the plugin init filters and moved/renamed the registration boolean from `is_avail[$name]` to `is_avail['p_ext'][$name]`.
-
-**Version 1.1.4 (2017/04/08)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Minor revision to move URLs in the extension config to the main WPSSO Core plugin config.
-	* Dropped the package number from the production version string.
-
-**Version 1.1.2-1 (2017/04/05)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* Updated the plugin icon images and the documentation URLs.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
-**Version 1.1.1-1 (2017/03/25)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* Minor updates to textdomain translation strings.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
-**Version 1.1.0-1 (2017/01/13)**
-
-* *New Features*
-	* Added a new "Toolbar Menu Icon" option in the User Locale settings page.
-* *Improvements*
-	* Changed the "Toolbar Menu Title" default value from "User Locale (%s)" to "%s".
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Added a new 'wpsso_user_locale_menu_dashicon' filter.
-	* Added a new 'wpsso_user_locale_menu_items' filter.
+	* Maintenance release.
 
 == Upgrade Notice ==
 
-= 1.1.9 =
+= 1.1.10 =
 
-(2017/11/14) Added a method call to clear WPSSO notifications when switching languages.
-
-= 1.1.8 =
-
-(2017/10/15) Minor code refactoring for WPSSO v3.47.0.
-
-= 1.1.7 =
-
-(2017/09/10) Minor code refactoring for WPSSO v3.46.0.
-
-= 1.1.6 =
-
-(2017/04/30) Code refactoring to rename the $is_avail array to $avail for WPSSO v3.42.0.
-
-= 1.1.5 =
-
-(2017/04/16) Refactored the plugin init filters and moved/renamed the registration boolean.
-
-= 1.1.4 =
-
-(2017/04/08) Minor revision to move URLs in the extension config to the main WPSSO Core plugin config.
-
-= 1.1.2-1 =
-
-(2017/04/05) Updated the plugin icon images and the documentation URLs.
-
-= 1.1.1-1 =
-
-(2017/03/25) Minor updates to textdomain translation strings.
-
-= 1.1.0-1 =
-
-(2017/01/13) Added a new "Toolbar Menu Icon" option in the User Locale settings page. Added a new 'wpsso_user_locale_menu_items' filter.
+(2018/02/04) Maintenance release.
 
