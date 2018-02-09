@@ -25,11 +25,11 @@ WPSSO Core extension to add a user locale / language / region selector in the Wo
 
 The default WordPress behavior is to apply the user locale preference to the admin back-end only &mdash; this plugin can optionally extend the user locale preference to the front-end webpage as well (enabled by default in the SSO &gt; User Locale settings page).
 
-**WPSSO UL is *incredibly fast* and coded for performance:**
+**WPSSO User Locale Selector is *incredibly fast* and coded for performance:**
 
 WPSSO Core and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light.
 
-WPSSO Core and its extensions are fully tested and compatible with PHP v7.x (PHP v5.3 or better required).
+WPSSO Core and its extensions are fully tested and compatible with PHP v7.x (PHP v5.4 or better required).
 
 <h3>Power-Users / Developers</h3>
 
@@ -41,7 +41,7 @@ If the Polylang plugin is active, the user locale menu will automatically use th
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO User Locale Selector is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.
+WPSSO User Locale Selector (aka WPSSO UL) is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.
 
 == Installation ==
 
