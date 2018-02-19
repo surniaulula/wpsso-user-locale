@@ -27,7 +27,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 					'text_domain' => 'wpsso-user-locale',
 					'domain_path' => '/languages',
 					'req' => array(
-						'short' => 'WPSSO',
+						'short' => 'WPSSO Core',
 						'name' => 'WPSSO Core',
 						'min_version' => '3.52.0',
 					),
