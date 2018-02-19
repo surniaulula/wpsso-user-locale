@@ -90,6 +90,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.2.0-dev.2 (2018/02/19)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Refactored the WpssoUl `min_version_notice()` method to use PHP's `trigger_error()` and include a notice to refresh plugin update information.
+
 **Version 1.1.10 (2018/02/04)**
 
 * *New Features*
@@ -102,6 +113,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Maintenance release.
 
 == Upgrade Notice ==
+
+= l.2.0-dev.2 =
+
+(2018/02/19) Refactored the WpssoUl min_version_notice() method to use PHP's trigger_error() and include a notice to refresh plugin update information.
 
 = 1.1.10 =
 
