@@ -100,7 +100,7 @@ msgid ""
 "%5$s is currently installed)."
 msgstr ""
 
-#: wpsso-user-locale.php:217
+#: wpsso-user-locale.php:219
 msgid "%s warning:"
 msgstr ""
 
