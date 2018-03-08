@@ -1,8 +1,8 @@
-<h1>WPSSO User Locale Selector</h1><h3>Select a Locale / Language / Region in the WP Toolbar Menu</h3>
+<h1>WPSSO User Locale Selector</h1>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO User Locale Selector</td></tr>
-<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO Core extension to add a user locale / language / region selector in the WordPress admin back-end and front-end toolbar menus.</td></tr>
+<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO Core extension to add a user locale (language / region) drop-down menu in the WordPress admin back-end and front-end toolbar.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.2.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.8</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.9.4</td></tr>
@@ -15,17 +15,13 @@
 
 <p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-user-locale/assets/icon-256x256.png"></p>
 
-<p><strong>Add a user locale drop-down menu item in the WordPress admin back-end admin and front-end toolbar menus.</strong></p>
+<p><strong>WPSSO Core extension to add a user locale (language / region) drop-down menu in the WordPress admin back-end and front-end toolbar.</strong></p>
 
-<p><strong>Perfect for translators or anyone who needs to switch languages quickly and easily</strong> &mdash; allows logged-in users to change their preferred locale / language setting right from the toolbar menu (instead of having to update their WordPress user profile page).</p>
+<p>Perfect for translators or anyone who needs to switch languages quickly and easily &mdash; allows logged-in users to change their preferred locale / language setting right from the toolbar menu (instead of having to update their WordPress user profile page).</p>
 
 <p>The default WordPress behavior is to apply the user locale preference to the admin back-end only &mdash; this plugin can optionally extend the user locale preference to the front-end webpage as well (enabled by default in the SSO &gt; User Locale settings page).</p>
 
-<p><strong>WPSSO User Locale Selector is <em>incredibly fast</em> and coded for performance:</strong></p>
-
-<p>WPSSO Core and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light.</p>
-
-<p>WPSSO Core and its extensions are fully tested and compatible with PHP v7.x (PHP v5.4 or better required).</p>
+<p>WPSSO User Locale Selector is <em>incredibly fast</em> and coded for performance &mdash; WPSSO Core and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its extensions are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).</p>
 
 <h3>Power-Users / Developers</h3>
 
