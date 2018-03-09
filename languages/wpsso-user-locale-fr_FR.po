@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO User Locale Selector 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-user-locale\n"
-"POT-Creation-Date: 2018-02-19 18:18-0600\n"
-"PO-Revision-Date: 2018-02-23 12:02-0600\n"
+"POT-Creation-Date: 2018-03-09 12:35-0600\n"
+"PO-Revision-Date: 2018-03-09 12:35-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -21,7 +21,7 @@ msgstr "Langue utilisateur"
 
 #: lib/config-gettext-extract.php:4
 msgctxt "plugin description"
-msgid "WPSSO Core extension to add a user locale / language / region selector in the WordPress admin back-end and front-end toolbar menus."
+msgid "WPSSO Core extension to add a user locale (language / region) drop-down menu in the WordPress admin back-end and front-end toolbar."
 msgstr "Extension WPSSO Core pour ajouté un sélecteur de langue / région pour les utilisateurs dans la barre d'outils WordPress d'avant et arrière."
 
 #: lib/filters.php:73
@@ -82,11 +82,12 @@ msgstr "%1$s nécessite %2$s version %3$s ou supérieure et a été désactivé.
 msgid "Please upgrade %1$s before trying to re-activate the %2$s plugin."
 msgstr "Veuillez mettre à jour %1$s avant d'essayer de réactiver l'extension %2$s."
 
-#: wpsso-user-locale.php:207
+#: wpsso-user-locale.php:206
 msgid "The %1$s version %2$s extension requires %3$s version %4$s or newer (version %5$s is currently installed)."
 msgstr "L'extension %1$s version %2$s requiert %3$s version %4$s ou plus récente (version %5$s est actuellement installée)."
 
-#: wpsso-user-locale.php:210
+#. translators: %s is the short plugin name
+#: wpsso-user-locale.php:218
 msgid "%s warning:"
 msgstr "Alerte %s:"
 
@@ -99,7 +100,7 @@ msgid "https://wpsso.com/extend/plugins/wpsso-user-locale/"
 msgstr "https://wpsso.com/extend/plugins/wpsso-user-locale/"
 
 #. Description of the plugin/theme
-msgid "WPSSO Core extension to add a user locale / language / region selector in the WordPress admin back-end and front-end toolbar menus."
+msgid "WPSSO Core extension to add a user locale (language / region) drop-down menu in the WordPress admin back-end and front-end toolbar."
 msgstr "Extension WPSSO Core pour ajouté un sélecteur de langue / région pour les utilisateurs dans la barre d'outils WordPress d'avant et arrière."
 
 #. Author of the plugin/theme
