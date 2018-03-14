@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO User Locale Selector 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-user-locale\n"
-"POT-Creation-Date: 2018-03-09 12:35-0600\n"
-"PO-Revision-Date: 2018-03-09 12:35-0600\n"
+"POT-Creation-Date: 2018-03-14 12:44-0600\n"
+"PO-Revision-Date: 2018-03-14 12:45-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -22,7 +22,7 @@ msgstr "Langue utilisateur"
 #: lib/config-gettext-extract.php:4
 msgctxt "plugin description"
 msgid "WPSSO Core extension to add a user locale (language / region) drop-down menu in the WordPress admin back-end and front-end toolbar."
-msgstr "Extension WPSSO Core pour ajouté un sélecteur de langue / région pour les utilisateurs dans la barre d'outils WordPress d'avant et arrière."
+msgstr "Extension WPSSO Core pour ajouter un sélecteur de langue / région pour les utilisateurs dans la barre d'outils WordPress d'avant et arrière."
 
 #: lib/filters.php:73
 msgid "An icon to prefix the title string used in the WordPress toolbar menu (uses the \"translation\" icon by default). Select \"[None]\" to disable the toolbar menu icon."
@@ -101,7 +101,7 @@ msgstr "https://wpsso.com/extend/plugins/wpsso-user-locale/"
 
 #. Description of the plugin/theme
 msgid "WPSSO Core extension to add a user locale (language / region) drop-down menu in the WordPress admin back-end and front-end toolbar."
-msgstr "Extension WPSSO Core pour ajouté un sélecteur de langue / région pour les utilisateurs dans la barre d'outils WordPress d'avant et arrière."
+msgstr "Extension WPSSO Core pour ajouter un sélecteur de langue / région pour les utilisateurs dans la barre d'outils WordPress d'avant et arrière."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"
