@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO User Locale Selector package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO User Locale Selector 1.2.0\n"
+"Project-Id-Version: WPSSO User Locale Selector 1.2.1-dev.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-user-"
 "locale\n"
 "POT-Creation-Date: 2018-MO-DA HO:MI+ZONE\n"
@@ -21,8 +21,8 @@ msgstr ""
 #: lib/config-gettext-extract.php:4
 msgctxt "plugin description"
 msgid ""
-"WPSSO Core extension to add a user locale (language / region) drop-down menu "
-"in the WordPress admin back-end and front-end toolbar."
+"WPSSO Core add-on to add a user locale (language / region) drop-down menu in "
+"the WordPress admin back-end and front-end toolbar."
 msgstr ""
 
 #: lib/filters.php:73
@@ -76,14 +76,14 @@ msgstr ""
 
 #: wpsso-user-locale.php:91
 msgid ""
-"%1$s is an extension for the %2$s plugin &mdash; please install and activate "
+"%1$s is an add-on for the %2$s plugin &mdash; please install and activate "
 "the %3$s plugin before activating %4$s."
 msgstr ""
 
 #: wpsso-user-locale.php:93
 msgid ""
-"The %1$s extension requires the %2$s plugin &mdash; install and activate the "
-"%3$s plugin or <a href=\"%4$s\">deactivate the %5$s extension</a>."
+"The %1$s add-on requires the %2$s plugin &mdash; install and activate the "
+"%3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr ""
 
 #: wpsso-user-locale.php:135
@@ -96,7 +96,7 @@ msgstr ""
 
 #: wpsso-user-locale.php:206
 msgid ""
-"The %1$s version %2$s extension requires %3$s version %4$s or newer (version "
+"The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."
 msgstr ""
 
@@ -115,8 +115,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"WPSSO Core extension to add a user locale (language / region) drop-down menu "
-"in the WordPress admin back-end and front-end toolbar."
+"WPSSO Core add-on to add a user locale (language / region) drop-down menu in "
+"the WordPress admin back-end and front-end toolbar."
 msgstr ""
 
 #. Author of the plugin/theme
