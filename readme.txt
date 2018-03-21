@@ -13,19 +13,19 @@ Requires At Least: 3.8
 Tested Up To: 4.9.4
 Stable Tag: 1.2.0
 
-WPSSO Core extension to add a user locale (language / region) drop-down menu in the WordPress admin back-end and front-end toolbar.
+WPSSO Core add-on to add a user locale (language / region) drop-down menu in the WordPress admin back-end and front-end toolbar.
 
 == Description ==
 
 <img class="readme-icon" src="https://surniaulula.github.io/wpsso-user-locale/assets/icon-256x256.png">
 
-**WPSSO Core extension to add a user locale (language / region) drop-down menu in the WordPress admin back-end and front-end toolbar.**
+**WPSSO Core add-on to add a user locale (language / region) drop-down menu in the WordPress admin back-end and front-end toolbar.**
 
 Perfect for translators or anyone who needs to switch languages quickly and easily &mdash; allows logged-in users to change their preferred locale / language setting right from the toolbar menu (instead of having to update their WordPress user profile page).
 
 The default WordPress behavior is to apply the user locale preference to the admin back-end only &mdash; this plugin can optionally extend the user locale preference to the front-end webpage as well (enabled by default in the SSO &gt; User Locale settings page).
 
-WPSSO User Locale Selector is *incredibly fast* and coded for performance &mdash; WPSSO Core and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its extensions are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).
+WPSSO User Locale Selector is *incredibly fast* and coded for performance &mdash; WPSSO Core and its add-ons make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its add-ons are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).
 
 <h3>Power-Users / Developers</h3>
 
@@ -37,14 +37,14 @@ If the Polylang plugin is active, the user locale menu will automatically use th
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO User Locale Selector (aka WPSSO UL) is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.
+WPSSO User Locale Selector (aka WPSSO UL) is an add-on for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.
 
 == Installation ==
 
 <h3>Install and Uninstall</h3>
 
-* [Install the WPSSO UL Extension](https://wpsso.com/docs/plugins/wpsso-user-locale/installation/install-the-plugin/)
-* [Uninstall the WPSSO UL Extension](https://wpsso.com/docs/plugins/wpsso-user-locale/installation/uninstall-the-plugin/)
+* [Install the WPSSO UL Add-on](https://wpsso.com/docs/plugins/wpsso-user-locale/installation/install-the-plugin/)
+* [Uninstall the WPSSO UL Add-on](https://wpsso.com/docs/plugins/wpsso-user-locale/installation/uninstall-the-plugin/)
 
 == Frequently Asked Questions ==
 
@@ -86,6 +86,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.2.1-dev.2 (2018/03/21)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Renamed plugin "Extensions" to "Add-ons" to avoid confusion and improve / simplify translations.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.2.0 (2018/02/24)**
 
 * *New Features*
@@ -98,6 +109,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Refactored the WpssoUl `min_version_notice()` method to use PHP's `trigger_error()` and include a notice to refresh plugin update information.
 
 == Upgrade Notice ==
+
+= 1.2.1-dev.2 =
+
+(2018/03/21) Renamed plugin "Extensions" to "Add-ons" to avoid confusion and improve / simplify translations.
 
 = 1.2.0 =
 

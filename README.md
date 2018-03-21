@@ -2,7 +2,7 @@
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO User Locale Selector</td></tr>
-<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO Core extension to add a user locale (language / region) drop-down menu in the WordPress admin back-end and front-end toolbar.</td></tr>
+<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO Core add-on to add a user locale (language / region) drop-down menu in the WordPress admin back-end and front-end toolbar.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.2.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.8</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.9.4</td></tr>
@@ -15,13 +15,13 @@
 
 <p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-user-locale/assets/icon-256x256.png"></p>
 
-<p><strong>WPSSO Core extension to add a user locale (language / region) drop-down menu in the WordPress admin back-end and front-end toolbar.</strong></p>
+<p><strong>WPSSO Core add-on to add a user locale (language / region) drop-down menu in the WordPress admin back-end and front-end toolbar.</strong></p>
 
 <p>Perfect for translators or anyone who needs to switch languages quickly and easily &mdash; allows logged-in users to change their preferred locale / language setting right from the toolbar menu (instead of having to update their WordPress user profile page).</p>
 
 <p>The default WordPress behavior is to apply the user locale preference to the admin back-end only &mdash; this plugin can optionally extend the user locale preference to the front-end webpage as well (enabled by default in the SSO &gt; User Locale settings page).</p>
 
-<p>WPSSO User Locale Selector is <em>incredibly fast</em> and coded for performance &mdash; WPSSO Core and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its extensions are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).</p>
+<p>WPSSO User Locale Selector is <em>incredibly fast</em> and coded for performance &mdash; WPSSO Core and its add-ons make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its add-ons are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).</p>
 
 <h3>Power-Users / Developers</h3>
 
@@ -33,7 +33,7 @@
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-<p>WPSSO User Locale Selector (aka WPSSO UL) is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.</p>
+<p>WPSSO User Locale Selector (aka WPSSO UL) is an add-on for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.</p>
 
 
 <h2>Installation</h2>
@@ -41,8 +41,8 @@
 <h3>Install and Uninstall</h3>
 
 <ul>
-<li><a href="https://wpsso.com/docs/plugins/wpsso-user-locale/installation/install-the-plugin/">Install the WPSSO UL Extension</a></li>
-<li><a href="https://wpsso.com/docs/plugins/wpsso-user-locale/installation/uninstall-the-plugin/">Uninstall the WPSSO UL Extension</a></li>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-user-locale/installation/install-the-plugin/">Install the WPSSO UL Add-on</a></li>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-user-locale/installation/uninstall-the-plugin/">Uninstall the WPSSO UL Add-on</a></li>
 </ul>
 
 
