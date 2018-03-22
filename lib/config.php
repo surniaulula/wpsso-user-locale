@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoul' => array(			// Plugin acronym.
-					'version' => '1.2.1-dev.2',		// Plugin version.
+					'version' => '1.2.1-b.1',		// Plugin version.
 					'opt_version' => '6',		// Increment when changing default option values.
 					'short' => 'WPSSO UL',		// Short plugin name.
 					'name' => 'WPSSO User Locale Selector',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO Core',
 						'name' => 'WPSSO Core',
-						'min_version' => '3.56.2-dev.2',
+						'min_version' => '3.56.2-b.1',
 					),
 					'img' => array(
 						'icons' => array(
