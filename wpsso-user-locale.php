@@ -10,11 +10,11 @@
  * Author URI: https://wpsso.com/
  * License: GPLv3
  * License URI: http://www.gnu.org/licenses/gpl.txt
- * Description: WPSSO Core add-on to add a user locale (language / region) drop-down menu in the WordPress admin back-end and front-end toolbar.
+ * Description: WPSSO Core add-on to provide a user locale (language / region) drop-down menu in the WordPress admin back-end and front-end toolbar.
  * Requires PHP: 5.4
  * Requires At Least: 3.8
  * Tested Up To: 4.9.4
- * Version: 1.2.1-b.1
+ * Version: 1.2.1-rc.1
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
