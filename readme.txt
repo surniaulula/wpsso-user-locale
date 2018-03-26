@@ -19,7 +19,7 @@ WPSSO Core add-on to provide a user locale (language / region) drop-down menu in
 
 <img class="readme-icon" src="https://surniaulula.github.io/wpsso-user-locale/assets/icon-256x256.png">
 
-**WPSSO Core add-on to provide a user locale (language / region) drop-down menu in the WordPress admin back-end and front-end toolbar.**
+**A WPSSO Core add-on to provide a user locale (language / region) drop-down menu in the WordPress admin back-end and front-end toolbar.**
 
 Perfect for translators or anyone who needs to switch languages quickly and easily &mdash; allows logged-in users to change their preferred locale / language setting right from the toolbar menu (instead of having to update their WordPress user profile page).
 
