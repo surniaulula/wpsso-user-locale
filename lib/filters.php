@@ -50,17 +50,20 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 			return $def_opts;
 		}
 
-		public function filter_option_type( $type, $key ) {
+		public function filter_option_type( $type, $base_key ) {
+
 			if ( ! empty( $type ) ) {
 				return $type;
-			} elseif ( strpos( $key, 'ul_' ) !== 0 ) {
+			} elseif ( strpos( $base_key, 'ul_' ) !== 0 ) {
 				return $type;
 			}
-			switch ( $key ) {
+
+			switch ( $base_key ) {
 				case 'ul_menu_title':
 					return 'not_blank';
 					break;
 			}
+
 			return $type;
 		}
 
