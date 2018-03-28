@@ -35,14 +35,17 @@ if ( ! class_exists( 'WpssoUlSubmenuUlGeneral' ) && class_exists( 'WpssoAdmin' )
 
 		public function show_metabox_user_locale() {
 			$metabox_id = 'ul';
-			$key = 'general';
-			$this->p->util->do_table_rows( apply_filters( $this->p->cf['lca'].'_'.$metabox_id.'_'.$key.'_rows', 
-				$this->get_table_rows( $metabox_id, $key ), $this->form, false ), 'metabox-'.$metabox_id.'-'.$key );
+			$tab_key = 'general';
+			$this->p->util->do_table_rows( apply_filters( $this->p->lca.'_'.$metabox_id.'_'.$tab_key.'_rows', 
+				$this->get_table_rows( $metabox_id, $tab_key ), $this->form, false ), 'metabox-'.$metabox_id.'-'.$tab_key );
 		}
 
-		protected function get_table_rows( $metabox_id, $key ) {
+		protected function get_table_rows( $metabox_id, $tab_key ) {
+
 			$table_rows = array();
-			switch ( $metabox_id.'-'.$key ) {
+
+			switch ( $metabox_id.'-'.$tab_key ) {
+
 				case 'ul-general':
 
 					$table_rows['ul_menu_icon'] = $this->form->get_th_html( _x( 'Toolbar Menu Icon',
@@ -61,8 +64,8 @@ if ( ! class_exists( 'WpssoUlSubmenuUlGeneral' ) && class_exists( 'WpssoAdmin' )
 
 					break;
 			}
+
 			return $table_rows;
 		}
 	}
 }
-
