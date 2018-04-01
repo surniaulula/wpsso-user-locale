@@ -57,9 +57,11 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 		}
 
 		public static function set_constants( $plugin_filepath ) { 
+
 			if ( defined( 'WPSSOUL_VERSION' ) ) {			// execute and define constants only once
 				return;
 			}
+
 			define( 'WPSSOUL_VERSION', self::$cf['plugin']['wpssoul']['version'] );						
 			define( 'WPSSOUL_FILEPATH', $plugin_filepath );						
 			define( 'WPSSOUL_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
@@ -93,4 +95,3 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 		}
 	}
 }
-
