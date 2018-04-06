@@ -100,11 +100,6 @@ msgid ""
 "%5$s is currently installed)."
 msgstr ""
 
-#. translators: %s is the short plugin name
-#: wpsso-user-locale.php:228
-msgid "%s warning:"
-msgstr ""
-
 #. Plugin Name of the plugin/theme
 msgid "WPSSO User Locale Selector"
 msgstr ""
