@@ -23,17 +23,20 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			}
 
 			$is_admin = is_admin();
-			$on_front = apply_filters( 'wpsso_user_locale_front_end',
-				( empty( $this->p->options['ul_front_end'] ) ? false : true ) );
+			$on_front = empty( $this->p->options['ul_front_end'] ) ? false : true;
+			$on_front = apply_filters( 'wpsso_user_locale_front_end', $on_front );
 
-			if ( ! $is_admin && $on_front )	// apply user locale value to front-end
+			if ( ! $is_admin && $on_front ) {	// Apply user locale value to front-end.
 				add_filter( 'locale', array( __CLASS__, 'get_user_locale' ) );
+			}
 
 			if ( $is_admin || $on_front ) {
-				add_action( 'wp_before_admin_bar_render', array( __CLASS__, 'add_locale_toolbar' ) );
 
-				if ( isset( $_GET['update-user-locale'] ) )	// new user locale value selected
+				add_action( 'admin_bar_menu', array( __CLASS__, 'add_locale_toolbar' ), 55 );	// After the home toolbar menu item.
+
+				if ( isset( $_GET['update-user-locale'] ) ) {	// New user locale value selected.
 					add_action( 'wp_loaded', array( __CLASS__, 'update_user_locale' ), -1000 );
+				}
 			}
 		}
 
@@ -99,14 +102,14 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			exit;
 		}
 
-		public static function add_locale_toolbar() {
+		public static function add_locale_toolbar( $wp_admin_bar ) {
 
 			if ( ! $user_id = get_current_user_id() ) {
 				return;
 			}
 
-			global $wp_admin_bar;
 			require_once trailingslashit( ABSPATH ).'wp-admin/includes/translation-install.php';
+
 			$wpsso = Wpsso::get_instance();
 			$translations = wp_get_available_translations();	// since wp 4.0
 			$languages = array_merge( array( 'site-default' ), get_available_languages() );	// since wp 3.0
@@ -122,13 +125,14 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			/**
 			 * Menu Icon and Title
 			 */
-			$dashicon = apply_filters( 'wpsso_user_locale_menu_dashicon', 
-				( empty( $wpsso->options['ul_menu_icon'] ) ? 
-					null : $wpsso->options['ul_menu_icon'] ), $menu_locale );
+			$dashicon = empty( $wpsso->options['ul_menu_icon'] ) ? null : $wpsso->options['ul_menu_icon'];
+			$dashicon = apply_filters( 'wpsso_user_locale_menu_dashicon',  $dashicon, $menu_locale );
 
 			if ( ! empty( $dashicon ) && $dashicon !== 'none' ) {
-				$dashicons = SucomUtil::get_dashicons();	// get the raw / unsorted dashicons array
-				if ( isset( $dashicons[$dashicon] ) ) {		// just in case
+
+				$dashicons = SucomUtil::get_dashicons();	// Get the raw / unsorted dashicons array.
+
+				if ( isset( $dashicons[$dashicon] ) ) {		// Just in case.
 					$menu_icon = '<span class="ab-icon dashicons-'.$dashicons[$dashicon].'"></span>';
 				} else {
 					$menu_icon = '';
@@ -141,9 +145,9 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			$menu_title = apply_filters( 'wpsso_user_locale_menu_title', $menu_title, $menu_locale );
 			$menu_title = sprintf( $menu_title, $menu_locale );
 
-			$wp_admin_bar->add_node( array(	// since wp 3.1
+			$wp_admin_bar->add_node( array(	// Since wp 3.1
 				'id' => 'wpsso-user-locale',
-				'title' => $menu_icon.$menu_title,
+				'title' => $menu_icon . $menu_title,
 				'parent' => false,
 				'href' => false,
 				'group' => false,
@@ -154,8 +158,11 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			 * Menu Drop-down Items
 			 */
 			$menu_items = array();
+
 			foreach ( $languages as $locale ) {
+
 				$meta = array();
+
 				if ( isset( $translations[$locale]['native_name'] ) ) {
 					$native_name = $translations[$locale]['native_name'];
 				} elseif ( $locale === 'en_US' ) {
@@ -165,10 +172,12 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				} else {
 					$native_name = $locale;
 				}
+
 				if ( $locale === $user_locale ) {
 					$native_name = '<strong>'.$native_name.'</strong>';
 					$meta['class'] = 'current_locale';
 				}
+
 				$menu_items[] = array(
 					'id' => 'wpsso-user-locale-'.$locale,
 					'title' => $native_name,
@@ -178,6 +187,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 					'meta' => $meta,
 				);
 			}
+
 			$menu_items = apply_filters( 'wpsso_user_locale_menu_items', $menu_items, $menu_locale );
 
 			foreach ( $menu_items as $menu_item ) {
@@ -186,4 +196,3 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 		}
 	}
 }
-

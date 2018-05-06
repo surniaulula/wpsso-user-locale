@@ -59,8 +59,11 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 			}
 
 			switch ( $base_key ) {
+
 				case 'ul_menu_title':
+
 					return 'not_blank';
+
 					break;
 			}
 
@@ -68,22 +71,33 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 		}
 
 		public function filter_messages_tooltip( $text, $idx ) {
-			if ( strpos( $idx, 'tooltip-ul_' ) !== 0 )
+
+			if ( strpos( $idx, 'tooltip-ul_' ) !== 0 ) {
 				return $text;
+			}
 
 			switch ( $idx ) {
+
 				case 'tooltip-ul_menu_icon':	// Toolbar Menu Icon
+
 					$text = __( 'An icon to prefix the title string used in the WordPress toolbar menu (uses the "translation" icon by default). Select "[None]" to disable the toolbar menu icon.', 'wpsso-user-locale' );
+
 					break;
+
 				case 'tooltip-ul_menu_title':	// Toolbar Menu Title
+
 					$text = __( 'The title string used in the WordPress toolbar menu. The "%s" parameter is replaced by the current user locale value (example: "User Locale (%s)").', 'wpsso-user-locale' );
+
 					break;
+
 				case 'tooltip-ul_front_end':	// Add User Locale on Front-End
+
 					$text = __( 'Add the user locale selector to the front-end toolbar menu, and define current WordPress locale as the user locale value.', 'wpsso-user-locale' );
+
 					break;
 			}
+
 			return $text;
 		}
 	}
 }
-
