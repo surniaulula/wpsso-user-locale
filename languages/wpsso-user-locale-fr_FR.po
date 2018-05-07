@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO User Locale Selector 1.2.1\n"
+"Project-Id-Version: WPSSO User Locale Selector 1.2.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-user-locale\n"
-"POT-Creation-Date: 2018-03-24 09:05-0400\n"
-"PO-Revision-Date: 2018-03-24 09:58-0400\n"
+"POT-Creation-Date: 2018-05-07 10:06-0600\n"
+"PO-Revision-Date: 2018-05-07 10:06-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -24,24 +24,24 @@ msgctxt "plugin description"
 msgid "WPSSO Core add-on to provide a user locale (language / region) drop-down menu in the WordPress admin back-end and front-end toolbar."
 msgstr "Extension d'ajout WPSSO Core pour fournir un sélecteur de langue / région pour les utilisateurs dans la barre d'outils WordPress d'avant et arrière."
 
-#: lib/filters.php:73
+#: lib/filters.php:83
 msgid "An icon to prefix the title string used in the WordPress toolbar menu (uses the \"translation\" icon by default). Select \"[None]\" to disable the toolbar menu icon."
 msgstr "Un icône devant le titre utilisé dans le menu de barre d'outils WordPress (utilise l'icône de \"traduction\" par défaut). Sélectionnez \"[Aucun]\" pour désactiver l'utilisation d'un icône dans de menu de barre d'outils."
 
-#: lib/filters.php:76
+#: lib/filters.php:89
 msgid "The title string used in the WordPress toolbar menu. The \"%s\" parameter is replaced by the current user locale value (example: \"User Locale (%s)\")."
 msgstr "Le titre utilisé dans le menu de barre d'outils WordPress. Le paramètre \"%s\" est remplacé par la valeur actuel de la langue utilisateur (exemple: \"Langue utilisateur (%s)\")."
 
-#: lib/filters.php:79
+#: lib/filters.php:95
 msgid "Add the user locale selector to the front-end toolbar menu, and define current WordPress locale as the user locale value."
 msgstr "Ajouter le sélecteur de langue utilisateur dans le menu de barre d'outils d'avant, et définir la langue courante WordPress comme celle de la langue utilisateur."
 
-#: lib/locale.php:120
+#: lib/locale.php:123
 msgctxt "toolbar menu title"
 msgid "default"
 msgstr "défaut"
 
-#: lib/locale.php:164
+#: lib/locale.php:171
 msgctxt "toolbar menu item"
 msgid "Default Locale"
 msgstr "Langue par défaut"
@@ -51,45 +51,40 @@ msgctxt "metabox title"
 msgid "User Locale Settings"
 msgstr "Réglages langue utilisateur"
 
-#: lib/submenu/ul-general.php:48
+#: lib/submenu/ul-general.php:51
 msgctxt "option label"
 msgid "Toolbar Menu Icon"
 msgstr "Icône dans la barre d'outils"
 
-#: lib/submenu/ul-general.php:54
+#: lib/submenu/ul-general.php:57
 msgctxt "option label"
 msgid "Toolbar Menu Title"
 msgstr "Titre dans la barre d'outils"
 
-#: lib/submenu/ul-general.php:58
+#: lib/submenu/ul-general.php:61
 msgctxt "option label"
 msgid "Add User Locale on Front-End"
 msgstr "Ajouter langue utilisateur à l'avant"
 
-#: wpsso-user-locale.php:91
+#: wpsso-user-locale.php:97
 msgid "%1$s is an add-on for the %2$s plugin &mdash; please install and activate the %3$s plugin before activating %4$s."
 msgstr "%1$s est un ajout pour l'extension %2$s &mdash; SVP installer et activer l'extension %3$s avant d'activer %4$s."
 
-#: wpsso-user-locale.php:93
+#: wpsso-user-locale.php:99
 msgid "The %1$s add-on requires the %2$s plugin &mdash; install and activate the %3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr "L'ajout %1$s requiert l'extension %2$s &mdash; installer et activer l'extension %3$s ou <a href=\"%4$s\">désactiver l'ajout %5$s</a>."
 
-#: wpsso-user-locale.php:135
+#: wpsso-user-locale.php:139
 msgid "%1$s requires %2$s version %3$s or higher and has been deactivated."
 msgstr "%1$s nécessite %2$s version %3$s ou supérieure et a été désactivé."
 
-#: wpsso-user-locale.php:137
+#: wpsso-user-locale.php:141
 msgid "Please upgrade %1$s before trying to re-activate the %2$s plugin."
 msgstr "Veuillez mettre à jour %1$s avant d'essayer de réactiver l'extension %2$s."
 
-#: wpsso-user-locale.php:206
+#: wpsso-user-locale.php:216
 msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed)."
 msgstr "L'ajout %1$s version %2$s requiert %3$s version %4$s ou plus récente (version %5$s est actuellement installée)."
-
-#. translators: %s is the short plugin name
-#: wpsso-user-locale.php:218
-msgid "%s warning:"
-msgstr "Alerte %s:"
 
 #. Plugin Name of the plugin/theme
 msgid "WPSSO User Locale Selector"
@@ -110,3 +105,6 @@ msgstr "JS Morisset"
 #. Author URI of the plugin/theme
 msgid "https://wpsso.com/"
 msgstr "https://wpsso.com/"
+
+#~ msgid "%s warning:"
+#~ msgstr "Alerte %s:"
