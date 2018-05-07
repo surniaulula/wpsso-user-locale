@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.4
 Requires At Least: 3.8
 Tested Up To: 4.9.5
-Stable Tag: 1.2.2
+Stable Tag: 1.2.3
 
 WPSSO Core add-on to provide a user locale (language / region) drop-down menu in the WordPress admin back-end and front-end toolbar.
 
@@ -95,46 +95,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* Added support for a new WPSSO_TB_LOCALE_MENU_ORDER constant in WPSSO Core v4.2.0.
 
-**Version 1.2.2 (2018/04/05)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Renamed some WpssoUtil methods for Gutenberg changes in WPSSO v3.57.0.
-
-**Version 1.2.1 (2018/03/24)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* Renamed plugin "Extensions" to "Add-ons" to avoid confusion and improve / simplify translations.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
-**Version 1.2.0 (2018/02/24)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Refactored the WpssoUl `min_version_notice()` method to use PHP's `trigger_error()` and include a notice to refresh plugin update information.
-
 == Upgrade Notice ==
 
 = 1.2.3 =
 
 (2018/05/07) Added support for a new WPSSO_TB_LOCALE_MENU_ORDER constant in WPSSO Core v4.2.0.
-
-= 1.2.2 =
-
-(2018/04/05) Renamed some WpssoUtil methods for Gutenberg changes in WPSSO v3.57.0.
 
