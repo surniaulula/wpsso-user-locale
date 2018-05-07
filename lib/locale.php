@@ -32,7 +32,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 			if ( $is_admin || $on_front ) {
 
-				add_action( 'admin_bar_menu', array( __CLASS__, 'add_locale_toolbar' ), 55 );	// After the home toolbar menu item.
+				add_action( 'admin_bar_menu', array( __CLASS__, 'add_locale_toolbar' ), WPSSO_TB_LOCALE_MENU_ORDER );
 
 				if ( isset( $_GET['update-user-locale'] ) ) {	// New user locale value selected.
 					add_action( 'wp_loaded', array( __CLASS__, 'update_user_locale' ), -1000 );
