@@ -21,7 +21,7 @@
 
 <p>Allows logged-in users to change their preferred locale / language / region setting right from the toolbar menu, instead of having to modify their user profile settings.</p>
 
-<p>The default WordPress behavior is to apply the user locale preference <em>only</em> to the admin back-end &mdash; this plugin extends the user setting preference to the front-end webpage as well.</p>
+<p>The default behavior of WordPress is to apply the user locale preference <em>only</em> to the admin back-end &mdash; this plugin can extend the user setting preference to the front-end webpage as well.</p>
 
 <p>The front-end locale selector is optional, and can be enabled / disabled in the SSO &gt; User Locale settings page.</p>
 
