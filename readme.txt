@@ -33,6 +33,10 @@ The front-end locale selector is optional, and can be enabled / disabled in the 
 
 If the Polylang plugin is detected, the locale selector will automatically use the correct Polylang language URLs.
 
+<h3>WPSSO Core Plugin Prerequisite</h3>
+
+WPSSO User Locale Selector (aka WPSSO UL) is an add-on for the WPSSO Core plugin. The Free add-on works with either the Free or Pro versions of WPSSO Core.
+
 == Installation ==
 
 <h3>Install and Uninstall</h3>
