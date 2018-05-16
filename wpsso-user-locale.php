@@ -13,7 +13,7 @@
  * Description: WPSSO Core add-on to provide a convenient locale / language / region selector in the WordPress admin toolbar.
  * Requires PHP: 5.4
  * Requires At Least: 3.8
- * Tested Up To: 4.9.5
+ * Tested Up To: 4.9.6
  * Version: 1.2.3
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
