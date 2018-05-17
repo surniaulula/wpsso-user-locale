@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO User Locale Selector 1.2.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-user-locale\n"
-"POT-Creation-Date: 2018-05-10 10:42-0600\n"
-"PO-Revision-Date: 2018-05-10 10:42-0600\n"
+"POT-Creation-Date: 2018-05-14 12:36-0600\n"
+"PO-Revision-Date: 2018-05-14 12:36-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -21,8 +21,8 @@ msgstr "Langue utilisateur"
 
 #: lib/config-gettext-extract.php:4
 msgctxt "plugin description"
-msgid "WPSSO Core add-on to provide a user locale (language / region) drop-down menu in the WordPress admin back-end and front-end toolbar."
-msgstr "Extension d'ajout WPSSO Core pour fournir un sélecteur de langue / région pour les utilisateurs dans la barre d'outils WordPress d'avant et arrière."
+msgid "WPSSO Core add-on to provide a convenient locale / language / region selector in the WordPress admin toolbar."
+msgstr "Extension d'ajout WPSSO Core pour fournir un sélecteur pratique de langue / région dans la barre d'outils WordPress."
 
 #: lib/filters.php:83
 msgid "An icon to prefix the title string used in the WordPress toolbar menu (uses the \"translation\" icon by default). Select \"[None]\" to disable the toolbar menu icon."
@@ -95,8 +95,8 @@ msgid "https://wpsso.com/extend/plugins/wpsso-user-locale/"
 msgstr "https://wpsso.com/extend/plugins/wpsso-user-locale/"
 
 #. Description of the plugin/theme
-msgid "WPSSO Core add-on to provide a user locale (language / region) drop-down menu in the WordPress admin back-end and front-end toolbar."
-msgstr "Extension d'ajout WPSSO Core pour fournir un sélecteur de langue / région pour les utilisateurs dans la barre d'outils WordPress d'avant et arrière."
+msgid "WPSSO Core add-on to provide a convenient locale / language / region selector in the WordPress admin toolbar."
+msgstr "Extension d'ajout WPSSO Core pour fournir un sélecteur pratique de langue / région dans la barre d'outils WordPress."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"
