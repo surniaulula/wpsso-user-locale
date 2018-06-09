@@ -12,7 +12,7 @@
  * License URI: http://www.gnu.org/licenses/gpl.txt
  * Description: WPSSO Core add-on to provide a convenient locale / language / region selector in the WordPress admin toolbar.
  * Requires PHP: 5.4
- * Requires At Least: 3.8
+ * Requires At Least: 4.7
  * Tested Up To: 4.9.6
  * Version: 1.2.3
  *
@@ -48,7 +48,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 		private $have_req_min = true;	// Have minimum wpsso version.
 
 		private static $instance;
-		private static $wp_min_version = 4.7;
+		private static $wp_min_version = '4.7';
 
 		public function __construct() {
 
