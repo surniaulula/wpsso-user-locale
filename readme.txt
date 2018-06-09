@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/wpsso-user-locale/assets/
 Tags: user locale, user language, user region, locale, language, region, select, toolbar, menu, polylang
 Contributors: jsmoriss
 Requires PHP: 5.4
-Requires At Least: 3.8
+Requires At Least: 4.7
 Tested Up To: 4.9.6
 Stable Tag: 1.2.3
 
