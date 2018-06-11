@@ -17,7 +17,7 @@ WPSSO Core add-on to provide a convenient locale / language / region selector in
 
 == Description ==
 
-<img class="readme-icon" src="https://surniaulula.github.io/wpsso-user-locale/assets/icon-256x256.png">
+<p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-user-locale/assets/icon-256x256.png"></p>
 
 **Provides a convenient locale / language / region selector in the WordPress admin toolbar.**
 
