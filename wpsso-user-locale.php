@@ -65,6 +65,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 			}
 
 			add_filter( 'wpsso_get_config', array( $this, 'wpsso_get_config' ), 10, 2 );	// Checks core version and merges config array.
+			add_filter( 'wpsso_get_avail', array( $this, 'wpsso_get_avail' ), 10, 1 );
 
 			add_action( 'wpsso_init_textdomain', array( __CLASS__, 'wpsso_init_textdomain' ) );
 			add_action( 'wpsso_init_options', array( $this, 'wpsso_init_options' ), 10 );	// Sets the $this->p reference variable.
@@ -127,16 +128,25 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 		}
 
 		public static function check_wp_version() {
+
 			global $wp_version;
+
 			if ( version_compare( $wp_version, self::$wp_min_version, '<' ) ) {
+
 				$plugin = plugin_basename( __FILE__ );
+
 				if ( is_plugin_active( $plugin ) ) {
+
 					self::wpsso_init_textdomain();
+
 					if ( ! function_exists( 'deactivate_plugins' ) ) {
 						require_once trailingslashit( ABSPATH ) . 'wp-admin/includes/plugin.php';
 					}
+
 					$plugin_data = get_plugin_data( __FILE__, false );	// $markup is false
+
 					deactivate_plugins( $plugin, true );	// $silent is true
+
 					wp_die( 
 						'<p>' . sprintf( __( '%1$s requires %2$s version %3$s or higher and has been deactivated.',
 							'wpsso-user-locale' ), $plugin_data['Name'], 'WordPress', self::$wp_min_version ) . '</p>' . 
@@ -166,6 +176,18 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 			return SucomUtil::array_merge_recursive_distinct( $cf, WpssoUlConfig::$cf );
 		}
 
+		public function wpsso_get_avail( $avail ) {
+
+			if ( ! $this->have_req_min ) {
+				$avail['p_ext']['ul'] = false;	// Signal that this extension / add-on is not available.
+				return $avail;
+			}
+
+			$avail['p_ext']['ul'] = true;		// Signal that this extension / add-on is available.
+
+			return $avail;
+		}
+
 		/**
 		 * Sets the $this->p reference variable for the core plugin instance.
 		 */
@@ -176,13 +198,6 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
 			}
-
-			if ( ! $this->have_req_min ) {
-				$this->p->avail['p_ext']['ul'] = false;	// Signal that this extension / add-on is not available.
-				return;
-			}
-
-			$this->p->avail['p_ext']['ul'] = true;	// Signal that this extension / add-on is available.
 		}
 
 		public function wpsso_init_objects() {
@@ -214,12 +229,16 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 		private function min_version_notice() {
 
 			$info = WpssoUlConfig::$cf['plugin']['wpssoul'];
+
 			$have_version = $this->p->cf['plugin']['wpsso']['version'];
+
 			$error_msg = sprintf( __( 'The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed).',
 				'wpsso-user-locale' ), $info['name'], $info['version'], $info['req']['short'], $info['req']['min_version'], $have_version );
 
 			if ( is_admin() ) {
+
 				$this->p->notice->err( $error_msg );
+
 				if ( method_exists( $this->p->admin, 'get_check_for_updates_link' ) ) {
 					$this->p->notice->inf( $this->p->admin->get_check_for_updates_link() );
 				}

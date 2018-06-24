@@ -58,7 +58,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 
 		public static function set_constants( $plugin_filepath ) { 
 
-			if ( defined( 'WPSSOUL_VERSION' ) ) {			// execute and define constants only once
+			if ( defined( 'WPSSOUL_VERSION' ) ) {	// Define constants only once.
 				return;
 			}
 
