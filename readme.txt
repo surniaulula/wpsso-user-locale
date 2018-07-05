@@ -10,7 +10,7 @@ Tags: user locale, user language, user region, locale, language, region, select,
 Contributors: jsmoriss
 Requires PHP: 5.4
 Requires At Least: 4.7
-Tested Up To: 4.9.6
+Tested Up To: 4.9.7
 Stable Tag: 1.2.3
 
 WPSSO Core add-on to provide a convenient locale / language / region selector in the WordPress admin toolbar.
