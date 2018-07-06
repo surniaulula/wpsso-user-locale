@@ -1,5 +1,11 @@
-'wpsso_user_locale_front_end' ( $bool );
-'wpsso_user_locale_redirect_url' ( $url, $user_locale );
-'wpsso_user_locale_menu_dashicon' ( $dashicon_number, $menu_locale );
-'wpsso_user_locale_menu_title' ( $menu_title, $menu_locale );
-'wpsso_user_locale_menu_items' ( array $menu_items, $menu_locale );
+
+'wpsso_user_locale_front_end' ( $bool )
+
+'wpsso_user_locale_redirect_url' ( $url, $user_locale )
+
+'wpsso_user_locale_menu_dashicon' ( $dashicon_number, $menu_locale )
+
+'wpsso_user_locale_menu_title' ( $menu_title, $menu_locale )
+
+'wpsso_user_locale_menu_items' ( array $menu_items, $menu_locale )
+
