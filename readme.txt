@@ -52,7 +52,7 @@ WPSSO User Locale Selector (aka WPSSO UL) is an add-on for the [WPSSO Core Plugi
 
 <h3 class="top">Frequently Asked Questions</h3>
 
-* None
+* None.
 
 <h3>Documentation and Notes</h3>
 
@@ -89,11 +89,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 **Version 1.2.3 (2018/05/07)**
 
 * *New Features*
-	* None
+	* None.
 * *Improvements*
-	* None
+	* None.
 * *Bugfixes*
-	* None
+	* None.
 * *Developer Notes*
 	* Added support for a new WPSSO_TB_LOCALE_MENU_ORDER constant in WPSSO Core v4.2.0.
 
