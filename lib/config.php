@@ -16,24 +16,24 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoul' => array(			// Plugin acronym.
-					'version' => '1.2.3',		// Plugin version.
+					'version'     => '1.3.0-rc.1',	// Plugin version.
 					'opt_version' => '6',		// Increment when changing default option values.
-					'short' => 'WPSSO UL',		// Short plugin name.
-					'name' => 'WPSSO User Locale Selector',
-					'desc' => 'WPSSO Core add-on to provide a convenient locale / language / region selector in the WordPress admin toolbar.',
-					'slug' => 'wpsso-user-locale',
-					'base' => 'wpsso-user-locale/wpsso-user-locale.php',
+					'short'       => 'WPSSO UL',	// Short plugin name.
+					'name'        => 'WPSSO User Locale Selector',
+					'desc'        => 'WPSSO Core add-on to provide a convenient locale / language / region selector in the WordPress admin toolbar.',
+					'slug'        => 'wpsso-user-locale',
+					'base'        => 'wpsso-user-locale/wpsso-user-locale.php',
 					'update_auth' => '',
 					'text_domain' => 'wpsso-user-locale',
 					'domain_path' => '/languages',
 					'req' => array(
-						'short' => 'WPSSO Core',
-						'name' => 'WPSSO Core',
-						'min_version' => '4.7.0',
+						'short'       => 'WPSSO Core',
+						'name'        => 'WPSSO Core',
+						'min_version' => '4.9.0-rc.1',
 					),
 					'img' => array(
 						'icons' => array(
-							'low' => 'images/icon-128x128.png',
+							'low'  => 'images/icon-128x128.png',
 							'high' => 'images/icon-256x256.png',
 						),
 					),
