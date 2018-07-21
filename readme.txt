@@ -86,6 +86,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.3.0-rc.1 (2018/07/21)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* Maintenance release.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* None.
+
 **Version 1.2.3 (2018/05/07)**
 
 * *New Features*
@@ -98,6 +109,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added support for a new WPSSO_TB_LOCALE_MENU_ORDER constant in WPSSO Core v4.2.0.
 
 == Upgrade Notice ==
+
+= 1.3.0-rc.1 =
+
+(2018/07/21) Maintenance release.
 
 = 1.2.3 =
 
