@@ -38,8 +38,8 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 
 			if ( is_admin() ) {
 				$this->p->util->add_plugin_filters( $this, array( 
-					'option_type' => 2,			// define the value type for each option
-					'messages_tooltip' => 2,		// tooltip messages filter
+					'option_type'      => 2,	// define the value type for each option
+					'messages_tooltip' => 2,	// tooltip messages filter
 				) );
 			}
 		}
