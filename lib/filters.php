@@ -26,6 +26,7 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 		);
 
 		public function __construct( &$plugin ) {
+
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled ) {
