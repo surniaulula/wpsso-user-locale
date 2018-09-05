@@ -96,7 +96,11 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			}
 
 			$wpsso = Wpsso::get_instance();
-			$wpsso->notice->trunc();	// clear all notification messages
+
+			/**
+			 * Clear any old notices for the current user.
+			 */
+			$wpsso->notice->truncate();
 
 			wp_redirect( apply_filters( 'wpsso_user_locale_redirect_url', $url, $user_locale ) );
 
