@@ -46,6 +46,7 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 		}
 
 		public function filter_get_defaults( $def_opts ) {
+
 			$def_opts = array_merge( $def_opts, self::$cf['opt']['defaults'] );
 
 			return $def_opts;

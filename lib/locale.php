@@ -77,20 +77,26 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			 */
 			if ( ! is_admin() && function_exists( 'pll_the_languages' ) ) {
 
-				$pll_languages = pll_the_languages( array( 'echo' => 0, 'raw' => 1 ) );
+				$pll_languages  = pll_the_languages( array( 'echo' => 0, 'raw' => 1 ) );
 				$pll_def_locale = pll_default_language( 'locale' );
-				$pll_urls = array();	// associative array of locales and their url
+				$pll_urls       = array();	// associative array of locales and their url
 
 				foreach ( $pll_languages as $pll_lang ) {
+
 					if ( ! empty( $pll_lang['locale'] ) && ! empty( $pll_lang['url'] ) ) {
+
 						$pll_locale = str_replace( '-', '_', $pll_lang['locale'] );	// wp compatibility
+
 						$pll_urls[$pll_locale] = $pll_lang['url'];
 					}
 				}
 
 				if ( isset( $pll_urls[$user_locale] ) ) {
+
 					$url = $pll_urls[$user_locale];
+
 				} elseif ( isset( $pll_urls[$pll_def_locale] ) ) {
+
 					$url = $pll_urls[$pll_def_locale];
 				}
 			}
@@ -115,10 +121,11 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 			require_once trailingslashit( ABSPATH ).'wp-admin/includes/translation-install.php';
 
-			$wpsso = Wpsso::get_instance();
+			$wpsso =& Wpsso::get_instance();
+
 			$translations = wp_get_available_translations();	// since wp 4.0
-			$languages = array_merge( array( 'site-default' ), get_available_languages() );	// since wp 3.0
-			$user_locale = get_user_meta( $user_id, 'locale', true );
+			$languages    = array_merge( array( 'site-default' ), get_available_languages() );	// since wp 3.0
+			$user_locale  = get_user_meta( $user_id, 'locale', true );
 
 			if ( empty( $user_locale ) ) {
 				$user_locale = 'site-default';
@@ -151,12 +158,12 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			$menu_title = sprintf( $menu_title, $menu_locale );
 
 			$wp_admin_bar->add_node( array(	// Since wp 3.1
-				'id' => 'wpsso-user-locale',
-				'title' => $menu_icon . $menu_title,
+				'id'     => 'wpsso-user-locale',
+				'title'  => $menu_icon . $menu_title,
 				'parent' => false,
-				'href' => false,
-				'group' => false,
-				'meta' => array(),
+				'href'   => false,
+				'group'  => false,
+				'meta'   => array(),
 			) );
 
 			/**
@@ -179,17 +186,19 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				}
 
 				if ( $locale === $user_locale ) {
+
 					$native_name = '<strong>'.$native_name.'</strong>';
+
 					$meta['class'] = 'current_locale';
 				}
 
 				$menu_items[] = array(
-					'id' => 'wpsso-user-locale-'.$locale,
-					'title' => $native_name,
+					'id'     => 'wpsso-user-locale-'.$locale,
+					'title'  => $native_name,
 					'parent' => 'wpsso-user-locale',
-					'href' => add_query_arg( 'update-user-locale', rawurlencode( $locale ) ),
-					'group' => false,
-					'meta' => $meta,
+					'href'   => add_query_arg( 'update-user-locale', rawurlencode( $locale ) ),
+					'group'  => false,
+					'meta'   => $meta,
 				);
 			}
 

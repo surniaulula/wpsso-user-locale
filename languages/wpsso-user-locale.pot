@@ -25,31 +25,31 @@ msgid ""
 "selector in the WordPress admin toolbar."
 msgstr ""
 
-#: lib/filters.php:84
+#: lib/filters.php:85
 msgid ""
 "An icon to prefix the title string used in the WordPress toolbar menu (uses "
 "the \"translation\" icon by default). Select \"[None]\" to disable the "
 "toolbar menu icon."
 msgstr ""
 
-#: lib/filters.php:90
+#: lib/filters.php:91
 msgid ""
 "The title string used in the WordPress toolbar menu. The \"%s\" parameter is "
 "replaced by the current user locale value (example: \"User Locale (%s)\")."
 msgstr ""
 
-#: lib/filters.php:96
+#: lib/filters.php:97
 msgid ""
 "Add the user locale selector to the front-end toolbar menu, and define "
 "current WordPress locale as the user locale value."
 msgstr ""
 
-#: lib/locale.php:128
+#: lib/locale.php:135
 msgctxt "toolbar menu title"
 msgid "default"
 msgstr ""
 
-#: lib/locale.php:176
+#: lib/locale.php:183
 msgctxt "toolbar menu item"
 msgid "Default Locale"
 msgstr ""
