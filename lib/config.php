@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoul' => array(			// Plugin acronym.
-					'version'     => '1.3.1-rc.1',	// Plugin version.
+					'version'     => '1.3.1-rc.2',	// Plugin version.
 					'opt_version' => '6',		// Increment when changing default option values.
 					'short'       => 'WPSSO UL',	// Short plugin name.
 					'name'        => 'WPSSO User Locale Selector',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 					'req' => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '4.12.0-rc.1',
+						'min_version' => '4.12.0-rc.2',
 					),
 					'img' => array(
 						'icons' => array(
@@ -62,12 +62,12 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 				return;
 			}
 
-			define( 'WPSSOUL_VERSION', self::$cf['plugin']['wpssoul']['version'] );						
 			define( 'WPSSOUL_FILEPATH', $plugin_filepath );						
+			define( 'WPSSOUL_PLUGINBASE', self::$cf['plugin']['wpssoul']['base'] );		// wpsso-user-locale/wpsso-user-locale.php
 			define( 'WPSSOUL_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
 			define( 'WPSSOUL_PLUGINSLUG', self::$cf['plugin']['wpssoul']['slug'] );		// wpsso-user-locale
-			define( 'WPSSOUL_PLUGINBASE', self::$cf['plugin']['wpssoul']['base'] );		// wpsso-user-locale/wpsso-user-locale.php
 			define( 'WPSSOUL_URLPATH', trailingslashit( plugins_url( '', $plugin_filepath ) ) );
+			define( 'WPSSOUL_VERSION', self::$cf['plugin']['wpssoul']['version'] );						
 		}
 
 		public static function require_libs( $plugin_filepath ) {
