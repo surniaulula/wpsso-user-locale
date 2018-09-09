@@ -3,7 +3,7 @@
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO User Locale Selector</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO Core add-on to provide a convenient locale / language / region selector in the WordPress admin toolbar.</td></tr>
-<tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.3.0</td></tr>
+<tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.3.1</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 4.7</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.9.8</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
