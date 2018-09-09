@@ -86,7 +86,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.3.1-rc.3 (2018/09/07)**
+**Version 1.3.1-rc.3 (2018/09/09)**
 
 * *New Features*
 	* None.
@@ -112,7 +112,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.3.1-rc.3 =
 
-(2018/09/07) Renamed an SucomNotice method for WPSSO Core v4.12.0.
+(2018/09/09) Renamed an SucomNotice method for WPSSO Core v4.12.0.
 
 = 1.3.0 =
 
