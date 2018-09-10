@@ -106,7 +106,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			/**
 			 * Clear any old notices for the current user.
 			 */
-			$wpsso->notice->truncate();
+			$wpsso->notice->clear();
 
 			wp_redirect( apply_filters( 'wpsso_user_locale_redirect_url', $url, $user_locale ) );
 
