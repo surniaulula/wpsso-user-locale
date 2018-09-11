@@ -119,7 +119,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				return;
 			}
 
-			require_once trailingslashit( ABSPATH ).'wp-admin/includes/translation-install.php';
+			require_once trailingslashit( ABSPATH ) . 'wp-admin/includes/translation-install.php';
 
 			$wpsso =& Wpsso::get_instance();
 
@@ -145,7 +145,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				$dashicons = SucomUtil::get_dashicons();	// Get the raw / unsorted dashicons array.
 
 				if ( isset( $dashicons[$dashicon] ) ) {		// Just in case.
-					$menu_icon = '<span class="ab-icon dashicons-'.$dashicons[$dashicon].'"></span>';
+					$menu_icon = '<span class="ab-icon dashicons-' . $dashicons[$dashicon] . '"></span>';
 				} else {
 					$menu_icon = '';
 				}
@@ -187,13 +187,13 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 				if ( $locale === $user_locale ) {
 
-					$native_name = '<strong>'.$native_name.'</strong>';
+					$native_name = '<strong>' . $native_name . '</strong>';
 
 					$meta['class'] = 'current_locale';
 				}
 
 				$menu_items[] = array(
-					'id'     => 'wpsso-user-locale-'.$locale,
+					'id'     => 'wpsso-user-locale-' . $locale,
 					'title'  => $native_name,
 					'parent' => 'wpsso-user-locale',
 					'href'   => add_query_arg( 'update-user-locale', rawurlencode( $locale ) ),
