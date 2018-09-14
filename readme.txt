@@ -86,7 +86,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.3.2-dev.5 (2018/09/13)**
+**Version 1.3.2-dev.6 (2018/09/14)**
 
 * *New Features*
 	* None.
@@ -108,22 +108,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* Renamed an SucomNotice method for WPSSO Core v4.12.0.
 
-**Version 1.2.3 (2018/05/07)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* None.
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* Added support for a new WPSSO_TB_LOCALE_MENU_ORDER constant in WPSSO Core v4.2.0.
-
 == Upgrade Notice ==
 
-= 1.3.2-dev.5 =
+= 1.3.2-dev.6 =
 
-(2018/09/13) Renamed an SucomNotice method for WPSSO Core v4.12.1.
+(2018/09/14) Renamed an SucomNotice method for WPSSO Core v4.12.1.
 
 = 1.3.1 =
 
