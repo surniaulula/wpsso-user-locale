@@ -86,7 +86,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.3.2-dev.6 (2018/09/14)**
+**Version 1.3.2-dev.7 (2018/09/14)**
 
 * *New Features*
 	* None.
@@ -110,7 +110,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.3.2-dev.6 =
+= 1.3.2-dev.7 =
 
 (2018/09/14) Renamed an SucomNotice method for WPSSO Core v4.12.1.
 
