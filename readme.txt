@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.4
 Requires At Least: 4.7
 Tested Up To: 4.9.8
-Stable Tag: 1.3.1
+Stable Tag: 1.3.2
 
 WPSSO Core add-on to provide a convenient locale / language / region selector in the WordPress admin toolbar.
 
