@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO User Locale Selector 1.3.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-user-locale\n"
-"POT-Creation-Date: 2018-09-07 08:45-0600\n"
-"PO-Revision-Date: 2018-09-10 09:07-0600\n"
+"POT-Creation-Date: 2018-09-15 21:10-0600\n"
+"PO-Revision-Date: 2018-09-15 21:10-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -24,24 +24,24 @@ msgctxt "plugin description"
 msgid "WPSSO Core add-on to provide a convenient locale / language / region selector in the WordPress admin toolbar."
 msgstr "Extension d'ajout WPSSO Core pour fournir un sélecteur pratique de langue / région dans la barre d'outils WordPress."
 
-#: lib/filters.php:84
+#: lib/filters.php:85
 msgid "An icon to prefix the title string used in the WordPress toolbar menu (uses the \"translation\" icon by default). Select \"[None]\" to disable the toolbar menu icon."
 msgstr "Un icône devant le titre utilisé dans le menu de barre d'outils WordPress (utilise l'icône de \"traduction\" par défaut). Sélectionnez \"[Aucun]\" pour désactiver l'utilisation d'un icône dans de menu de barre d'outils."
 
-#: lib/filters.php:90
+#: lib/filters.php:91
 msgid "The title string used in the WordPress toolbar menu. The \"%s\" parameter is replaced by the current user locale value (example: \"User Locale (%s)\")."
 msgstr "Le titre utilisé dans le menu de barre d'outils WordPress. Le paramètre \"%s\" est remplacé par la valeur actuel de la langue utilisateur (exemple: \"Langue utilisateur (%s)\")."
 
-#: lib/filters.php:96
+#: lib/filters.php:97
 msgid "Add the user locale selector to the front-end toolbar menu, and define current WordPress locale as the user locale value."
 msgstr "Ajouter le sélecteur de langue utilisateur dans le menu de barre d'outils d'avant, et définir la langue courante WordPress comme celle de la langue utilisateur."
 
-#: lib/locale.php:128
+#: lib/locale.php:135
 msgctxt "toolbar menu title"
 msgid "default"
 msgstr "défaut"
 
-#: lib/locale.php:176
+#: lib/locale.php:183
 msgctxt "toolbar menu item"
 msgid "Default Locale"
 msgstr "Langue par défaut"
