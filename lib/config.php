@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 					'req' => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '4.14.1',
+						'min_version' => '4.15.0',
 					),
 					'img' => array(
 						'icons' => array(
@@ -51,9 +51,11 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 		);
 
 		public static function get_version( $add_slug = false ) {
-			$ext = 'wpssoul';
+
+			$ext  = 'wpssoul';
 			$info =& self::$cf['plugin'][$ext];
-			return $add_slug ? $info['slug'].'-'.$info['version'] : $info['version'];
+
+			return $add_slug ? $info['slug'] . '-' . $info['version'] : $info['version'];
 		}
 
 		public static function set_constants( $plugin_filepath ) { 
@@ -72,25 +74,31 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 
 		public static function require_libs( $plugin_filepath ) {
 
-			require_once WPSSOUL_PLUGINDIR.'lib/register.php';
-			require_once WPSSOUL_PLUGINDIR.'lib/filters.php';
-			require_once WPSSOUL_PLUGINDIR.'lib/locale.php';
+			require_once WPSSOUL_PLUGINDIR . 'lib/register.php';
+			require_once WPSSOUL_PLUGINDIR . 'lib/filters.php';
+			require_once WPSSOUL_PLUGINDIR . 'lib/locale.php';
 
 			add_filter( 'wpssoul_load_lib', array( 'WpssoUlConfig', 'load_lib' ), 10, 3 );
 		}
 
 		public static function load_lib( $ret = false, $filespec = '', $classname = '' ) {
+
 			if ( false === $ret && ! empty( $filespec ) ) {
-				$filepath = WPSSOUL_PLUGINDIR.'lib/'.$filespec.'.php';
+
+				$filepath = WPSSOUL_PLUGINDIR . 'lib/' . $filespec . '.php';
+
 				if ( file_exists( $filepath ) ) {
+
 					require_once $filepath;
+
 					if ( empty( $classname ) ) {
-						return SucomUtil::sanitize_classname( 'wpssoul'.$filespec, false );	// $underscore = false
+						return SucomUtil::sanitize_classname( 'wpssoul' . $filespec, $allow_underscore = false );
 					} else {
 						return $classname;
 					}
 				}
 			}
+
 			return $ret;
 		}
 	}
