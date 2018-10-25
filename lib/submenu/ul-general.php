@@ -27,9 +27,12 @@ if ( ! class_exists( 'WpssoUlSubmenuUlGeneral' ) && class_exists( 'WpssoAdmin' )
 			$this->menu_ext = $ext;
 		}
 
-		// called by the extended WpssoAdmin class
+		/**
+		 * Called by the extended WpssoAdmin class.
+		 */
 		protected function add_meta_boxes() {
-			add_meta_box( $this->pagehook.'_user_locale', 
+
+			add_meta_box( $this->pagehook . '_user_locale', 
 				_x( 'User Locale Settings', 'metabox title', 'wpsso-user-locale' ),
 					array( $this, 'show_metabox_user_locale' ), $this->pagehook, 'normal' );
 		}
