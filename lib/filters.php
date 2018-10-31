@@ -72,13 +72,13 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 			return $type;
 		}
 
-		public function filter_messages_tooltip( $text, $idx ) {
+		public function filter_messages_tooltip( $text, $msg_key ) {
 
-			if ( strpos( $idx, 'tooltip-ul_' ) !== 0 ) {
+			if ( strpos( $msg_key, 'tooltip-ul_' ) !== 0 ) {
 				return $text;
 			}
 
-			switch ( $idx ) {
+			switch ( $msg_key ) {
 
 				case 'tooltip-ul_menu_icon':	// Toolbar Menu Icon
 
