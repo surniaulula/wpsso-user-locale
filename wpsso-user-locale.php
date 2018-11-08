@@ -35,12 +35,16 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 	class WpssoUl {
 
 		/**
-		 * Class Object Variables
+		 * Wpsso plugin class object variable.
 		 */
 		public $p;		// Wpsso
-		public $reg;		// WpssoUlRegister
+
+		/**
+		 * Library class object variables.
+		 */
 		public $filters;	// WpssoUlFilters
 		public $locale;		// WpssoUlLocale
+		public $reg;		// WpssoUlRegister
 
 		/**
 		 * Reference Variables (config, options, modules, etc.).
