@@ -189,7 +189,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 					$native_name = '<strong>' . $native_name . '</strong>';
 
-					$meta['class'] = 'current_locale';
+					$meta[ 'class' ] = 'current_locale';
 				}
 
 				$menu_items[] = array(
