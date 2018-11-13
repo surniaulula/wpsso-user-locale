@@ -97,7 +97,7 @@ if ( ! class_exists( 'WpssoUlRegister' ) ) {
 
 		private function activate_plugin() {
 
-			$version = WpssoUlConfig::$cf[ 'plugin' ]['wpssoul'][ 'version' ];	// only our config
+			$version = WpssoUlConfig::$cf[ 'plugin' ][ 'wpssoul' ][ 'version' ];	// only our config
 
 			if ( class_exists( 'WpssoUtil' ) ) {
 				WpssoUtil::save_all_times( 'wpssoul', $version );
