@@ -44,12 +44,12 @@ msgid ""
 "current WordPress locale as the user locale value."
 msgstr ""
 
-#: lib/locale.php:135
+#: lib/locale.php:137
 msgctxt "toolbar menu title"
 msgid "default"
 msgstr ""
 
-#: lib/locale.php:183
+#: lib/locale.php:185
 msgctxt "toolbar menu item"
 msgid "Default Locale"
 msgstr ""
