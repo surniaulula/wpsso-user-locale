@@ -97,21 +97,24 @@ if ( ! class_exists( 'WpssoUlRegister' ) ) {
 
 		private function activate_plugin() {
 
-			$version = WpssoUlConfig::$cf[ 'plugin' ][ 'wpssoul' ][ 'version' ];	// only our config
+			if ( class_exists( 'Wpsso' ) ) {
 
-			if ( class_exists( 'WpssoUtil' ) ) {
-				WpssoUtil::save_all_times( 'wpssoul', $version );
+				if ( class_exists( 'WpssoUtil' ) ) {	// Just in case.
+
+					$version = WpssoUlConfig::$cf[ 'plugin' ][ 'wpssoul' ][ 'version' ];
+
+					WpssoUtil::save_all_times( 'wpssoul', $version );
+				}
+
 			} else {
-				WpssoUl::required_notice( true );			// $deactivate = true
+				WpssoUl::required_notice( $deactivate = true );
 			}
 		}
 
 		private function deactivate_plugin() {
-			// nothing to do
 		}
 
 		private static function uninstall_plugin() {
-			// nothing to do
 		}
 	}
 }
