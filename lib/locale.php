@@ -156,6 +156,11 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			}
 
 			$menu_title = SucomUtil::get_key_value( 'ul_menu_title', $wpsso->options );
+
+			if ( empty( $menu_title ) ) {	// Just in case.
+				$menu_title = '%s';
+			}
+
 			$menu_title = apply_filters( 'wpsso_user_locale_menu_title', $menu_title, $menu_locale );
 			$menu_title = sprintf( $menu_title, $menu_locale );
 

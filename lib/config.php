@@ -16,8 +16,8 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoul' => array(			// Plugin acronym.
-					'version'     => '1.3.2',	// Plugin version.
-					'opt_version' => '6',		// Increment when changing default option values.
+					'version'     => '1.4.0-b.1',	// Plugin version.
+					'opt_version' => '7',		// Increment when changing default option values.
 					'short'       => 'WPSSO UL',	// Short plugin name.
 					'name'        => 'WPSSO User Locale Selector',
 					'desc'        => 'WPSSO Core add-on to provide a convenient locale / language / region selector in the WordPress admin toolbar.',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 					'req' => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '4.17.3.1',
+						'min_version' => '4.18.0-b.1',
 					),
 					'img' => array(
 						'icons' => array(
@@ -46,6 +46,13 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 						'pro' => array(
 						),
 					),
+				),
+			),
+			'opt' => array(				// options
+				'defaults' => array(
+					'ul_menu_icon'  => 326,		// Toolbar Menu Icon (dashicons-translation)
+					'ul_menu_title' => '%s',	// Toolbar Menu Title
+					'ul_front_end'  => 1,		// Add User Locale on Front-End
 				),
 			),
 		);

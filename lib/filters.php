@@ -15,16 +15,6 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 
 		protected $p;
 
-		public static $cf = array(
-			'opt' => array(				// options
-				'defaults' => array(
-					'ul_menu_icon' => 326,		// Toolbar Menu Icon (dashicons-translation)
-					'ul_menu_title' => '%s',	// Toolbar Menu Title
-					'ul_front_end' => 1,		// Add User Locale on Front-End
-				),
-			),
-		);
-
 		public function __construct( &$plugin ) {
 
 			$this->p =& $plugin;
@@ -33,23 +23,12 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 				$this->p->debug->mark();
 			}
 
-			$this->p->util->add_plugin_filters( $this, array( 
-				'get_defaults' => 1,			// option defaults
-			) );
-
 			if ( is_admin() ) {
 				$this->p->util->add_plugin_filters( $this, array( 
 					'option_type'      => 2,	// define the value type for each option
 					'messages_tooltip' => 2,	// tooltip messages filter
 				) );
 			}
-		}
-
-		public function filter_get_defaults( $def_opts ) {
-
-			$def_opts = array_merge( $def_opts, self::$cf['opt']['defaults'] );
-
-			return $def_opts;
 		}
 
 		public function filter_option_type( $type, $base_key ) {

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO User Locale Selector package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO User Locale Selector 1.3.2\n"
+"Project-Id-Version: WPSSO User Locale Selector 1.4.0-b.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-user-"
 "locale\n"
 "POT-Creation-Date: 2018-MO-DA HO:MI+ZONE\n"
@@ -25,20 +25,20 @@ msgid ""
 "selector in the WordPress admin toolbar."
 msgstr ""
 
-#: lib/filters.php:85
+#: lib/filters.php:64
 msgid ""
 "An icon to prefix the title string used in the WordPress toolbar menu (uses "
 "the \"translation\" icon by default). Select \"[None]\" to disable the "
 "toolbar menu icon."
 msgstr ""
 
-#: lib/filters.php:91
+#: lib/filters.php:70
 msgid ""
 "The title string used in the WordPress toolbar menu. The \"%s\" parameter is "
 "replaced by the current user locale value (example: \"User Locale (%s)\")."
 msgstr ""
 
-#: lib/filters.php:97
+#: lib/filters.php:76
 msgid ""
 "Add the user locale selector to the front-end toolbar menu, and define "
 "current WordPress locale as the user locale value."
@@ -49,7 +49,7 @@ msgctxt "toolbar menu title"
 msgid "default"
 msgstr ""
 
-#: lib/locale.php:185
+#: lib/locale.php:190
 msgctxt "toolbar menu item"
 msgid "Default Locale"
 msgstr ""
