@@ -86,7 +86,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.4.0-rc.1 (2018/12/14)**
+**Version 1.4.0-rc.2 (2018/12/14)**
 
 * *New Features*
 	* None.
@@ -110,7 +110,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.4.0-rc.1 =
+= 1.4.0-rc.2 =
 
 (2018/12/14) Added a sanitation test to avoid empty menu title values.
 
