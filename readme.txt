@@ -86,7 +86,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.4.0-rc.2 (2018/12/14)**
+**Version 1.4.0 (2018/12/14)**
 
 * *New Features*
 	* None.
@@ -97,24 +97,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* None.
 
-**Version 1.3.2 (2018/09/16)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* None.
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* Renamed an SucomNotice method for WPSSO Core v4.13.0.
-
 == Upgrade Notice ==
 
-= 1.4.0-rc.2 =
+= 1.4.0 =
 
 (2018/12/14) Added a sanitation test to avoid empty menu title values.
-
-= 1.3.2 =
-
-(2018/09/16) Renamed an SucomNotice method for WPSSO Core v4.13.0.
 
