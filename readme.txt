@@ -13,7 +13,7 @@ Requires At Least: 4.7
 Tested Up To: 5.0
 Stable Tag: 1.4.0
 
-WPSSO Core add-on to provide a convenient locale / language / region selector in the WordPress admin toolbar.
+WPSSO Core add-on provides a convenient locale / language / region selector in the WordPress admin toolbar.
 
 == Description ==
 
