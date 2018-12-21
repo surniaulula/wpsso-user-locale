@@ -10,7 +10,7 @@
  * Author URI: https://wpsso.com/
  * License: GPLv3
  * License URI: http://www.gnu.org/licenses/gpl.txt
- * Description: WPSSO Core add-on to provide a convenient locale / language / region selector in the WordPress admin toolbar.
+ * Description: WPSSO Core add-on provides a convenient locale / language / region selector in the WordPress admin toolbar.
  * Requires PHP: 5.4
  * Requires At Least: 4.7
  * Tested Up To: 5.0
