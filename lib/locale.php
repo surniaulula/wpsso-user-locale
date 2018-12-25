@@ -125,8 +125,8 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 			$wpsso =& Wpsso::get_instance();
 
-			$translations = wp_get_available_translations();	// Since WP 4.0.
-			$languages    = array_merge( array( 'site-default' ), get_available_languages() );	// Since wp 3.0.
+			$translations = wp_get_available_translations();	// Since WP v4.0.
+			$languages    = array_merge( array( 'site-default' ), get_available_languages() );	// Since WP v3.0.
 			$user_locale  = get_user_meta( $user_id, 'locale', true );
 
 			if ( empty( $user_locale ) ) {
@@ -151,6 +151,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				} else {
 					$menu_icon = '';
 				}
+
 			} else {
 				$menu_icon = '';
 			}
@@ -164,7 +165,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			$menu_title = apply_filters( 'wpsso_user_locale_menu_title', $menu_title, $menu_locale );
 			$menu_title = sprintf( $menu_title, $menu_locale );
 
-			$wp_admin_bar->add_node( array(	// Since WP 3.1.
+			$wp_admin_bar->add_node( array(	// Since WP v3.1.
 				'id'     => 'wpsso-user-locale',
 				'title'  => $menu_icon . $menu_title,
 				'parent' => false,
@@ -183,11 +184,17 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				$meta = array();
 
 				if ( isset( $translations[ $locale ][ 'native_name' ] ) ) {
+
 					$native_name = $translations[ $locale ][ 'native_name' ];
+
 				} elseif ( $locale === 'en_US' ) {
+
 					$native_name = 'English (United States)';
+
 				} elseif ( $locale === 'site-default' ) {
+
 					$native_name = _x( 'Default Locale', 'toolbar menu item', 'wpsso-user-locale' );
+
 				} else {
 					$native_name = $locale;
 				}

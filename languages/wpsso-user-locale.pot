@@ -49,7 +49,7 @@ msgctxt "toolbar menu title"
 msgid "default"
 msgstr ""
 
-#: lib/locale.php:190
+#: lib/locale.php:196
 msgctxt "toolbar menu item"
 msgid "Default Locale"
 msgstr ""
