@@ -86,6 +86,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.4.1 (2019/01/31)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* Maintenance release for WPSSO Core v4.22.0.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* Updated the required minimum PHP version from 5.4 to 5.5.
+
 **Version 1.4.0 (2018/12/14)**
 
 * *New Features*
@@ -99,7 +110,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.4.0 =
+= 1.4.1 =
 
-(2018/12/14) Added a sanitation test to avoid empty menu title values.
+(2019/01/31) Maintenance release for WPSSO Core v4.22.0.
 
