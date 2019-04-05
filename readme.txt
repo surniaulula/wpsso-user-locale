@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/wpsso-user-locale/assets/
 Tags: user locale, user language, user region, locale, language, region, select, toolbar, menu, polylang
 Contributors: jsmoriss
 Requires At Least: 4.7
-Tested Up To: 5.1
+Tested Up To: 5.1.1
 Stable Tag: 1.4.1
 
 WPSSO Core add-on provides a convenient locale / language / region selector in the WordPress admin toolbar.
