@@ -38,12 +38,12 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 						),
 					),
 					'lib' => array(
-						'submenu' => array(	// Note that submenu elements must have unique keys.
-							'ul-general' => 'User Locale',
-						),
 						'gpl' => array(
 						),
 						'pro' => array(
+						),
+						'submenu' => array(	// Note that submenu elements must have unique keys.
+							'ul-general' => 'User Locale',
 						),
 					),
 				),
