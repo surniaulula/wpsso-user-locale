@@ -42,7 +42,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 						),
 						'pro' => array(
 						),
-						'submenu' => array(	// Note that submenu elements must have unique keys.
+						'submenu' => array(
 							'ul-general' => 'User Locale',
 						),
 					),
