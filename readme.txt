@@ -85,7 +85,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.0.0-dev.3 (2019/06/20)**
+**Version 2.0.0-dev.4 (2019/06/20)**
 
 * *New Features*
 	* None.
@@ -109,7 +109,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.0.0-dev.3 =
+= 2.0.0-dev.4 =
 
 (2019/06/20) Maintenance release for WPSSO Core v5.0.0.
 
