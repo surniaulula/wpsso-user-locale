@@ -38,7 +38,7 @@ If the Polylang plugin is detected, the locale selector will automatically use t
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO User Locale Selector (aka WPSSO UL) is an add-on for the [WPSSO Core Plugin](https://wordpress.org/plugins/wpsso/) (Free or Pro version).
+WPSSO User Locale Selector (aka WPSSO UL) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/) (Standard or Premium version).
 
 == Installation ==
 
