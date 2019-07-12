@@ -13,7 +13,7 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 
 	class WpssoUlFilters {
 
-		protected $p;
+		private $p;
 
 		public function __construct( &$plugin ) {
 
