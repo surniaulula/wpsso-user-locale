@@ -1,4 +1,4 @@
-<h1>WPSSO User Locale Selector for the Admin Toolbar</h1>
+<h1>WPSSO User Locale Selector</h1>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO User Locale Selector</td></tr>
