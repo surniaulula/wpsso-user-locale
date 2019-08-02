@@ -1,4 +1,4 @@
-=== WPSSO User Locale Selector ===
+=== User Locale Selector | WPSSO Add-on ===
 Plugin Name: WPSSO User Locale Selector
 Plugin Slug: wpsso-user-locale
 Text Domain: wpsso-user-locale
@@ -12,7 +12,7 @@ Requires At Least: 4.7
 Tested Up To: 5.2.2
 Stable Tag: 2.0.0
 
-WPSSO Core add-on provides a convenient locale / language / region selector in the WordPress admin toolbar.
+Quick and easy locale / language / region selector for the WordPress admin toolbar.
 
 == Description ==
 
