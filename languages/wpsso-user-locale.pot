@@ -40,8 +40,8 @@ msgstr ""
 #: lib/gettext-config.php:7
 msgctxt "plugin description"
 msgid ""
-"WPSSO Core add-on provides a convenient locale / language / region selector "
-"in the WordPress admin toolbar."
+"Quick and easy locale / language / region selector for the WordPress admin "
+"toolbar."
 msgstr ""
 
 #: lib/locale.php:137
