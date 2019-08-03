@@ -110,8 +110,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"WPSSO Core add-on provides a convenient locale / language / region selector "
-"in the WordPress admin toolbar."
+"Quick and easy locale / language / region selector for the WordPress admin "
+"toolbar."
 msgstr ""
 
 #. Author of the plugin/theme
