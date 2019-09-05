@@ -12,7 +12,7 @@
  * License URI: http://www.gnu.org/licenses/gpl.txt
  * Description: Quick and easy locale / language / region selector for the WordPress admin toolbar.
  * Requires At Least: 4.7
- * Tested Up To: 5.2.2
+ * Tested Up To: 5.2.3
  * Version: 2.0.1
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
@@ -92,6 +92,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 		}
 
 		public static function required_check() {
+
 			if ( ! class_exists( 'Wpsso' ) ) {
 				add_action( 'all_admin_notices', array( __CLASS__, 'required_notice' ) );
 			}
@@ -116,7 +117,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 					require_once trailingslashit( ABSPATH ) . 'wp-admin/includes/plugin.php';
 				}
 
-				deactivate_plugins( $info[ 'base' ], true );	// $silent is true
+				deactivate_plugins( $info[ 'base' ], $silent = true );
 
 				wp_die( '<p>' . sprintf( $die_msg, $info[ 'name' ], $info[ 'req' ][ 'name' ], $info[ 'req' ][ 'short' ], $info[ 'short' ] ) . '</p>' );
 
@@ -152,7 +153,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 						require_once trailingslashit( ABSPATH ) . 'wp-admin/includes/plugin.php';
 					}
 
-					$plugin_data = get_plugin_data( __FILE__, false );	// $markup is false
+					$plugin_data = get_plugin_data( __FILE__, $markup = false );
 
 					deactivate_plugins( $plugin, true );	// $silent is true
 
