@@ -105,9 +105,6 @@ if ( ! class_exists( 'WpssoUlRegister' ) ) {
 
 					WpssoUtil::save_all_times( 'wpssoul', $version );
 				}
-
-			} else {
-				WpssoUl::required_notice( $deactivate = true );
 			}
 		}
 
