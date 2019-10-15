@@ -165,7 +165,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			$menu_title = apply_filters( 'wpsso_user_locale_menu_title', $menu_title, $menu_locale );
 			$menu_title = sprintf( $menu_title, $menu_locale );
 
-			$wp_admin_bar->add_node( array(	// Since WP v3.1.
+			$wp_admin_bar->add_node( array(
 				'id'     => 'wpsso-user-locale',
 				'title'  => $menu_icon . $menu_title,
 				'parent' => false,
