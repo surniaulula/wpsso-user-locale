@@ -59,8 +59,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 
 		public static function get_version( $add_slug = false ) {
 
-			$ext  = 'wpssoul';
-			$info =& self::$cf[ 'plugin' ][$ext];
+			$info =& self::$cf[ 'plugin' ][ 'wpssoul' ];
 
 			return $add_slug ? $info[ 'slug' ] . '-' . $info[ 'version' ] : $info[ 'version' ];
 		}
@@ -71,12 +70,17 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 				return;
 			}
 
+			$info =& self::$cf[ 'plugin' ][ 'wpssoul' ];
+
+			/**
+			 * Define fixed constants.
+			 */
 			define( 'WPSSOUL_FILEPATH', $plugin_filepath );						
-			define( 'WPSSOUL_PLUGINBASE', self::$cf[ 'plugin' ][ 'wpssoul' ][ 'base' ] );		// wpsso-user-locale/wpsso-user-locale.php
+			define( 'WPSSOUL_PLUGINBASE', $info[ 'base' ] );	// Example: wpsso-user-locale/wpsso-user-locale.php.
 			define( 'WPSSOUL_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
-			define( 'WPSSOUL_PLUGINSLUG', self::$cf[ 'plugin' ][ 'wpssoul' ][ 'slug' ] );		// wpsso-user-locale
+			define( 'WPSSOUL_PLUGINSLUG', $info[ 'slug' ] );	// Example: wpsso-user-locale.
 			define( 'WPSSOUL_URLPATH', trailingslashit( plugins_url( '', $plugin_filepath ) ) );
-			define( 'WPSSOUL_VERSION', self::$cf[ 'plugin' ][ 'wpssoul' ][ 'version' ] );						
+			define( 'WPSSOUL_VERSION', $info[ 'version' ] );						
 		}
 
 		public static function require_libs( $plugin_filepath ) {
