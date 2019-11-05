@@ -85,9 +85,9 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 
 		public static function require_libs( $plugin_filepath ) {
 
-			require_once WPSSOUL_PLUGINDIR . 'lib/register.php';
 			require_once WPSSOUL_PLUGINDIR . 'lib/filters.php';
 			require_once WPSSOUL_PLUGINDIR . 'lib/locale.php';
+			require_once WPSSOUL_PLUGINDIR . 'lib/register.php';
 
 			add_filter( 'wpssoul_load_lib', array( 'WpssoUlConfig', 'load_lib' ), 10, 3 );
 		}
