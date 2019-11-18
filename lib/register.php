@@ -103,7 +103,7 @@ if ( ! class_exists( 'WpssoUlRegister' ) ) {
 
 					$version = WpssoUlConfig::$cf[ 'plugin' ][ 'wpssoul' ][ 'version' ];
 
-					WpssoUtil::save_all_times( 'wpssoul', $version );
+					WpssoUtil::register_ext_version( 'wpssoul', $version );
 				}
 			}
 		}
