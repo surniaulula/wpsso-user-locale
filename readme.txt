@@ -10,7 +10,7 @@ Tags: user locale, user language, user region, locale, language, region, select,
 Contributors: jsmoriss
 Requires At Least: 4.7
 Tested Up To: 5.3
-Stable Tag: 2.0.2
+Stable Tag: 2.0.3
 
 Quick and easy locale / language / region selector for the WordPress admin toolbar.
 
@@ -96,24 +96,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* Updated `WpssoUlRegister->activate_plugin()` for the new WpssoUtilReg class in WPSSO Core v6.13.0.
 
-**Version 2.0.2 (2019/10/04)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Maintenance release for WPSSO Core v6.7.0.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-
 == Upgrade Notice ==
 
 = 2.0.3 =
 
 (2019/11/23) Update for the new WpssoUtilReg class in WPSSO Core v6.13.0.
-
-= 2.0.2 =
-
-(2019/10/04) Maintenance release for WPSSO Core v6.7.0.
 
