@@ -94,11 +94,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* Updated `WpssoUlRegister->activate_plugin()` for the new WpssoUtilReg class in WPSSO Core v6.13.0.
+	* Updated `WpssoUlRegister->activate_plugin()` for the new WpssoUtilReg class in WPSSO Core v6.13.1.
 
 == Upgrade Notice ==
 
 = 2.0.3 =
 
-(2019/11/23) Update for the new WpssoUtilReg class in WPSSO Core v6.13.0.
+(2019/11/23) Update for the new WpssoUtilReg class in WPSSO Core v6.13.1.
 
