@@ -64,7 +64,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 			return $add_slug ? $info[ 'slug' ] . '-' . $info[ 'version' ] : $info[ 'version' ];
 		}
 
-		public static function set_constants( $plugin_filepath ) { 
+		public static function set_constants( $plugin_file_path ) { 
 
 			if ( defined( 'WPSSOUL_VERSION' ) ) {	// Define constants only once.
 				return;
@@ -75,15 +75,15 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 			/**
 			 * Define fixed constants.
 			 */
-			define( 'WPSSOUL_FILEPATH', $plugin_filepath );						
+			define( 'WPSSOUL_FILEPATH', $plugin_file_path );						
 			define( 'WPSSOUL_PLUGINBASE', $info[ 'base' ] );	// Example: wpsso-user-locale/wpsso-user-locale.php.
-			define( 'WPSSOUL_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
+			define( 'WPSSOUL_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_file_path ) ) ) );
 			define( 'WPSSOUL_PLUGINSLUG', $info[ 'slug' ] );	// Example: wpsso-user-locale.
-			define( 'WPSSOUL_URLPATH', trailingslashit( plugins_url( '', $plugin_filepath ) ) );
+			define( 'WPSSOUL_URLPATH', trailingslashit( plugins_url( '', $plugin_file_path ) ) );
 			define( 'WPSSOUL_VERSION', $info[ 'version' ] );						
 		}
 
-		public static function require_libs( $plugin_filepath ) {
+		public static function require_libs( $plugin_file_path ) {
 
 			require_once WPSSOUL_PLUGINDIR . 'lib/filters.php';
 			require_once WPSSOUL_PLUGINDIR . 'lib/locale.php';
@@ -96,11 +96,11 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 
 			if ( false === $ret && ! empty( $filespec ) ) {
 
-				$filepath = WPSSOUL_PLUGINDIR . 'lib/' . $filespec . '.php';
+				$file_path = WPSSOUL_PLUGINDIR . 'lib/' . $filespec . '.php';
 
-				if ( file_exists( $filepath ) ) {
+				if ( file_exists( $file_path ) ) {
 
-					require_once $filepath;
+					require_once $file_path;
 
 					if ( empty( $classname ) ) {
 						return SucomUtil::sanitize_classname( 'wpssoul' . $filespec, $allow_underscore = false );
