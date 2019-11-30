@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 					'req'         => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '6.13.2',
+						'min_version' => '6.14.0',
 					),
 					'assets' => array(
 						'icons' => array(
@@ -48,7 +48,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 					),
 				),
 			),
-			'opt' => array(				// options
+			'opt' => array(
 				'defaults' => array(
 					'ul_menu_icon'  => 326,		// Toolbar Menu Icon (dashicons-translation)
 					'ul_menu_title' => '%s',	// Toolbar Menu Title
