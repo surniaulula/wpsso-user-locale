@@ -4,8 +4,9 @@
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO User Locale Selector</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>Quick and easy locale / language / region selector for the WordPress admin toolbar.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>2.0.3</td></tr>
-<tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 4.7</td></tr>
-<tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 5.3</td></tr>
+<tr><th align="right" valign="top" nowrap>Requires PHP</th><td>5.5 or newer</td></tr>
+<tr><th align="right" valign="top" nowrap>Requires WordPress</th><td>4.7 or newer</td></tr>
+<tr><th align="right" valign="top" nowrap>Tested Up To WordPress</th><td>5.3</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="https://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
 <tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>user locale, user language, user region, locale, language, region, select, toolbar, menu, polylang</td></tr>
