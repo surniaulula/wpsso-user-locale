@@ -65,7 +65,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 
 			if ( is_admin() ) {
 				add_action( 'admin_init', array( __CLASS__, 'required_check' ) );
-				add_action( 'admin_init', array( __CLASS__, 'check_wp_version' ) );	// Requires wp v4.7 or better.
+				add_action( 'admin_init', array( __CLASS__, 'check_wp_version' ) );
 			}
 
 			/**
