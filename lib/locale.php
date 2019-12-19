@@ -21,6 +21,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+				$this->p->debug->log( 'Default WP locale = ' . get_locale() );
 			}
 
 			$is_admin = is_admin();
@@ -28,7 +29,12 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			$on_front = apply_filters( 'wpsso_user_locale_front_end', $on_front );
 
 			if ( ! $is_admin && $on_front ) {	// Apply user locale value to front-end.
+
 				add_filter( 'locale', array( __CLASS__, 'get_user_locale' ) );
+
+				if ( $this->p->debug->enabled ) {
+					$this->p->debug->log( 'Filtered WP locale = ' . get_locale() );
+				}
 			}
 
 			if ( $is_admin || $on_front ) {
