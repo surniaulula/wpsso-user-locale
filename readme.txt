@@ -96,6 +96,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 * **Developer Notes**
 	* Updated `WpssoUlRegister->activate_plugin()` for the new WpssoUtilReg class in WPSSO Core v6.13.1.
+* **Requires At Least**
+	* PHP v5.5.
+	* WordPress v4.7.
+	* WPSSO Core v6.16.0.
 
 == Upgrade Notice ==
 
