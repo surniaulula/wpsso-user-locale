@@ -209,8 +209,8 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 				return;	// Stop here.
 			}
 
-			$this->filters = new WpssoUlFilters( $this->p );
 			$this->locale  = new WpssoUlLocale( $this->p );
+			$this->filters = new WpssoUlFilters( $this->p );
 		}
 
 		public function wpsso_init_plugin() {

@@ -17,16 +17,31 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 
 		public function __construct( &$plugin ) {
 
+			/**
+			 * Just in case - prevent filters from being hooked and executed more than once.
+			 */
+			static $do_once = null;
+
+			if ( true === $do_once ) {
+				return;	// Stop here.
+			}
+
+			$do_once = true;
+
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
 			}
 
+			$this->p->util->add_plugin_filters( $this, array( 
+				'option_type' => 2,	// Define the value type for each option.
+			) );
+
 			if ( is_admin() ) {
+
 				$this->p->util->add_plugin_filters( $this, array( 
-					'option_type'      => 2,	// define the value type for each option
-					'messages_tooltip' => 2,	// tooltip messages filter
+					'messages_tooltip' => 2,	// Tooltip messages filter.
 				) );
 			}
 		}
