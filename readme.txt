@@ -99,7 +99,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.7.
-	* WPSSO Core v6.23.2.
+	* WPSSO Core v6.26.1.
 
 == Upgrade Notice ==
 
