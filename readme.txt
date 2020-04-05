@@ -13,7 +13,7 @@ Requires At Least: 4.7
 Tested Up To: 5.4
 Stable Tag: 2.0.3
 
-Quick and easy locale / language / region selector for the WordPress admin toolbar.
+Quick and Easy Locale / Language / Region Selector for the WordPress Admin Toolbar.
 
 == Description ==
 
