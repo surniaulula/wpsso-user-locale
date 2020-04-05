@@ -20,7 +20,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 					'opt_version' => '7',		// Increment when changing default option values.
 					'short'       => 'WPSSO UL',	// Short plugin name.
 					'name'        => 'WPSSO User Locale Selector',
-					'desc'        => 'Quick and easy locale / language / region selector for the WordPress admin toolbar.',
+					'desc'        => 'Quick and Easy Locale / Language / Region Selector for the WordPress Admin Toolbar.',
 					'slug'        => 'wpsso-user-locale',
 					'base'        => 'wpsso-user-locale/wpsso-user-locale.php',
 					'update_auth' => '',		// No premium version.

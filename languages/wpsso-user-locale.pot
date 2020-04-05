@@ -40,8 +40,8 @@ msgstr ""
 #: lib/gettext-config.php:7
 msgctxt "plugin description"
 msgid ""
-"Quick and easy locale / language / region selector for the WordPress admin "
-"toolbar."
+"Quick and Easy Locale / Language / Region Selector for the WordPress Admin "
+"Toolbar."
 msgstr ""
 
 #: lib/locale.php:143
@@ -104,8 +104,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Quick and easy locale / language / region selector for the WordPress admin "
-"toolbar."
+"Quick and Easy Locale / Language / Region Selector for the WordPress Admin "
+"Toolbar."
 msgstr ""
 
 #. Author of the plugin/theme
