@@ -194,6 +194,10 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 			return SucomUtil::array_merge_recursive_distinct( $cf, WpssoUlConfig::$cf );
 		}
 
+		/**
+		 * The 'wpsso_get_avail' filter is run after the $check property is defined. The $cache and $notice properties are
+		 * not defined, and the plugin and add-on textdomains are not loaded.
+		 */
 		public function wpsso_get_avail( $avail ) {
 
 			if ( ! $this->have_min_version ) {
