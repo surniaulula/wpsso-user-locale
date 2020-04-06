@@ -14,7 +14,7 @@
  * Requires PHP: 5.6
  * Requires At Least: 4.7
  * Tested Up To: 5.4
- * Version: 2.1.0-rc.2
+ * Version: 2.1.0-rc.3
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -159,6 +159,9 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 			}
 		}
 
+		/**
+		 * The 'wpsso_init_textdomain' action is run after the $check, $avail, and $debug properties are defined.
+		 */
 		public static function wpsso_init_textdomain() {
 
 			static $do_once = null;
@@ -206,6 +209,9 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 		}
 
 		/**
+		 * The 'wpsso_init_options' action is run after the $check, $avail, $debug, $notice, $cache, $util, and $opt
+		 * properties are defined.
+		 *
 		 * Sets the $this->p reference variable for the core plugin instance.
 		 */
 		public function wpsso_init_options() {

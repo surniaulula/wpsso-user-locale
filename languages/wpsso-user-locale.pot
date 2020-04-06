@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO User Locale Selector package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO User Locale Selector 2.1.0-rc.2\n"
+"Project-Id-Version: WPSSO User Locale Selector 2.1.0-rc.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-user-"
 "locale\n"
 "POT-Creation-Date: 2020-MO-DA HO:MI+ZONE\n"
@@ -88,7 +88,7 @@ msgstr ""
 msgid "Please upgrade %1$s before trying to re-activate the %2$s plugin."
 msgstr ""
 
-#: wpsso-user-locale.php:259
+#: wpsso-user-locale.php:265
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."
