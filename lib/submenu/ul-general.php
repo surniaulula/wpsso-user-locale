@@ -46,33 +46,41 @@ if ( ! class_exists( 'WpssoUlSubmenuUlGeneral' ) && class_exists( 'WpssoAdmin' )
 		}
 
 		public function show_metabox_user_locale() {
+
 			$metabox_id = 'ul';
+
 			$tab_key = 'general';
-			$this->p->util->do_metabox_table( apply_filters( $this->p->lca.'_'.$metabox_id.'_'.$tab_key.'_rows', 
-				$this->get_table_rows( $metabox_id, $tab_key ), $this->form, false ), 'metabox-'.$metabox_id.'-'.$tab_key );
+
+			$filter_name = SucomUtil::sanitize_hookname( $this->p->lca . '_' . $metabox_id . '_' . $tab_key . '_rows' );
+
+			$table_rows = apply_filters( $filter_name, $this->get_table_rows( $metabox_id, $tab_key ), $this->form );
+
+			$this->p->util->do_metabox_table( $table_rows, 'metabox-' . $metabox_id . '-' . $tab_key );
 		}
 
 		protected function get_table_rows( $metabox_id, $tab_key ) {
 
 			$table_rows = array();
 
-			switch ( $metabox_id.'-'.$tab_key ) {
+			switch ( $metabox_id . '-' . $tab_key ) {
 
 				case 'ul-general':
 
-					$table_rows['ul_menu_icon'] = $this->form->get_th_html( _x( 'Toolbar Menu Icon',
-						'option label', 'wpsso-user-locale' ), null, 'ul_menu_icon' ).
-					'<td>'.$this->form->get_select( 'ul_menu_icon', 
-						SucomUtil::get_dashicons( true, true ),	// sort by name and add 'none'
-							'', '', true ).'</td>';
+					$table_rows[ 'ul_menu_icon' ] = '' .
+					$this->form->get_th_html( _x( 'Toolbar Menu Icon', 'option label', 'wpsso-user-locale' ),
+						$css_class = '', $css_id = 'ul_menu_icon' ) . 
+					'<td>' . $this->form->get_select( 'ul_menu_icon', SucomUtil::get_dashicons( true, true ),	// Sort by name and add 'none'.
+						$css_class = '', $css_id = '', $is_assoc = true ) . '</td>';
 
-					$table_rows[ 'ul_menu_title' ] = $this->form->get_th_html( _x( 'Toolbar Menu Title',
-						'option label', 'wpsso-user-locale' ), null, 'ul_menu_title', array( 'is_locale' => true ) ).
-					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'ul_menu_title', $this->p->options ) ).'</td>';
+					$table_rows[ 'ul_menu_title' ] = '' .
+					$this->form->get_th_html( _x( 'Toolbar Menu Title', 'option label', 'wpsso-user-locale' ),
+						$css_class = '', $css_id = 'ul_menu_title', array( 'is_locale' => true ) ) . 
+					'<td>' . $this->form->get_input( SucomUtil::get_key_locale( 'ul_menu_title', $this->p->options ) ) . '</td>';
 
-					$table_rows['ul_front_end'] = $this->form->get_th_html( _x( 'Add User Locale on Front-End',
-						'option label', 'wpsso-user-locale' ), '', 'ul_front_end' ).
-					'<td>'.$this->form->get_checkbox( 'ul_front_end' ).'</td>';
+					$table_rows[ 'ul_front_end' ] = '' .
+					$this->form->get_th_html( _x( 'Add User Locale on Front-End', 'option label', 'wpsso-user-locale' ),
+						$css_class = '', $css_id = 'ul_front_end' ) . 
+					'<td>' . $this->form->get_checkbox( 'ul_front_end' ) . '</td>';
 
 					break;
 			}
