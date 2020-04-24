@@ -73,9 +73,9 @@ if ( ! class_exists( 'WpssoUlSubmenuUlGeneral' ) && class_exists( 'WpssoAdmin' )
 						$css_class = '', $css_id = '', $is_assoc = true ) . '</td>';
 
 					$table_rows[ 'ul_menu_title' ] = '' .
-					$this->form->get_th_html( _x( 'Toolbar Menu Title', 'option label', 'wpsso-user-locale' ),
-						$css_class = '', $css_id = 'ul_menu_title', array( 'is_locale' => true ) ) . 
-					'<td>' . $this->form->get_input( SucomUtil::get_key_locale( 'ul_menu_title', $this->p->options ) ) . '</td>';
+					$this->form->get_th_html_locale( _x( 'Toolbar Menu Title', 'option label', 'wpsso-user-locale' ),
+						$css_class = '', $css_id = 'ul_menu_title' ) . 
+					'<td>' . $this->form->get_input_locale( 'ul_menu_title' ) . '</td>';
 
 					$table_rows[ 'ul_front_end' ] = '' .
 					$this->form->get_th_html( _x( 'Add User Locale on Front-End', 'option label', 'wpsso-user-locale' ),
