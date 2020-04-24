@@ -86,6 +86,22 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.2.0-b.1 (2020/04/24)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Changed `get_input()` for multilingual options to `get_input_locale()` (available since WPSSO Core v7.1.0).
+	* Changed `get_th_html()` for multilingual options to `get_th_html_locale()` (available since WPSSO Core v7.1.0).
+* **Requires At Least**
+	* PHP v5.6.
+	* WordPress v4.7.
+	* WPSSO Core v7.1.0-b.1.
+
 **Version 2.1.0 (2020/04/06)**
 
 * **New Features**
@@ -117,6 +133,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v6.27.1.
 
 == Upgrade Notice ==
+
+= 2.2.0-b.1 =
+
+(2020/04/24) Updated multilingual option method calls for optimized methods in WPSSO Core v7.1.0.
 
 = 2.1.0 =
 
