@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.7
 Tested Up To: 5.4
-Stable Tag: 2.1.0
+Stable Tag: 2.2.0
 
 Quick and Easy Locale / Language / Region Selector for the WordPress Admin Toolbar.
 
@@ -117,21 +117,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v4.7.
 	* WPSSO Core v7.0.1.
 
-**Version 2.0.3 (2019/11/23)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Updated `WpssoUlRegister->activate_plugin()` for the new WpssoUtilReg class in WPSSO Core v6.13.1.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.7.
-	* WPSSO Core v6.27.1.
-
 == Upgrade Notice ==
 
 = 2.2.0 =
@@ -141,8 +126,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 2.1.0 =
 
 (2020/04/06) Refactored WPSSO Core active and minimum version dependency checks.
-
-= 2.0.3 =
-
-(2019/11/23) Update for the new WpssoUtilReg class in WPSSO Core v6.13.1.
 
