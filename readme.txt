@@ -45,8 +45,8 @@ WPSSO User Locale Selector (aka WPSSO UL) is an add-on for the [WPSSO Core plugi
 
 <h3 class="top">Install and Uninstall</h3>
 
-* [Install the WPSSO UL Add-on](https://wpsso.com/docs/plugins/wpsso-user-locale/installation/install-the-plugin/)
-* [Uninstall the WPSSO UL Add-on](https://wpsso.com/docs/plugins/wpsso-user-locale/installation/uninstall-the-plugin/)
+* [Install the WPSSO User Locale Selector add-on](https://wpsso.com/docs/plugins/wpsso-user-locale/installation/install-the-plugin/).
+* [Uninstall the WPSSO User Locale Selector add-on](https://wpsso.com/docs/plugins/wpsso-user-locale/installation/uninstall-the-plugin/).
 
 == Frequently Asked Questions ==
 
