@@ -32,7 +32,7 @@ if ( ! class_exists( 'WpssoUlSubmenuUlGeneral' ) && class_exists( 'WpssoAdmin' )
 		 */
 		protected function add_meta_boxes() {
 
-			$metabox_id      = 'user_locale';
+			$metabox_id      = 'ul';
 			$metabox_title   = _x( 'User Locale Settings', 'metabox title', 'wpsso-user-locale' );
 			$metabox_screen  = $this->pagehook;
 			$metabox_context = 'normal';
@@ -41,11 +41,11 @@ if ( ! class_exists( 'WpssoUlSubmenuUlGeneral' ) && class_exists( 'WpssoAdmin' )
 			);
 
 			add_meta_box( $this->pagehook . '_' . $metabox_id, $metabox_title,
-				array( $this, 'show_metabox_user_locale' ), $metabox_screen,
+				array( $this, 'show_metabox_' . $metabox_id ), $metabox_screen,
 					$metabox_context, $metabox_prio, $callback_args );
 		}
 
-		public function show_metabox_user_locale() {
+		public function show_metabox_ul() {
 
 			$metabox_id = 'ul';
 
