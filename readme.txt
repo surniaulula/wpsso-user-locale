@@ -86,7 +86,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.2.0-b.2 (2020/04/24)**
+**Version 2.2.0-rc.1 (2020/04/25)**
 
 * **New Features**
 	* None.
@@ -100,7 +100,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.7.
-	* WPSSO Core v7.1.0-b.2.
+	* WPSSO Core v7.1.0-rc.1.
 
 **Version 2.1.0 (2020/04/06)**
 
@@ -134,9 +134,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.2.0-b.2 =
+= 2.2.0-rc.1 =
 
-(2020/04/24) Updated multilingual option method calls for optimized methods in WPSSO Core v7.1.0.
+(2020/04/25) Updated multilingual option method calls for optimized methods in WPSSO Core v7.1.0.
 
 = 2.1.0 =
 
