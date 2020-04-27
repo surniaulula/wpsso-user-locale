@@ -52,10 +52,6 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 					 * Library files loaded and instantiated by WPSSO.
 					 */
 					'lib' => array(
-						'pro' => array(
-						),
-						'std' => array(
-						),
 						'submenu' => array(
 							'ul-general' => 'User Locale',
 						),

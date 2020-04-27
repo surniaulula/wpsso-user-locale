@@ -35,13 +35,13 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 			}
 
 			$this->p->util->add_plugin_filters( $this, array( 
-				'option_type' => 2,	// Define the value type for each option.
+				'option_type' => 2,
 			) );
 
 			if ( is_admin() ) {
 
 				$this->p->util->add_plugin_filters( $this, array( 
-					'messages_tooltip' => 2,	// Tooltip messages filter.
+					'messages_tooltip' => 2,
 				) );
 			}
 		}
