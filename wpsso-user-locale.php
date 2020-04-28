@@ -133,6 +133,8 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 
 		/**
 		 * Check for the minimum required WordPress version.
+		 *
+		 * If we don't have the minimum required version, then de-activate ourselves and die.
 		 */
 		public static function check_wp_version() {
 
@@ -150,7 +152,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 
 				$plugin_data = get_plugin_data( __FILE__, $markup = false );
 
-				deactivate_plugins( $plugin, true );	// $silent is true
+				deactivate_plugins( $plugin, $silent = true );
 
 				wp_die( '<p>' . sprintf( __( '%1$s requires %2$s version %3$s or higher and has been deactivated.',
 					'wpsso-user-locale' ), $plugin_data[ 'Name' ], 'WordPress', self::$wp_min_version ) . ' ' . 
@@ -166,7 +168,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 
 			static $do_once = null;
 
-			if ( true === $do_once ) {
+			if ( null !== $do_once ) {	// Already loaded.
 				return;
 			}
 
