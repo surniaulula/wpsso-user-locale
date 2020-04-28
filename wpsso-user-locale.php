@@ -65,6 +65,9 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 
 			$this->reg = new WpssoUlRegister();		// Activate, deactivate, uninstall hooks.
 
+			/**
+			 * Check for the minimum required WordPress version.
+			 */
 			add_action( 'admin_init', array( __CLASS__, 'check_wp_version' ) );
 
 			/**
@@ -128,6 +131,9 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 			}
 		}
 
+		/**
+		 * Check for the minimum required WordPress version.
+		 */
 		public static function check_wp_version() {
 
 			global $wp_version;
@@ -136,25 +142,20 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 
 				$plugin = plugin_basename( __FILE__ );
 
-				if ( is_plugin_active( $plugin ) ) {
+				self::wpsso_init_textdomain();	// If not already loaded, load the textdomain now.
 
-					self::wpsso_init_textdomain();	// If not already loaded, load the textdomain now.
-
-					if ( ! function_exists( 'deactivate_plugins' ) ) {
-						require_once trailingslashit( ABSPATH ) . 'wp-admin/includes/plugin.php';
-					}
-
-					$plugin_data = get_plugin_data( __FILE__, $markup = false );
-
-					deactivate_plugins( $plugin, true );	// $silent is true
-
-					wp_die( 
-						'<p>' . sprintf( __( '%1$s requires %2$s version %3$s or higher and has been deactivated.',
-							'wpsso-user-locale' ), $plugin_data[ 'Name' ], 'WordPress', self::$wp_min_version ) . '</p>' . 
-						'<p>' . sprintf( __( 'Please upgrade %1$s before trying to re-activate the %2$s plugin.',
-							'wpsso-user-locale' ), 'WordPress', $plugin_data[ 'Name' ] ) . '</p>'
-					);
+				if ( ! function_exists( 'deactivate_plugins' ) ) {
+					require_once trailingslashit( ABSPATH ) . 'wp-admin/includes/plugin.php';
 				}
+
+				$plugin_data = get_plugin_data( __FILE__, $markup = false );
+
+				deactivate_plugins( $plugin, true );	// $silent is true
+
+				wp_die( '<p>' . sprintf( __( '%1$s requires %2$s version %3$s or higher and has been deactivated.',
+					'wpsso-user-locale' ), $plugin_data[ 'Name' ], 'WordPress', self::$wp_min_version ) . ' ' . 
+						sprintf( __( 'Please upgrade %1$s before trying to re-activate the %2$s plugin.',
+							'wpsso-user-locale' ), 'WordPress', $plugin_data[ 'Name' ] ) . '</p>' );
 			}
 		}
 
