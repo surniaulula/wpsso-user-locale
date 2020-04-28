@@ -142,9 +142,9 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 
 			if ( version_compare( $wp_version, self::$wp_min_version, '<' ) ) {
 
-				$plugin = plugin_basename( __FILE__ );
-
 				self::wpsso_init_textdomain();	// If not already loaded, load the textdomain now.
+
+				$plugin = plugin_basename( __FILE__ );
 
 				if ( ! function_exists( 'deactivate_plugins' ) ) {
 					require_once trailingslashit( ABSPATH ) . 'wp-admin/includes/plugin.php';
@@ -164,15 +164,15 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 		/**
 		 * The 'wpsso_init_textdomain' action is run after the $check, $avail, and $debug properties are defined.
 		 */
-		public static function wpsso_init_textdomain() {
+		public static function wpsso_init_textdomain( $debug_enabled = false ) {
 
-			static $do_once = null;
+			static $loaded = null;
 
-			if ( null !== $do_once ) {	// Already loaded.
+			if ( null !== $loaded ) {
 				return;
 			}
 
-			$do_once = true;
+			$loaded = true;
 
 			load_plugin_textdomain( 'wpsso-user-locale', false, 'wpsso-user-locale/languages/' );
 		}
