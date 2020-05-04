@@ -57,7 +57,7 @@
 <li>None.</li>
 </ul>
 
-<h3>Advanced Documentation and Notes</h3>
+<h3>Notes and Documentation</h3>
 
 <ul>
 <li><a href="https://wpsso.com/docs/plugins/wpsso-user-locale/notes/developer/">Developer Resources</a>
