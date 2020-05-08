@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WPSSO User Locale Selector 2.3.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-user-locale\n"
 "POT-Creation-Date: 2020-05-07 15:37-0700\n"
-"PO-Revision-Date: 2020-05-07 15:37-0700\n"
+"PO-Revision-Date: 2020-05-07 17:16-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -67,23 +67,20 @@ msgid "Add User Locale on Front-End"
 msgstr "Ajouter langue utilisateur à l'avant"
 
 #: wpsso-user-locale.php:208
-#, fuzzy
-msgid "%1$s requires %2$s version %3$s or newer and has been deactivated."
-msgstr "%1$s nécessite %2$s version %3$s ou plus récente et a été désactivée."
+msgid "The %1$s add-on requires %2$s version %3$s or newer and has been deactivated."
+msgstr "L'ajout %1$s nécessite %2$s version %3$s ou plus récente et a été désactivée."
 
-#: wpsso-user-locale.php:210
+#: wpsso-user-locale.php:211
 msgid "Please upgrade %1$s before trying to re-activate the %2$s plugin."
 msgstr "Veuillez mettre à jour %1$s avant d'essayer de réactiver l'extension %2$s."
 
-#: wpsso-user-locale.php:260
-#, fuzzy
+#: wpsso-user-locale.php:262
 msgid "The %1$s version %2$s add-on requires the %3$s plugin &mdash; please activate the missing plugin."
-msgstr "L'ajout %1$s version %2$s requiert l'extension %2$s &mdash; veuillez activer l'extension manquante."
+msgstr "L'ajout %1$s version %2$s nécessite l'extension %2$s &mdash; veuillez activer l'extension manquante."
 
-#: wpsso-user-locale.php:263
-#, fuzzy
+#: wpsso-user-locale.php:265
 msgid "The %1$s version %2$s add-on requires the %3$s version %4$s plugin or newer (version %5$s is currently installed)."
-msgstr "L'ajout %1$s version %2$s requiert l'extension %3$s version %4$s ou plus récente (la version %5$s est actuellement installée)."
+msgstr "L'ajout %1$s version %2$s nécessite l'extension %3$s version %4$s ou plus récente (la version %5$s est actuellement installée)."
 
 #. Plugin Name of the plugin/theme
 msgid "WPSSO User Locale Selector"
