@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO User Locale Selector package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO User Locale Selector 2.3.0-dev.3\n"
+"Project-Id-Version: WPSSO User Locale Selector 2.3.0-dev.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-user-"
 "locale\n"
 "POT-Creation-Date: 2020-MO-DA HO:MI+ZONE\n"
@@ -74,24 +74,16 @@ msgctxt "option label"
 msgid "Add User Locale on Front-End"
 msgstr ""
 
-#: wpsso-user-locale.php:208
-msgid "%1$s requires %2$s version %3$s or newer and has been deactivated."
-msgstr ""
-
-#: wpsso-user-locale.php:210
-msgid "Please upgrade %1$s before trying to re-activate the %2$s plugin."
-msgstr ""
-
-#: wpsso-user-locale.php:260
+#: wpsso-user-locale.php:242
 msgid ""
 "The %1$s version %2$s add-on requires the %3$s plugin &mdash; please "
 "activate the missing plugin."
 msgstr ""
 
-#: wpsso-user-locale.php:263
+#: wpsso-user-locale.php:245
 msgid ""
-"The %1$s version %2$s add-on requires the %3$s version %4$s plugin or newer "
-"(version %5$s is currently installed)."
+"The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
+"%5$s is currently installed)."
 msgstr ""
 
 #. Plugin Name of the plugin/theme
