@@ -59,8 +59,6 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 				case 'ul_menu_title':
 
 					return 'not_blank';
-
-					break;
 			}
 
 			return $type;
