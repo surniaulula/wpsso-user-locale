@@ -50,7 +50,9 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 		public static function get_user_locale( $locale ) {
 
 			if ( $user_id = get_current_user_id() )	{
-				if ( $user_locale = get_user_meta( $user_id, 'locale', true ) ) {
+
+				if ( $user_locale = get_user_meta( $user_id, 'locale', $single = true ) ) {
+
 					return $user_locale;
 				}
 			}
@@ -61,22 +63,30 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 		public static function update_user_locale() {
 
 			if ( isset( $_GET[ 'update-user-locale' ] ) ) {
+
 				$user_locale = sanitize_text_field( $_GET[ 'update-user-locale' ] );
+
 			} else {
+
 				return;
 			}
 
 			$url = remove_query_arg( 'update-user-locale' );
 
 			if ( $user_id = get_current_user_id() ) {
+
 				if ( $user_locale === 'site-default' ) {
+
 					delete_user_meta( $user_id, 'locale' );
+
 				} else {
+
 					update_user_meta( $user_id, 'locale', $user_locale );
 				}
 			}
 
 			if ( $user_locale === 'site-default' ) {
+
 				$user_locale = SucomUtil::get_locale( 'default' );
 			}
 
@@ -132,10 +142,13 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			$wpsso =& Wpsso::get_instance();
 
 			$translations = wp_get_available_translations();	// Since WP v4.0.
-			$languages    = array_merge( array( 'site-default' ), get_available_languages() );	// Since WP v3.0.
-			$user_locale  = get_user_meta( $user_id, 'locale', true );
+
+			$languages = array_merge( array( 'site-default' ), get_available_languages() );	// Since WP v3.0.
+
+			$user_locale  = get_user_meta( $user_id, 'locale', $single = true );
 
 			if ( empty( $user_locale ) ) {
+
 				$user_locale = 'site-default';
 			}
 

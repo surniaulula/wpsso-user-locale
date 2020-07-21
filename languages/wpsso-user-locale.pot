@@ -44,12 +44,12 @@ msgid ""
 "Toolbar."
 msgstr ""
 
-#: lib/locale.php:143
+#: lib/locale.php:156
 msgctxt "toolbar menu title"
 msgid "default"
 msgstr ""
 
-#: lib/locale.php:202
+#: lib/locale.php:215
 msgctxt "toolbar menu item"
 msgid "Default Locale"
 msgstr ""
