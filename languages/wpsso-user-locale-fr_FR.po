@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO User Locale Selector 2.3.0\n"
+"Project-Id-Version: WPSSO User Locale Selector 2.4.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-user-locale\n"
-"POT-Creation-Date: 2020-07-31 07:14-0700\n"
-"PO-Revision-Date: 2020-07-31 07:14-0700\n"
+"POT-Creation-Date: 2020-08-02 10:44-0700\n"
+"PO-Revision-Date: 2020-08-02 10:44-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -66,11 +66,11 @@ msgctxt "option label"
 msgid "Add User Locale on Front-End"
 msgstr "Ajouter langue utilisateur à l'avant"
 
-#: wpsso-user-locale.php:243
+#: wpsso-user-locale.php:251
 msgid "The %1$s version %2$s add-on requires the %3$s plugin &mdash; please activate the missing plugin."
 msgstr "L'ajout %1$s version %2$s nécessite l'extension %3$s &mdash; veuillez activer l'extension manquante."
 
-#: wpsso-user-locale.php:246
+#: wpsso-user-locale.php:254
 msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed)."
 msgstr "L'ajout %1$s version %2$s nécessite %3$s version %4$s ou plus récente (la version %5$s est actuellement installée)."
 
