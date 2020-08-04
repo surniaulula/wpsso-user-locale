@@ -74,13 +74,13 @@ msgctxt "option label"
 msgid "Add User Locale on Front-End"
 msgstr ""
 
-#: wpsso-user-locale.php:251
+#: wpsso-user-locale.php:272
 msgid ""
 "The %1$s version %2$s add-on requires the %3$s plugin &mdash; please "
 "activate the missing plugin."
 msgstr ""
 
-#: wpsso-user-locale.php:254
+#: wpsso-user-locale.php:285
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."
