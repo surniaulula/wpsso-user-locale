@@ -55,7 +55,7 @@ if ( ! class_exists( 'WpssoUlSubmenuUlGeneral' ) && class_exists( 'WpssoAdmin' )
 
 			$table_rows = apply_filters( $filter_name, $this->get_table_rows( $metabox_id, $tab_key ), $this->form );
 
-			$this->p->util->do_metabox_table( $table_rows, 'metabox-' . $metabox_id . '-' . $tab_key );
+			$this->p->util->metabox->do_table( $table_rows, 'metabox-' . $metabox_id . '-' . $tab_key );
 		}
 
 		protected function get_table_rows( $metabox_id, $tab_key ) {
