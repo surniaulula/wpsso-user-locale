@@ -86,7 +86,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.5.0-dev.7 (2020/08/07)**
+**Version 2.5.0-dev.8 (2020/08/08)**
 
 * **New Features**
 	* None.
@@ -99,7 +99,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.7.
-	* WPSSO Core v7.16.0-dev.7.
+	* WPSSO Core v7.16.0-dev.8.
 
 **Version 2.4.0 (2020/08/02)**
 
@@ -133,9 +133,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.5.0-dev.7 =
+= 2.5.0-dev.8 =
 
-(2020/08/07) Added support for the new WpssoUtilMetabox class in WPSSO Core v7.16.0.
+(2020/08/08) Added support for the new WpssoUtilMetabox class in WPSSO Core v7.16.0.
 
 = 2.4.0 =
 
