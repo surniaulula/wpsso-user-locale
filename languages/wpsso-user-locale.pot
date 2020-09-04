@@ -13,20 +13,20 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: lib/filters.php:77
+#: lib/filters.php:81
 msgid ""
 "An icon to prefix the title string used in the WordPress toolbar menu (uses "
 "the \"translation\" icon by default). Select \"[None]\" to disable the "
 "toolbar menu icon."
 msgstr ""
 
-#: lib/filters.php:83
+#: lib/filters.php:87
 msgid ""
 "The title string used in the WordPress toolbar menu. The \"%s\" parameter is "
 "replaced by the current user locale value (example: \"User Locale (%s)\")."
 msgstr ""
 
-#: lib/filters.php:89
+#: lib/filters.php:93
 msgid ""
 "Add the user locale selector to the front-end toolbar menu, and define "
 "current WordPress locale as the user locale value."

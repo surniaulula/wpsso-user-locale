@@ -6,6 +6,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
+
 	die( 'These aren\'t the droids you\'re looking for.' );
 }
 
@@ -17,12 +18,10 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 
 		public function __construct( &$plugin ) {
 
-			/**
-			 * Just in case - prevent filters from being hooked and executed more than once.
-			 */
 			static $do_once = null;
 
 			if ( true === $do_once ) {
+
 				return;	// Stop here.
 			}
 
@@ -31,6 +30,7 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
@@ -49,8 +49,11 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 		public function filter_option_type( $type, $base_key ) {
 
 			if ( ! empty( $type ) ) {
+
 				return $type;
+
 			} elseif ( strpos( $base_key, 'ul_' ) !== 0 ) {
+
 				return $type;
 			}
 
@@ -67,6 +70,7 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 		public function filter_messages_tooltip( $text, $msg_key ) {
 
 			if ( strpos( $msg_key, 'tooltip-ul_' ) !== 0 ) {
+
 				return $text;
 			}
 
