@@ -13,6 +13,18 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
+#: gettext/gettext-config.php:6 lib/gettext-config.php:6
+msgctxt "lib file description"
+msgid "User Locale"
+msgstr ""
+
+#: gettext/gettext-config.php:7 lib/gettext-config.php:7
+msgctxt "plugin description"
+msgid ""
+"Quick and Easy Locale / Language / Region Selector for the WordPress Admin "
+"Toolbar."
+msgstr ""
+
 #: lib/filters.php:81
 msgid ""
 "An icon to prefix the title string used in the WordPress toolbar menu (uses "
@@ -30,18 +42,6 @@ msgstr ""
 msgid ""
 "Add the user locale selector to the front-end toolbar menu, and define "
 "current WordPress locale as the user locale value."
-msgstr ""
-
-#: lib/gettext-config.php:6
-msgctxt "lib file description"
-msgid "User Locale"
-msgstr ""
-
-#: lib/gettext-config.php:7
-msgctxt "plugin description"
-msgid ""
-"Quick and Easy Locale / Language / Region Selector for the WordPress Admin "
-"Toolbar."
 msgstr ""
 
 #: lib/locale.php:156
