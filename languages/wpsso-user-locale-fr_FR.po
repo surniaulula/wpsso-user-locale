@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO User Locale Selector 2.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-user-locale\n"
-"POT-Creation-Date: 2020-08-11 12:14-0700\n"
-"PO-Revision-Date: 2020-08-11 12:14-0700\n"
+"POT-Creation-Date: 2020-09-13 12:23-0700\n"
+"PO-Revision-Date: 2020-09-13 12:23-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -14,27 +14,27 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: lib/filters.php:77
-msgid "An icon to prefix the title string used in the WordPress toolbar menu (uses the \"translation\" icon by default). Select \"[None]\" to disable the toolbar menu icon."
-msgstr "Un icône devant le titre utilisé dans le menu de barre d'outils WordPress (utilise l'icône de \"traduction\" par défaut). Sélectionnez \"[Aucun]\" pour désactiver l'utilisation d'un icône dans de menu de barre d'outils."
-
-#: lib/filters.php:83
-msgid "The title string used in the WordPress toolbar menu. The \"%s\" parameter is replaced by the current user locale value (example: \"User Locale (%s)\")."
-msgstr "Le titre utilisé dans le menu de barre d'outils WordPress. Le paramètre \"%s\" est remplacé par la valeur actuel de la langue utilisateur (exemple: \"Langue utilisateur (%s)\")."
-
-#: lib/filters.php:89
-msgid "Add the user locale selector to the front-end toolbar menu, and define current WordPress locale as the user locale value."
-msgstr "Ajouter le sélecteur de langue utilisateur dans le menu de barre d'outils d'avant, et définir la langue courante WordPress comme celle de la langue utilisateur."
-
-#: lib/gettext-config.php:6
+#: gettext/gettext-config.php:6 lib/gettext-config.php:6
 msgctxt "lib file description"
 msgid "User Locale"
 msgstr "Langue utilisateur"
 
-#: lib/gettext-config.php:7
+#: gettext/gettext-config.php:7 lib/gettext-config.php:7
 msgctxt "plugin description"
 msgid "Quick and Easy Locale / Language / Region Selector for the WordPress Admin Toolbar."
 msgstr "Sélecteur de locale / langue / région rapide et facile pour la barre d'outils admin WordPress."
+
+#: lib/filters.php:81
+msgid "An icon to prefix the title string used in the WordPress toolbar menu (uses the \"translation\" icon by default). Select \"[None]\" to disable the toolbar menu icon."
+msgstr "Un icône devant le titre utilisé dans le menu de barre d'outils WordPress (utilise l'icône de \"traduction\" par défaut). Sélectionnez \"[Aucun]\" pour désactiver l'utilisation d'un icône dans de menu de barre d'outils."
+
+#: lib/filters.php:87
+msgid "The title string used in the WordPress toolbar menu. The \"%s\" parameter is replaced by the current user locale value (example: \"User Locale (%s)\")."
+msgstr "Le titre utilisé dans le menu de barre d'outils WordPress. Le paramètre \"%s\" est remplacé par la valeur actuel de la langue utilisateur (exemple: \"Langue utilisateur (%s)\")."
+
+#: lib/filters.php:93
+msgid "Add the user locale selector to the front-end toolbar menu, and define current WordPress locale as the user locale value."
+msgstr "Ajouter le sélecteur de langue utilisateur dans le menu de barre d'outils d'avant, et définir la langue courante WordPress comme celle de la langue utilisateur."
 
 #: lib/locale.php:156
 msgctxt "toolbar menu title"
