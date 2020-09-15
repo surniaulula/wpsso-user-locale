@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO User Locale Selector package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO User Locale Selector 2.5.0\n"
+"Project-Id-Version: WPSSO User Locale Selector 2.5.1-b.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-user-"
 "locale\n"
 "POT-Creation-Date: 2020-MO-DA HO:MI+ZONE\n"
@@ -19,6 +19,11 @@ msgid "User Locale"
 msgstr ""
 
 #: gettext/gettext-lib-config.php:7
+msgctxt "plugin name"
+msgid "WPSSO User Locale Selector"
+msgstr ""
+
+#: gettext/gettext-lib-config.php:8
 msgctxt "plugin description"
 msgid ""
 "Quick and Easy Locale / Language / Region Selector for the WordPress Admin "
