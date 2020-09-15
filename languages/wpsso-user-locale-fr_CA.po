@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO User Locale Selector 2.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-user-locale\n"
-"POT-Creation-Date: 2020-09-14 11:18-0700\n"
-"PO-Revision-Date: 2020-09-15 09:06-0700\n"
+"POT-Creation-Date: 2020-09-15 11:20-0700\n"
+"PO-Revision-Date: 2020-09-15 11:20-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -20,6 +20,11 @@ msgid "User Locale"
 msgstr "Langue utilisateur"
 
 #: gettext/gettext-lib-config.php:7
+msgctxt "plugin name"
+msgid "WPSSO User Locale Selector"
+msgstr "WPSSO sélecteur de langue utilisateur"
+
+#: gettext/gettext-lib-config.php:8
 msgctxt "plugin description"
 msgid "Quick and Easy Locale / Language / Region Selector for the WordPress Admin Toolbar."
 msgstr "Sélecteur de locale / langue / région rapide et facile pour la barre d'outils admin WordPress."
