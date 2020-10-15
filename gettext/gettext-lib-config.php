@@ -5,4 +5,4 @@
  */
 _x( 'User Locale', 'lib file description', 'wpsso-user-locale' );
 _x( 'WPSSO User Locale Selector', 'plugin name', 'wpsso-user-locale' );
-_x( 'Quick and Easy Locale / Language / Region Selector for the WordPress Admin Toolbar.', 'plugin description', 'wpsso-user-locale' );
+_x( 'Quick and easy locale / language / region selector for the WordPress admin toolbar.', 'plugin description', 'wpsso-user-locale' );
