@@ -86,11 +86,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.6.0-b.1 (2020/10/15)**
+**Version 3.0.0-b.1 (2020/10/15)**
 
 * **New Features**
 	* None.
 * **Improvements**
+	* Added a call to switch_to_locale() on the front-end.
 	* Refactored the add-on class to extend a new WpssoAddOn abstract class.
 * **Bugfixes**
 	* None.
@@ -119,9 +120,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.6.0-b.1 =
+= 3.0.0-b.1 =
 
-(2020/10/15) Refactored the add-on class to extend a new WpssoAddOn abstract class.
+(2020/10/15) Added a call to switch_to_locale() on the front-end. Refactored the add-on class to extend a new WpssoAddOn abstract class.
 
 = 2.5.1 =
 
