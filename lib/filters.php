@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 
 		private $p;
 
-		public function __construct( &$plugin ) {
+		public function __construct( &$plugin, $is_admin = false ) {
 
 			static $do_once = null;
 
@@ -38,7 +38,7 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 				'option_type' => 2,
 			) );
 
-			if ( is_admin() ) {
+			if ( $is_admin ) {
 
 				$this->p->util->add_plugin_filters( $this, array( 
 					'messages_tooltip' => 2,

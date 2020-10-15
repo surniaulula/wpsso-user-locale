@@ -14,7 +14,7 @@
  * Requires PHP: 5.6
  * Requires At Least: 4.7
  * Tested Up To: 5.5.1
- * Version: 2.6.0-b.1
+ * Version: 3.0.0-b.1
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -62,21 +62,12 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 			return self::$instance;
 		}
 
-		public function init_textdomain( $debug_enabled = false ) {
+		public function init_textdomain() {
 
-			static $local_cache = null;
-
-			if ( null === $local_cache || $debug_enabled ) {
-
-				$local_cache = 'wpsso-user-locale';
-
-				load_plugin_textdomain( 'wpsso-user-locale', false, 'wpsso-user-locale/languages/' );
-			}
-
-			return $local_cache;
+			load_plugin_textdomain( 'wpsso-user-locale', false, 'wpsso-user-locale/languages/' );
 		}
 
-		public function init_objects() {
+		public function init_objects( $is_admin, $doing_ajax, $doing_cron ) {
 
 			$this->p =& Wpsso::get_instance();
 
@@ -90,8 +81,8 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 				return;	// Stop here.
 			}
 
-			$this->locale  = new WpssoUlLocale( $this->p );
-			$this->filters = new WpssoUlFilters( $this->p );
+			$this->locale  = new WpssoUlLocale( $this->p, $is_admin );
+			$this->filters = new WpssoUlFilters( $this->p, $is_admin );
 		}
 	}
 

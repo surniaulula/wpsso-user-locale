@@ -6,6 +6,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
+
 	die( 'These aren\'t the droids you\'re looking for.' );
 }
 
@@ -15,67 +16,58 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 		protected $p;
 
-		public function __construct( &$plugin ) {
+		public function __construct( &$plugin, $is_admin = false ) {
 
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
-				$this->p->debug->log( 'Default WP locale = ' . get_locale() );
 			}
 
-			$is_admin = is_admin();
-			$on_front = empty( $this->p->options[ 'ul_front_end' ] ) ? false : true;
-			$on_front = apply_filters( 'wpsso_user_locale_front_end', $on_front );
+			$user_id       = get_current_user_id();
+			$show_on_front = empty( $this->p->options[ 'ul_front_end' ] ) ? false : true;
+			$show_on_front = apply_filters( 'wpsso_user_locale_front_end', $show_on_front );
 
-			if ( ! $is_admin && $on_front ) {	// Apply user locale value to front-end.
+			if ( $user_id ) {
 
-				add_filter( 'locale', array( __CLASS__, 'get_user_locale' ) );
+				if ( ! $is_admin && $show_on_front ) {	// Apply user locale value to front-end.
 
-				if ( $this->p->debug->enabled ) {
-					$this->p->debug->log( 'Filtered WP locale = ' . get_locale() );
+					$locale      = get_locale();
+					$user_locale = get_user_meta( $user_id, 'locale', $single = true );
+
+					if ( $locale !== $user_locale ) {
+
+						switch_to_locale( $user_locale );
+					}
 				}
-			}
 
-			if ( $is_admin || $on_front ) {
+				if ( $is_admin || $show_on_front ) {
 
-				add_action( 'admin_bar_menu', array( __CLASS__, 'add_locale_toolbar' ), WPSSO_TB_LOCALE_MENU_ORDER );
+					add_action( 'admin_bar_menu', array( $this, 'add_locale_toolbar' ), WPSSO_TB_LOCALE_MENU_ORDER, 1 );
 
-				if ( isset( $_GET[ 'update-user-locale' ] ) ) {	// New user locale value selected.
-					add_action( 'wp_loaded', array( __CLASS__, 'update_user_locale' ), -1000 );
+					if ( isset( $_GET[ 'update-user-locale' ] ) ) {	// New user locale value selected.
+
+						add_action( 'wp_loaded', array( $this, 'update_user_locale' ), -1000 );
+					}
 				}
 			}
 		}
 
-		public static function get_user_locale( $locale ) {
+		public function update_user_locale() {
 
-			if ( $user_id = get_current_user_id() )	{
-
-				if ( $user_locale = get_user_meta( $user_id, 'locale', $single = true ) ) {
-
-					return $user_locale;
-				}
-			}
-
-			return $locale;
-		}
-
-		public static function update_user_locale() {
-
-			if ( isset( $_GET[ 'update-user-locale' ] ) ) {
-
-				$user_locale = sanitize_text_field( $_GET[ 'update-user-locale' ] );
-
-			} else {
+			if ( ! isset( $_GET[ 'update-user-locale' ] ) ) {	// Just in case.
 
 				return;
 			}
+
+			$user_locale = sanitize_text_field( $_GET[ 'update-user-locale' ] );
 
 			$url = remove_query_arg( 'update-user-locale' );
 
 			if ( $user_id = get_current_user_id() ) {
 
-				if ( $user_locale === 'site-default' ) {
+				if ( 'site-default' === $user_locale ) {
 
 					delete_user_meta( $user_id, 'locale' );
 
@@ -85,7 +77,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				}
 			}
 
-			if ( $user_locale === 'site-default' ) {
+			if ( 'site-default' === $user_locale ) {
 
 				$user_locale = SucomUtil::get_locale( 'default' );
 			}
@@ -121,19 +113,17 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 			$wpsso = Wpsso::get_instance();
 
-			/**
-			 * Clear any old notices for the current user.
-			 */
-			$wpsso->notice->clear();
+			$wpsso->notice->clear();	// Clear any old locale notices.
 
 			wp_redirect( apply_filters( 'wpsso_user_locale_redirect_url', $url, $user_locale ) );
 
 			exit;
 		}
 
-		public static function add_locale_toolbar( $wp_admin_bar ) {
+		public function add_locale_toolbar( $wp_admin_bar ) {
 
-			if ( ! $user_id = get_current_user_id() ) {
+			if ( ! $user_id = get_current_user_id() ) {	// Just in case.
+
 				return;
 			}
 
@@ -142,9 +132,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			$wpsso =& Wpsso::get_instance();
 
 			$translations = wp_get_available_translations();	// Since WP v4.0.
-
-			$languages = array_merge( array( 'site-default' ), get_available_languages() );	// Since WP v3.0.
-
+			$languages    = array_merge( array( 'site-default' ), get_available_languages() );	// Since WP v3.0.
 			$user_locale  = get_user_meta( $user_id, 'locale', $single = true );
 
 			if ( empty( $user_locale ) ) {
@@ -152,8 +140,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				$user_locale = 'site-default';
 			}
 
-			$menu_locale = $user_locale === 'site-default' ? 
-				_x( 'default', 'toolbar menu title', 'wpsso-user-locale' ) : $user_locale;
+			$menu_locale = 'site-default' === $user_locale ? _x( 'default', 'toolbar menu title', 'wpsso-user-locale' ) : $user_locale;
 
 			/**
 			 * Menu Icon and Title
@@ -166,18 +153,23 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				$dashicons = SucomUtil::get_dashicons();	// Get the raw / unsorted dashicons array.
 
 				if ( isset( $dashicons[ $dashicon ] ) ) {		// Just in case.
+
 					$menu_icon = '<span class="ab-icon dashicons-' . $dashicons[ $dashicon ] . '"></span>';
+
 				} else {
+
 					$menu_icon = '';
 				}
 
 			} else {
+
 				$menu_icon = '';
 			}
 
 			$menu_title = SucomUtil::get_key_value( 'ul_menu_title', $wpsso->options );
 
 			if ( empty( $menu_title ) ) {	// Just in case.
+
 				$menu_title = '%s';
 			}
 
@@ -206,15 +198,16 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 					$native_name = $translations[ $locale ][ 'native_name' ];
 
-				} elseif ( $locale === 'en_US' ) {
+				} elseif ( 'en_US' === $locale ) {
 
 					$native_name = 'English (United States)';
 
-				} elseif ( $locale === 'site-default' ) {
+				} elseif ( 'site-default' === $locale ) {
 
 					$native_name = _x( 'Default Locale', 'toolbar menu item', 'wpsso-user-locale' );
 
 				} else {
+
 					$native_name = $locale;
 				}
 
@@ -238,6 +231,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			$menu_items = apply_filters( 'wpsso_user_locale_menu_items', $menu_items, $menu_locale );
 
 			foreach ( $menu_items as $menu_item ) {
+
 				$wp_admin_bar->add_node( $menu_item );
 			}
 		}
