@@ -13,7 +13,7 @@ Requires At Least: 4.7
 Tested Up To: 5.5.1
 Stable Tag: 2.5.1
 
-Quick and Easy Locale / Language / Region Selector for the WordPress Admin Toolbar.
+Quick and easy locale / language / region selector for the WordPress admin toolbar.
 
 == Description ==
 
@@ -40,6 +40,8 @@ If the Polylang plugin is detected, the locale selector will automatically use t
 <h3>WPSSO Core Plugin Required</h3>
 
 WPSSO User Locale Selector (aka WPSSO UL) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
+
+WPSSO Core and its add-ons make sure your content looks great on social sites and in search results, no matter how your URLs are crawled, shared, re-shared, posted, or embedded.
 
 == Installation ==
 
