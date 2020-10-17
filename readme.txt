@@ -88,7 +88,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.0.0-rc.1 (2020/10/17)**
+**Version 3.0.0 (2020/10/17)**
 
 * **New Features**
 	* None.
@@ -103,7 +103,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.7.
-	* WPSSO Core v8.8.0-rc.1.
+	* WPSSO Core v8.8.0.
 
 **Version 2.5.1 (2020/09/15)**
 
@@ -122,7 +122,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 3.0.0-rc.1 =
+= 3.0.0 =
 
 (2020/10/17) Added a call to switch_to_locale() on the front-end. Refactored the add-on class to extend a new WpssoAddOn abstract class.
 
