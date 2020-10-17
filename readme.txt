@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.7
 Tested Up To: 5.5.1
-Stable Tag: 2.5.1
+Stable Tag: 3.0.0
 
 Quick and easy locale / language / region selector for the WordPress admin toolbar.
 
@@ -105,28 +105,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v4.7.
 	* WPSSO Core v8.8.0.
 
-**Version 2.5.1 (2020/09/15)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Updated the French plugin translations.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Moved extracted translation strings from lib/gettext-*.php files to a new gettext/ folder.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.7.
-	* WPSSO Core v8.5.0.
-
 == Upgrade Notice ==
 
 = 3.0.0 =
 
 (2020/10/17) Added a call to switch_to_locale() on the front-end. Refactored the add-on class to extend a new WpssoAddOn abstract class.
-
-= 2.5.1 =
-
-(2020/09/15) Updated the French plugin translations.
 
