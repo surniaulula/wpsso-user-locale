@@ -67,7 +67,10 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 			load_plugin_textdomain( 'wpsso-user-locale', false, 'wpsso-user-locale/languages/' );
 		}
 
-		public function init_objects( $is_admin ) {
+		/**
+		 * $is_admin, $doing_ajax, and $doing_cron available since WPSSO Core v8.8.0.
+		 */
+		public function init_objects( $is_admin = false, $doing_ajax = false, $doing_cron = false ) {
 
 			$this->p =& Wpsso::get_instance();
 
