@@ -103,12 +103,12 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 			/**
 			 * Define fixed constants.
 			 */
-			define( 'WPSSOUL_FILEPATH', $plugin_file );						
+			define( 'WPSSOUL_FILEPATH', $plugin_file );
 			define( 'WPSSOUL_PLUGINBASE', $info[ 'base' ] );	// Example: wpsso-user-locale/wpsso-user-locale.php.
 			define( 'WPSSOUL_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_file ) ) ) );
 			define( 'WPSSOUL_PLUGINSLUG', $info[ 'slug' ] );	// Example: wpsso-user-locale.
 			define( 'WPSSOUL_URLPATH', trailingslashit( plugins_url( '', $plugin_file ) ) );
-			define( 'WPSSOUL_VERSION', $info[ 'version' ] );						
+			define( 'WPSSOUL_VERSION', $info[ 'version' ] );
 		}
 
 		public static function require_libs( $plugin_file ) {
