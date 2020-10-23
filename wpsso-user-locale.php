@@ -40,12 +40,12 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 
 	class WpssoUl extends WpssoAddOn {
 
-		public $filters;	// WpssoUlFilters class.
-		public $locale;		// WpssoUlLocale class.
+		public $filters;	// WpssoUlFilters class object.
+		public $locale;		// WpssoUlLocale class object.
 
-		protected $p;
+		protected $p;	// Wpsso class object.
 
-		private static $instance = null;
+		private static $instance = null;	// WpssoUl class object.
 
 		public function __construct() {
 

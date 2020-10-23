@@ -14,7 +14,7 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 
 	class WpssoUlFilters {
 
-		private $p;
+		private $p;	// Wpsso class object.
 
 		public function __construct( &$plugin, $is_admin = false ) {
 
