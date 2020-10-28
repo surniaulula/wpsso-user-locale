@@ -71,22 +71,22 @@ msgctxt "toolbar menu item"
 msgid "Default Locale"
 msgstr ""
 
-#: lib/submenu/ul-general.php:36
+#: lib/submenu/ul-general.php:38
 msgctxt "metabox title"
 msgid "User Locale Settings"
 msgstr ""
 
-#: lib/submenu/ul-general.php:70
+#: lib/submenu/ul-general.php:72
 msgctxt "option label"
 msgid "Toolbar Menu Icon"
 msgstr ""
 
-#: lib/submenu/ul-general.php:76
+#: lib/submenu/ul-general.php:78
 msgctxt "option label"
 msgid "Toolbar Menu Title"
 msgstr ""
 
-#: lib/submenu/ul-general.php:81
+#: lib/submenu/ul-general.php:83
 msgctxt "option label"
 msgid "Add User Locale on Front-End"
 msgstr ""
