@@ -10,7 +10,7 @@ Tags: user locale, user language, user region, locale, language, region, select,
 Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.7
-Tested Up To: 5.5.3
+Tested Up To: 5.5.4
 Stable Tag: 3.0.1
 
 Quick and easy locale / language / region selector for the WordPress admin toolbar.
