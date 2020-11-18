@@ -88,6 +88,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 3.1.0-rc.2 (2020/11/18)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Renamed the 'default' menu item to 'Default'.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Renamed the 'wpsso_user_locale_front_end' filter to 'wpsso_user_locale_show_on_front'.
+* **Requires At Least**
+	* PHP v5.6.
+	* WordPress v4.7.
+	* WPSSO Core v8.12.1.
+
 **Version 3.0.1 (2020/10/17)**
 
 * **New Features**
@@ -106,6 +121,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v8.12.1.
 
 == Upgrade Notice ==
+
+= 3.1.0-rc.2 =
+
+(2020/11/18) Renamed the 'default' menu item to 'Default'.
 
 = 3.0.1 =
 
