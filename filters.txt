@@ -1,5 +1,5 @@
 
-'wpsso_user_locale_front_end' ( $bool )
+'wpsso_user_locale_show_on_front' ( $bool )
 
 'wpsso_user_locale_redirect_url' ( $url, $user_locale )
 

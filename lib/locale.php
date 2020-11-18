@@ -27,7 +27,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 			$user_id       = get_current_user_id();
 			$show_on_front = empty( $this->p->options[ 'ul_front_end' ] ) ? false : true;
-			$show_on_front = apply_filters( 'wpsso_user_locale_front_end', $show_on_front );
+			$show_on_front = (bool) apply_filters( 'wpsso_user_locale_show_on_front', $show_on_front );
 
 			if ( $user_id ) {
 
@@ -140,12 +140,13 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				$user_locale = 'site-default';
 			}
 
-			$menu_locale = 'site-default' === $user_locale ? _x( 'default', 'toolbar menu title', 'wpsso-user-locale' ) : $user_locale;
+			$menu_locale = 'site-default' === $user_locale ? _x( 'Default', 'toolbar menu title', 'wpsso-user-locale' ) : $user_locale;
 
 			/**
 			 * Menu Icon and Title
 			 */
 			$dashicon = empty( $wpsso->options[ 'ul_menu_icon' ] ) ? null : $wpsso->options[ 'ul_menu_icon' ];
+
 			$dashicon = apply_filters( 'wpsso_user_locale_menu_dashicon',  $dashicon, $menu_locale );
 
 			if ( ! empty( $dashicon ) && $dashicon !== 'none' ) {
@@ -174,6 +175,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			}
 
 			$menu_title = apply_filters( 'wpsso_user_locale_menu_title', $menu_title, $menu_locale );
+
 			$menu_title = sprintf( $menu_title, $menu_locale );
 
 			$wp_admin_bar->add_node( array(
