@@ -152,7 +152,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 				$dashicons = SucomUtil::get_dashicons();	// Get the raw / unsorted dashicons array.
 
-				if ( isset( $dashicons[ $dashicon ] ) ) {		// Just in case.
+				if ( isset( $dashicons[ $dashicon ] ) ) {	// Just in case.
 
 					$menu_icon = '<span class="ab-icon dashicons-' . $dashicons[ $dashicon ] . '"></span>';
 
