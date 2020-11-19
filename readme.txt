@@ -1,4 +1,4 @@
-=== User Locale Selector | WPSSO Add-on ===
+=== WPSSO User Locale Selector ===
 Plugin Name: WPSSO User Locale Selector
 Plugin Slug: wpsso-user-locale
 Text Domain: wpsso-user-locale

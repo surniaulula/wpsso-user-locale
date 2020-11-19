@@ -1,4 +1,4 @@
-<h1>User Locale Selector</h1><h3>WPSSO Add-on</h3>
+<h1>WPSSO User Locale Selector</h1>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO User Locale Selector</td></tr>
