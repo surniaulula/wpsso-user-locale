@@ -88,7 +88,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.1.0-rc.3 (2020/11/18)**
+**Version 3.1.0-rc.4 (2020/11/19)**
 
 * **New Features**
 	* None.
@@ -122,9 +122,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 3.1.0-rc.3 =
+= 3.1.0-rc.4 =
 
-(2020/11/18) Renamed the 'default' menu item to 'Default'.
+(2020/11/19) Renamed the 'default' menu item to 'Default'.
 
 = 3.0.1 =
 
