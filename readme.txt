@@ -88,7 +88,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.1.0-rc.5 (2020/11/20)**
+**Version 3.1.0 (2020/11/20)**
 
 * **New Features**
 	* None.
@@ -101,7 +101,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.7.
-	* WPSSO Core v8.13.0-rc.5.
+	* WPSSO Core v8.13.0.
 
 **Version 3.0.1 (2020/10/17)**
 
@@ -122,7 +122,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 3.1.0-rc.5 =
+= 3.1.0 =
 
 (2020/11/20) Renamed the 'default' menu item to 'Default'.
 
