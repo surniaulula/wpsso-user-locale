@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.7
 Tested Up To: 5.6
-Stable Tag: 3.1.0
+Stable Tag: 3.2.0
 
 Quick and easy locale / language / region selector for the WordPress admin toolbar.
 
@@ -101,7 +101,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.7.
-	* WPSSO Core v8.13.0.
+	* WPSSO Core v8.14.0.
 
 **Version 3.1.0 (2020/11/20)**
 
