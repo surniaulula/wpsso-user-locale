@@ -14,7 +14,7 @@
  * Requires PHP: 5.6
  * Requires At Least: 4.7
  * Tested Up To: 5.6
- * Version: 3.1.0
+ * Version: 3.2.0
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -84,8 +84,8 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 				return;	// Stop here.
 			}
 
-			$this->locale  = new WpssoUlLocale( $this->p, $is_admin );
-			$this->filters = new WpssoUlFilters( $this->p, $is_admin );
+			$this->locale  = new WpssoUlLocale( $this->p, $this );
+			$this->filters = new WpssoUlFilters( $this->p, $this );
 		}
 	}
 

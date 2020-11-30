@@ -15,8 +15,13 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 	class WpssoUlFilters {
 
 		private $p;	// Wpsso class object.
+		private $a;     // WpssoUl class object.
+		private $msgs;	// WpssoUlFiltersMessages class object.
 
-		public function __construct( &$plugin, $is_admin = false ) {
+		/**
+		 * Instantiated by WpssoUl->init_objects().
+		 */
+		public function __construct( &$plugin, &$addon ) {
 
 			static $do_once = null;
 
@@ -28,6 +33,7 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 			$do_once = true;
 
 			$this->p =& $plugin;
+			$this->a =& $addon;
 
 			if ( $this->p->debug->enabled ) {
 
@@ -38,11 +44,11 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 				'option_type' => 2,
 			) );
 
-			if ( $is_admin ) {
+			if ( is_admin() ) {
 
-				$this->p->util->add_plugin_filters( $this, array( 
-					'messages_tooltip' => 2,
-				) );
+				require_once WPSSOUL_PLUGINDIR . 'lib/filters-messages.php';
+
+				$this->msgs = new WpssoUlFiltersMessages( $plugin, $addon );
 			}
 		}
 
@@ -65,37 +71,6 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 			}
 
 			return $type;
-		}
-
-		public function filter_messages_tooltip( $text, $msg_key ) {
-
-			if ( strpos( $msg_key, 'tooltip-ul_' ) !== 0 ) {
-
-				return $text;
-			}
-
-			switch ( $msg_key ) {
-
-				case 'tooltip-ul_menu_icon':	// Toolbar Menu Icon
-
-					$text = __( 'An icon to prefix the title string used in the WordPress toolbar menu (uses the "translation" icon by default). Select "[None]" to disable the toolbar menu icon.', 'wpsso-user-locale' );
-
-					break;
-
-				case 'tooltip-ul_menu_title':	// Toolbar Menu Title
-
-					$text = __( 'The title string used in the WordPress toolbar menu. The "%s" parameter is replaced by the current user locale value (example: "User Locale (%s)").', 'wpsso-user-locale' );
-
-					break;
-
-				case 'tooltip-ul_front_end':	// Add User Locale on Front-End
-
-					$text = __( 'Add the user locale selector to the front-end toolbar menu, and define current WordPress locale as the user locale value.', 'wpsso-user-locale' );
-
-					break;
-			}
-
-			return $text;
 		}
 	}
 }

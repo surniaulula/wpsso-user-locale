@@ -14,17 +14,23 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 	class WpssoUlLocale {
 
-		protected $p;
+		private $p;	// Wpsso class object.
+		private $a;     // WpssoUl class object.
 
-		public function __construct( &$plugin, $is_admin = false ) {
+		/**
+		 * Instantiated by WpssoUl->init_objects().
+		 */
+		public function __construct( &$plugin, &$addon ) {
 
 			$this->p =& $plugin;
+			$this->a =& $addon;
 
 			if ( $this->p->debug->enabled ) {
 
 				$this->p->debug->mark();
 			}
 
+			$is_admin      = is_admin();
 			$user_id       = get_current_user_id();
 			$show_on_front = empty( $this->p->options[ 'ul_front_end' ] ) ? false : true;
 			$show_on_front = (bool) apply_filters( 'wpsso_user_locale_show_on_front', $show_on_front );
@@ -111,9 +117,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				}
 			}
 
-			$wpsso = Wpsso::get_instance();
-
-			$wpsso->notice->clear();	// Clear any old locale notices.
+			$this->p->notice->clear();	// Clear any old locale notices.
 
 			wp_redirect( apply_filters( 'wpsso_user_locale_redirect_url', $url, $user_locale ) );
 
@@ -129,8 +133,6 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 			require_once trailingslashit( ABSPATH ) . 'wp-admin/includes/translation-install.php';
 
-			$wpsso =& Wpsso::get_instance();
-
 			$translations = wp_get_available_translations();	// Since WP v4.0.
 			$languages    = array_merge( array( 'site-default' ), get_available_languages() );	// Since WP v3.0.
 			$user_locale  = get_user_meta( $user_id, 'locale', $single = true );
@@ -145,7 +147,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			/**
 			 * Menu Icon and Title
 			 */
-			$dashicon = empty( $wpsso->options[ 'ul_menu_icon' ] ) ? null : $wpsso->options[ 'ul_menu_icon' ];
+			$dashicon = empty( $this->p->options[ 'ul_menu_icon' ] ) ? null : $this->p->options[ 'ul_menu_icon' ];
 
 			$dashicon = apply_filters( 'wpsso_user_locale_menu_dashicon',  $dashicon, $menu_locale );
 
@@ -167,7 +169,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				$menu_icon = '';
 			}
 
-			$menu_title = SucomUtil::get_key_value( 'ul_menu_title', $wpsso->options );
+			$menu_title = SucomUtil::get_key_value( 'ul_menu_title', $this->p->options );
 
 			if ( empty( $menu_title ) ) {	// Just in case.
 
