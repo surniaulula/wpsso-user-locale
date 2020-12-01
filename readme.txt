@@ -93,11 +93,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **New Features**
 	* None.
 * **Improvements**
-	* Included the `$addon` argument for library class constructors.
+	* None.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* None.
+	* Included the `$addon` argument for library class constructors.
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.7.
