@@ -25,11 +25,6 @@ if ( ! class_exists( 'WpssoUlFiltersMessages' ) ) {
 			$this->p =& $plugin;
 			$this->a =& $addon;
 
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
-
 			$this->p->util->add_plugin_filters( $this, array( 
 				'messages_tooltip' => 2,
 			) );

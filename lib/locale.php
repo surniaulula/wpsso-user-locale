@@ -25,11 +25,6 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			$this->p =& $plugin;
 			$this->a =& $addon;
 
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
-
 			$is_admin      = is_admin();
 			$user_id       = get_current_user_id();
 			$show_on_front = empty( $this->p->options[ 'ul_front_end' ] ) ? false : true;

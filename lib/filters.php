@@ -35,11 +35,6 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 			$this->p =& $plugin;
 			$this->a =& $addon;
 
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
-
 			$this->p->util->add_plugin_filters( $this, array( 
 				'option_type' => 2,
 			) );
