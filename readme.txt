@@ -8,7 +8,7 @@ License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-user-locale/assets/
 Tags: user locale, user language, user region, locale, language, region, select, toolbar, menu, polylang
 Contributors: jsmoriss
-Requires PHP: 5.6
+Requires PHP: 7.0
 Requires At Least: 4.7
 Tested Up To: 5.6
 Stable Tag: 3.2.0
@@ -99,7 +99,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* Included the `$addon` argument for library class constructors.
 * **Requires At Least**
-	* PHP v5.6.
+	* PHP v7.0.
 	* WordPress v4.7.
 	* WPSSO Core v8.16.0.
 
