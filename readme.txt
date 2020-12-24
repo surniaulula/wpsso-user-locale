@@ -60,11 +60,11 @@ WPSSO Core and its add-ons make sure your content looks best on social sites and
 
 * [Developer Resources](https://wpsso.com/docs/plugins/wpsso-user-locale/notes/developer/)
 	* [Filters](https://wpsso.com/docs/plugins/wpsso-user-locale/notes/developer/filters/)
+		* [All Filters](https://wpsso.com/docs/plugins/wpsso-user-locale/notes/developer/filters/all/)
 		* [Filter Examples](https://wpsso.com/docs/plugins/wpsso-user-locale/notes/developer/filters/examples/)
 			* [Disable User Locale on Front-End](https://wpsso.com/docs/plugins/wpsso-user-locale/notes/developer/filters/examples/disable-user-locale-on-front-end/)
 			* [Modify the Menu Title](https://wpsso.com/docs/plugins/wpsso-user-locale/notes/developer/filters/examples/modify-the-menu-title/)
 			* [Modify the Redirect URL](https://wpsso.com/docs/plugins/wpsso-user-locale/notes/developer/filters/examples/modify-the-redirect-url/)
-		* [Filters by Name](https://wpsso.com/docs/plugins/wpsso-user-locale/notes/developer/filters/by-name/)
 
 == Screenshots ==
 
