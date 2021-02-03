@@ -14,9 +14,7 @@
 
 <h2>Description</h2>
 
-<p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-user-locale/assets/icon-256x256.png"></p>
-
-<p><strong>Provides a convenient locale / language / region selector in the WordPress admin toolbar.</strong></p>
+<p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-user-locale/assets/icon-256x256.png"> <strong>Provides a convenient locale / language / region selector in the WordPress admin toolbar.</strong></p>
 
 <p><strong>Perfect for translators or anyone that needs to switch languages quickly and easily:</strong></p>
 
