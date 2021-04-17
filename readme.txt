@@ -82,6 +82,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 3.3.0-b.2 (2021/04/17)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Added support for `SucomUtilWP::get_available_languages()`.
+* **Requires At Least**
+	* PHP v7.0.
+	* WordPress v4.7.
+	* WPSSO Core v8.26.3-b.2.
+
 **Version 3.2.1 (2021/02/25)**
 
 * **New Features**
@@ -145,6 +160,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v8.12.1.
 
 == Upgrade Notice ==
+
+= 3.3.0-b.2 =
+
+(2021/04/17) Added support for `SucomUtilWP::get_available_languages()`.
 
 = 3.2.1 =
 
