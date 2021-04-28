@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoul' => array(			// Plugin acronym.
-					'version'     => '3.3.0',	// Plugin version.
+					'version'     => '3.3.1-dev.2',	// Plugin version.
 					'opt_version' => '7',		// Increment when changing default option values.
 					'short'       => 'WPSSO UL',	// Short plugin name.
 					'name'        => 'WPSSO User Locale Selector',
@@ -43,7 +43,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '8.26.3',
+							'min_version'   => '8.28.0-dev.2',
 						),
 					),
 
@@ -79,7 +79,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 				'defaults' => array(
 					'ul_menu_icon'  => 326,		// Toolbar Menu Icon (dashicons-translation)
 					'ul_menu_title' => '%s',	// Toolbar Menu Title
-					'ul_front_end'  => 1,		// Add User Locale on Front-End
+					'ul_front_end'  => 1,		// Show User Locale on Front-End
 				),
 			),
 		);
