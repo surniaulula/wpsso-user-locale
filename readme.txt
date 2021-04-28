@@ -82,6 +82,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 3.3.1-dev.2 (2021/04/28)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Minor CSS and text formatting updates.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.0.
+	* WordPress v4.7.
+	* WPSSO Core v8.28.0-dev.2.
+
 **Version 3.3.0 (2021/04/17)**
 
 * **New Features**
@@ -160,6 +175,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v8.12.1.
 
 == Upgrade Notice ==
+
+= 3.3.1-dev.2 =
+
+(2021/04/28) Minor CSS and text formatting updates.
 
 = 3.3.0 =
 
