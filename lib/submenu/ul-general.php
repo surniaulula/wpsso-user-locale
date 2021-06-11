@@ -68,21 +68,23 @@ if ( ! class_exists( 'WpssoUlSubmenuUlGeneral' ) && class_exists( 'WpssoAdmin' )
 
 				case 'ul-general':
 
+					$dashicons = SucomUtil::get_dashicons( $icon_number = true, $add_none = true );
+
 					$table_rows[ 'ul_menu_icon' ] = '' .
-					$this->form->get_th_html( _x( 'Toolbar Menu Icon', 'option label', 'wpsso-user-locale' ),
-						$css_class = '', $css_id = 'ul_menu_icon' ) . 
-					'<td>' . $this->form->get_select( 'ul_menu_icon', SucomUtil::get_dashicons( true, true ),	// Sort by name and add 'none'.
-						$css_class = '', $css_id = '', $is_assoc = true ) . '</td>';
+						$this->form->get_th_html( _x( 'Toolbar Menu Icon', 'option label', 'wpsso-user-locale' ),
+							$css_class = '', $css_id = 'ul_menu_icon' ) . 
+						'<td>' . $this->form->get_select( 'ul_menu_icon', $dashicons,
+							$css_class = '', $css_id = '', $is_assoc = true ) . '</td>';
 
 					$table_rows[ 'ul_menu_title' ] = '' .
-					$this->form->get_th_html_locale( _x( 'Toolbar Menu Title', 'option label', 'wpsso-user-locale' ),
-						$css_class = '', $css_id = 'ul_menu_title' ) . 
-					'<td>' . $this->form->get_input_locale( 'ul_menu_title' ) . '</td>';
+						$this->form->get_th_html_locale( _x( 'Toolbar Menu Title', 'option label', 'wpsso-user-locale' ),
+							$css_class = '', $css_id = 'ul_menu_title' ) . 
+						'<td>' . $this->form->get_input_locale( 'ul_menu_title' ) . '</td>';
 
 					$table_rows[ 'ul_front_end' ] = '' .
-					$this->form->get_th_html( _x( 'Show User Locale on Front-End', 'option label', 'wpsso-user-locale' ),
-						$css_class = '', $css_id = 'ul_front_end' ) . 
-					'<td>' . $this->form->get_checkbox( 'ul_front_end' ) . '</td>';
+						$this->form->get_th_html( _x( 'User Locale on Front-End', 'option label', 'wpsso-user-locale' ),
+							$css_class = '', $css_id = 'ul_front_end' ) . 
+						'<td>' . $this->form->get_checkbox( 'ul_front_end' ) . '</td>';
 
 					break;
 			}
