@@ -82,6 +82,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 3.3.2 (2021/06/11)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Minor label change and translation update.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.0.
+	* WordPress v4.7.
+	* WPSSO Core v8.30.0.
+
 **Version 3.3.1 (2021/04/30)**
 
 * **New Features**
@@ -175,6 +190,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v8.12.1.
 
 == Upgrade Notice ==
+
+= 3.3.2 =
+
+(2021/06/11) Minor label change and translation update.
 
 = 3.3.1 =
 
