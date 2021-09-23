@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/wpsso-user-locale/assets/
 Tags: user locale, user language, user region, locale, language, region, select, toolbar, menu, polylang
 Contributors: jsmoriss
 Requires PHP: 7.0
-Requires At Least: 4.7
+Requires At Least: 5.0
 Tested Up To: 5.8.1
 Stable Tag: 3.3.2
 
@@ -81,6 +81,23 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * [WordPress.org](https://plugins.trac.wordpress.org/browser/wpsso-user-locale/)
 
 <h3>Changelog / Release Notes</h3>
+
+**Version 3.4.0-rc.2 (2021/09/23)**
+
+Maintenance release for WPSSO Core v9.0.0.
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.0.
+	* WordPress v5.0.
+	* WPSSO Core v9.0.0-rc.2.
 
 **Version 3.3.2 (2021/06/11)**
 
@@ -190,6 +207,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v8.12.1.
 
 == Upgrade Notice ==
+
+= 3.4.0-rc.2 =
+
+(2021/09/23) Maintenance release for WPSSO Core v9.0.0.
 
 = 3.3.2 =
 
