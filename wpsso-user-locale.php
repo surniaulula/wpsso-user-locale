@@ -12,9 +12,9 @@
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: Quick and easy locale / language / region selector for the WordPress admin toolbar.
  * Requires PHP: 7.0
- * Requires At Least: 4.7
+ * Requires At Least: 5.0
  * Tested Up To: 5.8.1
- * Version: 3.3.2
+ * Version: 3.4.0-rc.2
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
