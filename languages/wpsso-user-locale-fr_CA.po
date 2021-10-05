@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO User Locale Selector 3.4.0\n"
+"Project-Id-Version: WPSSO User Locale Selector 3.4.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-user-locale\n"
 "POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-09-23 11:35-0700\n"
+"PO-Revision-Date: 2021-10-05 08:58-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -64,17 +64,17 @@ msgctxt "metabox title"
 msgid "User Locale Settings"
 msgstr "Réglages langue utilisateur"
 
-#: lib/submenu/ul-general.php:74
+#: lib/submenu/ul-general.php:76
 msgctxt "option label"
 msgid "Toolbar Menu Icon"
 msgstr "Icône dans la barre d'outils"
 
-#: lib/submenu/ul-general.php:80
+#: lib/submenu/ul-general.php:82
 msgctxt "option label"
 msgid "Toolbar Menu Title"
 msgstr "Titre dans la barre d'outils"
 
-#: lib/submenu/ul-general.php:85
+#: lib/submenu/ul-general.php:87
 msgctxt "option label"
 msgid "User Locale on Front-End"
 msgstr "Langue utilisateur à l'avant"
