@@ -14,13 +14,17 @@
 
 <h2>Description</h2>
 
+<!-- about -->
+
 <p><strong>Provides a convenient locale / language / region selector in the WordPress admin toolbar.</strong></p>
 
 <p><strong>Perfect for anyone that needs to switch languages quickly and easily:</strong></p>
 
 <p>Allows logged-in users to easily change their preferred locale / language / region setting right from the toolbar menu, instead of having to modify their user profile settings.</p>
 
-<p>The default behavior of WordPress is to apply the user locale preference only to the admin back-end - this plugin can optionally extend the locale preference to the front-end webpage as well.</p>
+<!-- /about -->
+
+<p>The default behavior of WordPress is to apply the user locale preference to the admin back-end only - the WPSSO User Locale Selector add-on can optionally extend the locale preference to the front-end webpage as well.</p>
 
 <h3>Do you use the Polylang plugin?</h3>
 
