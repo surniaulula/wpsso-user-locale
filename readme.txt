@@ -17,7 +17,7 @@ Quick and easy locale / language / region selector for the WordPress admin toolb
 
 == Description ==
 
-<p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-user-locale/assets/icon-256x256.png"> <strong>Provides a convenient locale / language / region selector in the WordPress admin toolbar.</strong></p>
+**Provides a convenient locale / language / region selector in the WordPress admin toolbar.**
 
 **Perfect for anyone that needs to switch languages quickly and easily:**
 
