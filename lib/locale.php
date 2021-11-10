@@ -128,9 +128,9 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 			require_once trailingslashit( ABSPATH ) . 'wp-admin/includes/translation-install.php';
 
-			$translations = wp_get_available_translations();	// Since WP v4.0.
-			$languages    = array_merge( array( 'site-default' ), SucomUtilWP::get_available_languages() );	// Uses a local static cache.
-			$user_locale  = get_user_meta( $user_id, 'locale', $single = true );
+			$translations  = wp_get_available_translations();
+			$avail_locales = array_merge( array( 'site-default' ), SucomUtil::get_available_locales() );
+			$user_locale   = get_user_meta( $user_id, 'locale', $single = true );
 
 			if ( empty( $user_locale ) ) {
 
@@ -189,7 +189,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			 */
 			$menu_items = array();
 
-			foreach ( $languages as $locale ) {
+			foreach ( $avail_locales as $locale ) {
 
 				$meta = array();
 
