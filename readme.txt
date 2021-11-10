@@ -92,7 +92,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.5.0-dev.2 (2021/11/10)**
+**Version 3.5.0-b.1 (2021/11/10)**
 
 * **New Features**
 	* None.
@@ -101,7 +101,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* None.
+	* Replaced `SucomUtilWP::get_available_languages()` by `SucomUtil::get_available_locales()` for consistency.
 * **Requires At Least**
 	* PHP v7.0.
 	* WordPress v5.0.
@@ -248,9 +248,9 @@ Maintenance release for WPSSO Core v9.0.0.
 
 == Upgrade Notice ==
 
-= 3.5.0-dev.2 =
+= 3.5.0-b.1 =
 
-(2021/11/10) None.
+(2021/11/10) Replaced `SucomUtilWP::get_available_languages()` by `SucomUtil::get_available_locales()` for consistency.
 
 = 3.4.1 =
 
