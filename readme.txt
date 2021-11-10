@@ -92,7 +92,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.5.0-b.1 (2021/11/10)**
+**Version 3.5.0-rc.1 (2021/11/10)**
 
 * **New Features**
 	* None.
@@ -248,7 +248,7 @@ Maintenance release for WPSSO Core v9.0.0.
 
 == Upgrade Notice ==
 
-= 3.5.0-b.1 =
+= 3.5.0-rc.1 =
 
 (2021/11/10) Replaced `SucomUtilWP::get_available_languages()` by `SucomUtil::get_available_locales()` for consistency.
 
