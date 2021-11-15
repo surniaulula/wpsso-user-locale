@@ -126,58 +126,46 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				return;
 			}
 
-			require_once trailingslashit( ABSPATH ) . 'wp-admin/includes/translation-install.php';
-
-			$translations  = wp_get_available_translations();
-			$avail_locales = array_merge( array( 'site-default' ), SucomUtil::get_available_locales() );
-			$user_locale   = get_user_meta( $user_id, 'locale', $single = true );
+			$user_locale  = get_user_meta( $user_id, 'locale', $single = true );
+			$locale_names = array( 'site-default' => _x( 'Default', 'toolbar menu item', 'wpsso-user-locale' ) );
+			$locale_names = array_merge( $locale_names, SucomUtil::get_available_locale_names() );
 
 			if ( empty( $user_locale ) ) {
 
 				$user_locale = 'site-default';
 			}
 
-			$menu_locale = 'site-default' === $user_locale ? _x( 'Default', 'toolbar menu title', 'wpsso-user-locale' ) : $user_locale;
-
 			/**
 			 * Menu Icon and Title
 			 */
-			$dashicon = empty( $this->p->options[ 'ul_menu_icon' ] ) ? null : $this->p->options[ 'ul_menu_icon' ];
+			$def_menu_title = empty( $locale_names[ $user_locale ] ) ? $user_locale : $locale_names[ $user_locale ];
+			$menu_dashicon  = empty( $this->p->options[ 'ul_menu_icon' ] ) ? null : $this->p->options[ 'ul_menu_icon' ];
+			$menu_dashicon  = apply_filters( 'wpsso_user_locale_menu_dashicon', $menu_dashicon, $user_locale );
+			$menu_icon_html = '';
 
-			$dashicon = apply_filters( 'wpsso_user_locale_menu_dashicon',  $dashicon, $menu_locale );
-
-			if ( ! empty( $dashicon ) && $dashicon !== 'none' ) {
+			if ( ! empty( $menu_dashicon ) && $menu_dashicon !== 'none' ) {
 
 				$dashicons = SucomUtil::get_dashicons();	// Get the raw / unsorted dashicons array.
 
-				if ( isset( $dashicons[ $dashicon ] ) ) {	// Just in case.
+				if ( isset( $dashicons[ $menu_dashicon ] ) ) {
 
-					$menu_icon = '<span class="ab-icon dashicons-' . $dashicons[ $dashicon ] . '"></span>';
-
-				} else {
-
-					$menu_icon = '';
+					$menu_icon_html = '<span class="ab-icon dashicons-' . $dashicons[ $menu_dashicon ] . '"></span>';
 				}
-
-			} else {
-
-				$menu_icon = '';
 			}
 
-			$menu_title = SucomUtil::get_key_value( 'ul_menu_title', $this->p->options );
+			$menu_title_html = SucomUtil::get_key_value( 'ul_menu_title', $this->p->options );
 
-			if ( empty( $menu_title ) ) {	// Just in case.
+			if ( empty( $menu_title_html ) ) {	// Just in case.
 
-				$menu_title = '%s';
+				$menu_title_html = '%s';
 			}
 
-			$menu_title = apply_filters( 'wpsso_user_locale_menu_title', $menu_title, $menu_locale );
-
-			$menu_title = sprintf( $menu_title, $menu_locale );
+			$menu_title_html = apply_filters( 'wpsso_user_locale_menu_title', $menu_title_html, $user_locale );
+			$menu_title_html = sprintf( $menu_title_html, $def_menu_title );
 
 			$wp_admin_bar->add_node( array(
 				'id'     => 'wpsso-user-locale',
-				'title'  => $menu_icon . $menu_title,
+				'title'  => $menu_icon_html . $menu_title_html,
 				'parent' => false,
 				'href'   => false,
 				'group'  => false,
@@ -189,26 +177,9 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			 */
 			$menu_items = array();
 
-			foreach ( $avail_locales as $locale ) {
+			foreach ( $locale_names as $locale => $native_name ) {
 
 				$meta = array();
-
-				if ( isset( $translations[ $locale ][ 'native_name' ] ) ) {
-
-					$native_name = $translations[ $locale ][ 'native_name' ];
-
-				} elseif ( 'en_US' === $locale ) {
-
-					$native_name = 'English (United States)';
-
-				} elseif ( 'site-default' === $locale ) {
-
-					$native_name = _x( 'Default Locale', 'toolbar menu item', 'wpsso-user-locale' );
-
-				} else {
-
-					$native_name = $locale;
-				}
 
 				if ( $locale === $user_locale ) {
 
@@ -227,7 +198,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				);
 			}
 
-			$menu_items = apply_filters( 'wpsso_user_locale_menu_items', $menu_items, $menu_locale );
+			$menu_items = apply_filters( 'wpsso_user_locale_menu_items', $menu_items, $user_locale );
 
 			foreach ( $menu_items as $menu_item ) {
 
