@@ -92,7 +92,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.5.1 (2021/11/15)**
+**Version 3.5.1 (2021/11/16)**
 
 * **New Features**
 	* None.
@@ -266,7 +266,7 @@ Maintenance release for WPSSO Core v9.0.0.
 
 = 3.5.1 =
 
-(2021/11/15) Refactored the `WpssoUlLocale->add_locale_toolbar()` and `SucomAddOn->get_missing_requirements()` methods.
+(2021/11/16) Refactored the `WpssoUlLocale->add_locale_toolbar()` and `SucomAddOn->get_missing_requirements()` methods.
 
 = 3.5.0 =
 
