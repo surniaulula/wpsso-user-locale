@@ -111,12 +111,25 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 			require_once WPSSOUL_PLUGINDIR . 'lib/locale.php';
 			require_once WPSSOUL_PLUGINDIR . 'lib/register.php';
 
-			add_filter( 'wpssoul_load_lib', array( 'WpssoUlConfig', 'load_lib' ), 10, 3 );
+			add_filter( 'wpssoul_load_lib', array( __CLASS__, 'load_lib' ), 10, 3 );
 		}
 
 		public static function load_lib( $success = false, $filespec = '', $classname = '' ) {
 
-			if ( false === $success && ! empty( $filespec ) ) {
+			if ( false !== $success ) {
+
+				return $success;
+			}
+
+			if ( ! empty( $classname ) ) {
+
+				if ( class_exists( $classname ) ) {
+
+					return $classname;
+				}
+			}
+
+			if ( ! empty( $filespec ) ) {
 
 				$file_path = WPSSOUL_PLUGINDIR . 'lib/' . $filespec . '.php';
 
