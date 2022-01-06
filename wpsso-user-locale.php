@@ -13,7 +13,7 @@
  * Description: Quick and easy locale / language / region selector for the WordPress admin toolbar.
  * Requires PHP: 7.2
  * Requires At Least: 5.2
- * Tested Up To: 5.8.2
+ * Tested Up To: 5.8.3
  * Version: 3.5.1
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
@@ -23,7 +23,7 @@
  *      {bugfix}        Backwards-compatible bug fixes or small improvements.
  *      {stage}.{level} Pre-production release: dev < a (alpha) < b (beta) < rc (release candidate).
  *
- * Copyright 2017-2021 Jean-Sebastien Morisset (https://wpsso.com/)
+ * Copyright 2017-2022 Jean-Sebastien Morisset (https://wpsso.com/)
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
