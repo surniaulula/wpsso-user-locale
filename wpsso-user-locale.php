@@ -13,7 +13,7 @@
  * Description: Quick and easy locale / language / region selector for the WordPress admin toolbar.
  * Requires PHP: 7.2
  * Requires At Least: 5.2
- * Tested Up To: 5.9.0
+ * Tested Up To: 5.9.1
  * Version: 3.6.0
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
