@@ -64,7 +64,7 @@ msgid ""
 "locale as the WordPress locale."
 msgstr ""
 
-#: lib/locale.php:130
+#: lib/locale.php:135
 msgctxt "toolbar menu item"
 msgid "Default"
 msgstr ""

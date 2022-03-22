@@ -39,7 +39,12 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 					if ( $locale !== $user_locale ) {
 
-						switch_to_locale( $user_locale );	// Calls an action to clear the SucomUtil::get_locale() cache.
+						/**
+						 * The WpssoUtil constructor hooks the 'switch_locale', 'restore_previous_locale',
+						 * and 'change_locale' actions to clear the SucomUtil::get_locale() cache for the
+						 * 'current' locale.
+						 */
+						switch_to_locale( $user_locale );
 					}
 				}
 
