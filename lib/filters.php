@@ -35,7 +35,7 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 			$this->p =& $plugin;
 			$this->a =& $addon;
 
-			$this->p->util->add_plugin_filters( $this, array( 
+			$this->p->util->add_plugin_filters( $this, array(
 				'option_type' => 2,
 			) );
 
