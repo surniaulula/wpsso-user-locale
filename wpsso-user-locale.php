@@ -11,6 +11,7 @@
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: Quick and easy locale / language / region selector for the WordPress admin toolbar.
+ * Requires Plugins: wpsso
  * Requires PHP: 7.2
  * Requires At Least: 5.2
  * Tested Up To: 6.1.0
