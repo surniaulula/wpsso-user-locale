@@ -17,6 +17,7 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 		private $p;	// Wpsso class object.
 		private $a;     // WpssoUl class object.
 		private $msgs;	// WpssoUlFiltersMessages class object.
+		private $opts;	// WpssoUlFiltersOptions class object.
 
 		/**
 		 * Instantiated by WpssoUl->init_objects().
@@ -35,9 +36,9 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 			$this->p =& $plugin;
 			$this->a =& $addon;
 
-			$this->p->util->add_plugin_filters( $this, array(
-				'option_type' => 2,
-			) );
+			require_once WPSSOUL_PLUGINDIR . 'lib/filters-options.php';
+
+			$this->opts = new WpssoUlFiltersOptions( $plugin, $addon );
 
 			if ( is_admin() ) {
 
@@ -45,30 +46,6 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 
 				$this->msgs = new WpssoUlFiltersMessages( $plugin, $addon );
 			}
-		}
-
-		/**
-		 * Return the sanitation type for a given option key.
-		 */
-		public function filter_option_type( $type, $base_key ) {
-
-			if ( ! empty( $type ) ) {	// Return early if we already have a type.
-
-				return $type;
-
-			} elseif ( 0 !== strpos( $base_key, 'ul_' ) ) {	// Nothing to do.
-
-				return $type;
-			}
-
-			switch ( $base_key ) {
-
-				case 'ul_menu_title':
-
-					return 'not_blank';
-			}
-
-			return $type;
 		}
 	}
 }

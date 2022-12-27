@@ -34,7 +34,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 				if ( ! $is_admin && $show_on_front ) {	// Apply user locale value to front-end.
 
-					$locale      = get_locale();
+					$locale      = SucomUtil::get_locale();
 					$user_locale = get_user_meta( $user_id, 'locale', $single = true );
 
 					if ( $locale !== $user_locale ) {
