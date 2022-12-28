@@ -93,6 +93,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 3.7.0 (2022/12/28)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Added a new `WpssoUlFiltersOptions` class.
+* **Requires At Least**
+	* PHP v7.2.
+	* WordPress v5.2.
+	* WPSSO Core v14.0.0.
+
 **Version 3.6.1 (2022/03/07)**
 
 Maintenance release.
@@ -299,6 +314,10 @@ Maintenance release for WPSSO Core v9.0.0.
 	* WPSSO Core v8.12.1.
 
 == Upgrade Notice ==
+
+= 3.7.0 =
+
+(2022/12/28) Added a new `WpssoUlFiltersOptions` class.
 
 = 3.6.1 =
 
