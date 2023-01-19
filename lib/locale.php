@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Copyright 2017-2023 Jean-Sebastien Morisset (https://wpsso.com/)
@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 		private $p;	// Wpsso class object.
 		private $a;     // WpssoUl class object.
 
-		/**
+		/*
 		 * Instantiated by WpssoUl->init_objects().
 		 */
 		public function __construct( &$plugin, &$addon ) {
@@ -83,7 +83,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				$user_locale = SucomUtil::get_locale( 'default' );
 			}
 
-			/**
+			/*
 			 * Use Polylang URLs
 			 */
 			if ( ! is_admin() && function_exists( 'pll_the_languages' ) ) {
@@ -135,7 +135,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				$user_locale = 'site-default';
 			}
 
-			/**
+			/*
 			 * Menu Icon and Title
 			 */
 			$def_menu_title = empty( $locale_names[ $user_locale ] ) ? $user_locale : $locale_names[ $user_locale ];
@@ -172,7 +172,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				'meta'   => array(),
 			) );
 
-			/**
+			/*
 			 * Menu Drop-down Items
 			 */
 			$menu_items = array();

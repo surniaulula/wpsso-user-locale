@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Copyright 2017-2023 Jean-Sebastien Morisset (https://wpsso.com/)
@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoUlFiltersMessages' ) ) {
 		private $p;	// Wpsso class object.
 		private $a;     // WpssoUl class object.
 
-		/**
+		/*
 		 * Instantiated by WpssoUlFilters->__construct().
 		 */
 		public function __construct( &$plugin, &$addon ) {
