@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * Plugin Name: WPSSO User Locale Selector
  * Plugin Slug: wpsso-user-locale
  * Text Domain: wpsso-user-locale
@@ -15,7 +15,7 @@
  * Requires PHP: 7.2
  * Requires At Least: 5.2
  * Tested Up To: 6.1.1
- * Version: 3.8.0-rc.1
+ * Version: 3.8.0-rc.2
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
