@@ -98,11 +98,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **New Features**
 	* None.
 * **Improvements**
-	* Added compatibility declaration for WooCommerce HPOS.
+	* None.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* Updated the `WpssoAbstractAddOn` class.
+	* Updated the `WpssoAbstractAddOn` library class.
 * **Requires At Least**
 	* PHP v7.2.
 	* WordPress v5.2.
@@ -347,7 +347,7 @@ Maintenance release for WPSSO Core v9.0.0.
 
 = 3.8.1-dev.2 =
 
-(2023/01/24) Added compatibility declaration for WooCommerce HPOS.
+(2023/01/24) Updated the `WpssoAbstractAddOn` library class.
 
 = 3.8.0 =
 
