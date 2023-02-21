@@ -45,7 +45,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 				if ( $is_admin || $show_on_front ) {
 
-					add_action( 'admin_bar_menu', array( $this, 'add_locale_toolbar' ), WPSSO_TB_LOCALE_MENU_ORDER, 1 );
+					add_action( 'admin_bar_menu', array( $this, 'add_admin_bar_menu' ), WPSSO_TB_LOCALE_MENU_ORDER, 1 );
 
 					if ( isset( $_GET[ 'update-user-locale' ] ) ) {	// New user locale value selected.
 
@@ -119,7 +119,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			exit;
 		}
 
-		public function add_locale_toolbar( $wp_admin_bar ) {
+		public function add_admin_bar_menu( $wp_admin_bar ) {
 
 			if ( ! $user_id = get_current_user_id() ) {	// Just in case.
 
