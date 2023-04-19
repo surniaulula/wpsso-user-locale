@@ -39,7 +39,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 					if ( $locale !== $user_locale ) {
 
-						switch_to_locale( $user_locale );
+						switch_to_locale( $user_locale );	// Switches to locale if the WP language is installed.
 					}
 				}
 
