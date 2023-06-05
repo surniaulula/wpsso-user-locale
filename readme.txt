@@ -100,7 +100,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **New Features**
 	* None.
 * **Improvements**
-	* Updated the minimum WordPress version from v5.2 to v5.4.
+	* Updated the minimum WordPress version from v5.2 to v5.5.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -206,150 +206,11 @@ Maintenance release.
 	* WordPress v5.0.
 	* WPSSO Core v9.7.0.
 
-**Version 3.4.1 (2021/10/06)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Standardized `get_table_rows()` calls and filters in 'submenu' and 'sitesubmenu' classes.
-* **Requires At Least**
-	* PHP v7.0.
-	* WordPress v5.0.
-	* WPSSO Core v9.1.0.
-
-**Version 3.4.0 (2021/09/24)**
-
-Maintenance release for WPSSO Core v9.0.0.
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.0.
-	* WordPress v5.0.
-	* WPSSO Core v9.0.0.
-
-**Version 3.3.2 (2021/06/11)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Minor label change and translation update.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.0.
-	* WordPress v4.7.
-	* WPSSO Core v8.34.0.
-
-**Version 3.3.1 (2021/04/30)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Minor CSS and text formatting updates.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.0.
-	* WordPress v4.7.
-	* WPSSO Core v8.28.0.
-
-**Version 3.3.0 (2021/04/17)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Added support for `SucomUtilWP::get_available_languages()`.
-* **Requires At Least**
-	* PHP v7.0.
-	* WordPress v4.7.
-	* WPSSO Core v8.26.3.
-
-**Version 3.2.1 (2021/02/25)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Updated the banners and icons of WPSSO Core and its add-ons.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.0.
-	* WordPress v4.7.
-	* WPSSO Core v8.25.2.
-
-**Version 3.2.0 (2020/11/20)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Included the `$addon` argument for library class constructors.
-* **Requires At Least**
-	* PHP v7.0.
-	* WordPress v4.7.
-	* WPSSO Core v8.16.0.
-
-**Version 3.1.0 (2020/11/20)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Renamed the 'default' menu item to 'Default'.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Renamed the 'wpsso_user_locale_front_end' filter to 'wpsso_user_locale_show_on_front'.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.7.
-	* WPSSO Core v8.13.0.
-
-**Version 3.0.1 (2020/10/17)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Added a call to switch_to_locale() on the front-end.
-	* Refactored the add-on class to extend a new WpssoAddOn abstract class.
-* **Bugfixes**
-	* Fixed backwards compatibility with older 'init_objects' and 'init_plugin' action arguments.
-* **Developer Notes**
-	* Added a new WpssoAddOn class in lib/abstracts/add-on.php.
-	* Added a new SucomAddOn class in lib/abstracts/com/add-on.php.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.7.
-	* WPSSO Core v8.12.1.
-
 == Upgrade Notice ==
 
 = 3.8.1 =
 
-(2023/01/26) Updated the minimum WordPress version from v5.2 to v5.4.
+(2023/01/26) Updated the minimum WordPress version from v5.2 to v5.5.
 
 = 3.8.0 =
 
@@ -374,40 +235,4 @@ Maintenance release for WPSSO Core v9.0.0.
 = 3.5.0 =
 
 (2021/11/10) Replaced `SucomUtilWP::get_available_languages()` by `SucomUtil::get_available_locales()` for consistency.
-
-= 3.4.1 =
-
-(2021/10/06) Standardized `get_table_rows()` calls and filters in 'submenu' and 'sitesubmenu' classes.
-
-= 3.4.0 =
-
-(2021/09/24) Maintenance release for WPSSO Core v9.0.0.
-
-= 3.3.2 =
-
-(2021/06/11) Minor label change and translation update.
-
-= 3.3.1 =
-
-(2021/04/30) Minor CSS and text formatting updates.
-
-= 3.3.0 =
-
-(2021/04/17) Added support for `SucomUtilWP::get_available_languages()`.
-
-= 3.2.1 =
-
-(2021/02/25) Updated the banners and icons of WPSSO Core and its add-ons.
-
-= 3.2.0 =
-
-(2020/11/30) Included the `$addon` argument for library class constructors.
-
-= 3.1.0 =
-
-(2020/11/20) Renamed the 'default' menu item to 'Default'.
-
-= 3.0.1 =
-
-(2020/10/17) Added a call to switch_to_locale() on the front-end. Refactored the add-on class to extend a new WpssoAddOn abstract class.
 
