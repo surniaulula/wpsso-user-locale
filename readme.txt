@@ -226,7 +226,7 @@ Maintenance release.
 
 = 3.8.2-dev.1 =
 
-(2023/07/08) Minor code optimization and standardization:
+(2023/07/08) Minor code optimization and standardization.
 
 = 3.8.1 =
 
