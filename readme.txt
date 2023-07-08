@@ -95,6 +95,22 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 3.8.2-dev.1 (2023/07/08)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Minor code optimization and standardization:
+		* Replaced `{get|update|delete}_{comment|post|term|user}_meta()` functions by `{get|update|delete}_metadata()`.
+* **Requires At Least**
+	* PHP v7.2.34.
+	* WordPress v5.5.
+	* WPSSO Core v15.15.2-dev.1.
+
 **Version 3.8.1 (2023/01/26)**
 
 * **New Features**
@@ -207,6 +223,10 @@ Maintenance release.
 	* WPSSO Core v9.7.0.
 
 == Upgrade Notice ==
+
+= 3.8.2-dev.1 =
+
+(2023/07/08) Minor code optimization and standardization:
 
 = 3.8.1 =
 
