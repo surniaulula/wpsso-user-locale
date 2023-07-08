@@ -35,7 +35,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				if ( ! $is_admin && $show_on_front ) {	// Apply user locale value to front-end.
 
 					$locale      = SucomUtil::get_locale();
-					$user_locale = get_user_meta( $user_id, 'locale', $single = true );
+					$user_locale = get_metadata( 'user', $user_id, 'locale', $single = true );
 
 					if ( $locale !== $user_locale ) {
 
@@ -70,11 +70,11 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 				if ( 'site-default' === $user_locale ) {
 
-					delete_user_meta( $user_id, 'locale' );
+					delete_metadata( 'user', $user_id, 'locale' );
 
 				} else {
 
-					update_user_meta( $user_id, 'locale', $user_locale );
+					update_metadata( 'user', $user_id, 'locale', $user_locale );
 				}
 			}
 
@@ -126,7 +126,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				return;
 			}
 
-			$user_locale  = get_user_meta( $user_id, 'locale', $single = true );
+			$user_locale  = get_metadata( 'user', $user_id, 'locale', $single = true );
 			$locale_names = array( 'site-default' => _x( 'Default', 'toolbar menu item', 'wpsso-user-locale' ) );
 			$locale_names = array_merge( $locale_names, SucomUtil::get_available_locale_names() );
 
