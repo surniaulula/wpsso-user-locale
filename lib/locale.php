@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 	class WpssoUlLocale {
 
 		private $p;	// Wpsso class object.
-		private $a;     // WpssoUl class object.
+		private $a;	// WpssoUl class object.
 
 		/*
 		 * Instantiated by WpssoUl->init_objects().

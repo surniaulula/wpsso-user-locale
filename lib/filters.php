@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 	class WpssoUlFilters {
 
 		private $p;	// Wpsso class object.
-		private $a;     // WpssoUl class object.
+		private $a;	// WpssoUl class object.
 		private $msgs;	// WpssoUlFiltersMessages class object.
 		private $opts;	// WpssoUlFiltersOptions class object.
 
