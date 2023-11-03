@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoul' => array(			// Plugin acronym.
-					'version'     => '3.8.2',	// Plugin version.
+					'version'     => '3.9.0-dev.8',	// Plugin version.
 					'opt_version' => '7',		// Increment when changing default option values.
 					'short'       => 'WPSSO UL',	// Short plugin name.
 					'name'        => 'WPSSO User Locale Selector',
@@ -37,7 +37,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '15.16.0',
+							'min_version'   => '16.7.0-dev.8',
 						),
 					),
 
@@ -60,7 +60,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 					 */
 					'lib' => array(
 						'submenu' => array(
-							'ul-general' => 'User Locale',
+							'user-locale' => 'User Locale',
 						),
 					),
 				),

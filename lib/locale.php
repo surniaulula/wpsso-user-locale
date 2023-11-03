@@ -25,8 +25,8 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			$this->p =& $plugin;
 			$this->a =& $addon;
 
-			$is_admin      = is_admin();
 			$user_id       = get_current_user_id();
+			$is_admin      = is_admin();
 			$show_on_front = empty( $this->p->options[ 'ul_front_end' ] ) ? false : true;
 			$show_on_front = (bool) apply_filters( 'wpsso_user_locale_show_on_front', $show_on_front );
 
@@ -34,12 +34,17 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 				if ( ! $is_admin && $show_on_front ) {	// Apply user locale value to front-end.
 
-					$locale      = SucomUtil::get_locale();
+					$locale      = get_locale();
 					$user_locale = get_metadata( 'user', $user_id, 'locale', $single = true );
 
 					if ( $locale !== $user_locale ) {
 
-						switch_to_locale( $user_locale );	// Switches to locale if the WP language is installed.
+						$is_switched = switch_to_locale( $user_locale );	// Switches to locale if the WP language is installed.
+
+						if ( $this->p->debug->enabled ) {
+
+							$this->p->debug->log( 'switch to locale ' . ( $is_switched ? 'successful' : 'failed' ) );
+						}
 					}
 				}
 
@@ -63,8 +68,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			}
 
 			$user_locale = sanitize_text_field( $_GET[ 'update-user-locale' ] );
-
-			$url = remove_query_arg( 'update-user-locale' );
+			$url         = remove_query_arg( 'update-user-locale' );
 
 			if ( $user_id = get_current_user_id() ) {
 
