@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO User Locale Selector 3.8.2\n"
+"Project-Id-Version: WPSSO User Locale Selector 3.9.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-user-locale\n"
 "POT-Creation-Date: 2023-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-07-13 10:41-0700\n"
+"PO-Revision-Date: 2023-11-03 21:33-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.4.1\n"
 "X-Poedit-Basepath: .\n"
 
 #: gettext/gettext-lib-abstract-com.php:5 lib/abstract/com/add-on.php:209
@@ -54,27 +54,27 @@ msgstr "Le titre utilisé dans le menu de barre d'outils WordPress. Le paramètr
 msgid "Show the user locale selector in the front-end toolbar and set the user locale as the WordPress locale."
 msgstr "Affichez le sélecteur de langue utilisateur dans la barre d'outils d'avant et définir la langue utilisateur comme langue WordPress."
 
-#: lib/locale.php:130
+#: lib/locale.php:134
 msgctxt "toolbar menu item"
 msgid "Default"
 msgstr "Défaut"
 
-#: lib/submenu/ul-general.php:38
+#: lib/submenu/user-locale.php:32
 msgctxt "metabox title"
 msgid "User Locale Settings"
 msgstr "Réglages langue utilisateur"
 
-#: lib/submenu/ul-general.php:76
+#: lib/submenu/user-locale.php:48
 msgctxt "option label"
 msgid "Toolbar Menu Icon"
 msgstr "Icône dans la barre d'outils"
 
-#: lib/submenu/ul-general.php:82
+#: lib/submenu/user-locale.php:54
 msgctxt "option label"
 msgid "Toolbar Menu Title"
 msgstr "Titre dans la barre d'outils"
 
-#: lib/submenu/ul-general.php:87
+#: lib/submenu/user-locale.php:59
 msgctxt "option label"
 msgid "User Locale on Front-End"
 msgstr "Langue utilisateur à l'avant"
