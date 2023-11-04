@@ -33,7 +33,7 @@ if ( ! class_exists( 'WpssoUlSubmenuUserLocale' ) && class_exists( 'WpssoAdmin' 
 			);
 		}
 
-		protected function get_table_rows( $page_id, $metabox_id, $tab_key = '' ) {
+		protected function get_table_rows( $page_id, $metabox_id, $tab_key = '', $args = array() ) {
 
 			$table_rows = array();
 			$match_rows = trim( $page_id . '-' . $metabox_id . '-' . $tab_key, '-' );
