@@ -54,6 +54,9 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 					if ( isset( $_GET[ 'update-user-locale' ] ) ) {	// New user locale value selected.
 
+						/*
+						 * This hook is fired once WordPress, plugins, and the theme are fully loaded and instantiated.
+						 */
 						add_action( 'wp_loaded', array( $this, 'update_user_locale' ), -1000 );
 					}
 				}
