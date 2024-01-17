@@ -12,7 +12,7 @@ Requires Plugins: wpsso
 Requires PHP: 7.2.34
 Requires At Least: 5.8
 Tested Up To: 6.4.2
-Stable Tag: 4.0.0
+Stable Tag: 4.1.0
 
 Quick and easy locale / language / region selector for the WordPress admin toolbar.
 
@@ -91,6 +91,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.1.0 (2024/01/12)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Update for `SucomUtil` and `SucomUtilWP` changes in WPSSO Core v17.8.0.
+* **Requires At Least**
+	* PHP v7.2.34.
+	* WordPress v5.8.
+	* WPSSO Core v17.8.0.
+
 **Version 4.0.0 (2021/11/08)**
 
 * **New Features**
@@ -106,29 +121,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v5.8.
 	* WPSSO Core v17.0.0.
 
-**Version 3.8.2 (2023/07/13)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Minor code optimization and standardization:
-		* Replaced `{get|update|delete}_{comment|post|term|user}_meta()` functions by `{get|update|delete}_metadata()`.
-* **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.5.
-	* WPSSO Core v15.16.0.
-
 == Upgrade Notice ==
+
+= 4.1.0 =
+
+(2024/01/12) Update for `SucomUtil` and `SucomUtilWP` changes in WPSSO Core v17.8.0.
 
 = 4.0.0 =
 
 (2021/11/08) Refactored the settings page and metabox load process for WPSSO Core v17.0.0.
-
-= 3.8.2 =
-
-(2023/07/13) Minor code optimization and standardization.
 
