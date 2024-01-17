@@ -87,7 +87,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 			if ( 'site-default' === $user_locale ) {
 
-				$user_locale = SucomUtil::get_locale( 'default' );
+				$user_locale = SucomUtilWP::get_locale( 'default' );
 			}
 
 			/*
@@ -135,7 +135,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 			$user_locale  = get_metadata( 'user', $user_id, 'locale', $single = true );
 			$locale_names = array( 'site-default' => _x( 'Default', 'toolbar menu item', 'wpsso-user-locale' ) );
-			$locale_names = array_merge( $locale_names, SucomUtil::get_available_locale_names() );
+			$locale_names = array_merge( $locale_names, SucomUtilWP::get_available_locale_names() );
 
 			if ( empty( $user_locale ) ) {
 
@@ -143,32 +143,21 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			}
 
 			/*
-			 * Menu Icon and Title
+			 * Menu icon and title.
 			 */
-			$def_menu_title = empty( $locale_names[ $user_locale ] ) ? $user_locale : $locale_names[ $user_locale ];
-			$menu_dashicon  = empty( $this->p->options[ 'ul_menu_icon' ] ) ? null : $this->p->options[ 'ul_menu_icon' ];
-			$menu_dashicon  = apply_filters( 'wpsso_user_locale_menu_dashicon', $menu_dashicon, $user_locale );
+			$native_name    = empty( $locale_names[ $user_locale ] ) ? $user_locale : $locale_names[ $user_locale ];
+			$menu_icon_num  = empty( $this->p->options[ 'ul_menu_icon' ] ) ? null : $this->p->options[ 'ul_menu_icon' ];
+			$menu_icon_num  = apply_filters( 'wpsso_user_locale_menu_dashicon', $menu_icon_num, $user_locale );
 			$menu_icon_html = '';
 
-			if ( ! empty( $menu_dashicon ) && $menu_dashicon !== 'none' ) {
+			if ( $menu_icon_name = SucomUtil::get_dashicons( $menu_icon_num ) ) {	// Just in case.
 
-				$dashicons = SucomUtil::get_dashicons();	// Get the raw / unsorted dashicons array.
-
-				if ( isset( $dashicons[ $menu_dashicon ] ) ) {
-
-					$menu_icon_html = '<span class="ab-icon dashicons-' . $dashicons[ $menu_dashicon ] . '"></span>';
-				}
+				$menu_icon_html = '<span class="ab-icon dashicons-' . $menu_icon_name . '"></span>';
 			}
 
-			$menu_title_html = SucomUtil::get_key_value( 'ul_menu_title', $this->p->options );
-
-			if ( empty( $menu_title_html ) ) {	// Just in case.
-
-				$menu_title_html = '%s';
-			}
-
+			$menu_title_html = SucomUtil::get_key_value( 'ul_menu_title', $this->p->options );	// Returns a localized option value or null.
 			$menu_title_html = apply_filters( 'wpsso_user_locale_menu_title', $menu_title_html, $user_locale );
-			$menu_title_html = sprintf( $menu_title_html, $def_menu_title );
+			$menu_title_html = sprintf( $menu_title_html, $native_name );
 
 			$wp_admin_bar->add_node( array(
 				'id'     => 'wpsso-user-locale',
@@ -180,7 +169,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 			) );
 
 			/*
-			 * Menu Drop-down Items
+			 * Menu drop-down items.
 			 */
 			$menu_items = array();
 

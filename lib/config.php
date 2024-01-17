@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoul' => array(			// Plugin acronym.
-					'version'     => '4.0.0',	// Plugin version.
+					'version'     => '4.1.0',	// Plugin version.
 					'opt_version' => '7',		// Increment when changing default option values.
 					'short'       => 'WPSSO UL',	// Short plugin name.
 					'name'        => 'WPSSO User Locale Selector',
@@ -37,7 +37,7 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '17.0.0',
+							'min_version'   => '17.8.0',
 						),
 					),
 
@@ -65,10 +65,6 @@ if ( ! class_exists( 'WpssoUlConfig' ) ) {
 					),
 				),
 			),
-
-			/*
-			 * Additional add-on setting options.
-			 */
 			'opt' => array(
 				'defaults' => array(
 					'ul_menu_icon'  => 326,		// Toolbar Menu Icon (dashicons-translation)

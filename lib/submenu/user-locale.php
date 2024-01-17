@@ -42,12 +42,10 @@ if ( ! class_exists( 'WpssoUlSubmenuUserLocale' ) && class_exists( 'WpssoAdmin' 
 
 				case 'user-locale-settings':
 
-					$dashicons = SucomUtil::get_dashicons( $icon_number = true, $add_none = true );
-
 					$table_rows[ 'ul_menu_icon' ] = '' .
 						$this->form->get_th_html( _x( 'Toolbar Menu Icon', 'option label', 'wpsso-user-locale' ),
 							$css_class = '', $css_id = 'ul_menu_icon' ) .
-						'<td>' . $this->form->get_select( 'ul_menu_icon', $dashicons,
+						'<td>' . $this->form->get_select( 'ul_menu_icon', SucomUtil::get_dashicons(),
 							$css_class = '', $css_id = '', $is_assoc = true ) . '</td>';
 
 					$table_rows[ 'ul_menu_title' ] = '' .
