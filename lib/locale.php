@@ -155,7 +155,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				$menu_icon_html = '<span class="ab-icon dashicons-' . $menu_icon_name . '"></span>';
 			}
 
-			$menu_title_html = SucomUtil::get_key_value( 'ul_menu_title', $this->p->options );	// Returns a localized option value or null.
+			$menu_title_html = SucomUtilOptions::get_key_value( 'ul_menu_title', $this->p->options );	// Returns a localized option value or null.
 			$menu_title_html = apply_filters( 'wpsso_user_locale_menu_title', $menu_title_html, $user_locale );
 			$menu_title_html = sprintf( $menu_title_html, $native_name );
 
