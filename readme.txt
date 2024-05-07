@@ -6,7 +6,7 @@ Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-user-locale/assets/
-Tags: user locale, user language, user region, locale, language, region, select, toolbar, menu, polylang
+Tags: locale, language, region, select, polylang
 Contributors: jsmoriss
 Requires Plugins: wpsso
 Requires PHP: 7.2.34
