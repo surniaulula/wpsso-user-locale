@@ -70,8 +70,8 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 				return;
 			}
 
-			$user_locale = sanitize_text_field( $_GET[ 'update-user-locale' ] );
-			$url         = remove_query_arg( 'update-user-locale' );
+			$user_locale  = sanitize_text_field( $_GET[ 'update-user-locale' ] );
+			$redirect_url = remove_query_arg( 'update-user-locale' );
 
 			if ( $user_id = get_current_user_id() ) {
 
@@ -79,10 +79,7 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 					delete_metadata( 'user', $user_id, 'locale' );
 
-				} else {
-
-					update_metadata( 'user', $user_id, 'locale', $user_locale );
-				}
+				} else update_metadata( 'user', $user_id, 'locale', $user_locale );
 			}
 
 			if ( 'site-default' === $user_locale ) {
@@ -111,17 +108,17 @@ if ( ! class_exists( 'WpssoUlLocale' ) ) {
 
 				if ( isset( $pll_urls[ $user_locale ] ) ) {
 
-					$url = $pll_urls[ $user_locale ];
+					$redirect_url = $pll_urls[ $user_locale ];
 
 				} elseif ( isset( $pll_urls[ $pll_def_locale ] ) ) {
 
-					$url = $pll_urls[ $pll_def_locale ];
+					$redirect_url = $pll_urls[ $pll_def_locale ];
 				}
 			}
 
 			$this->p->notice->clear();	// Clear any old locale notices.
 
-			wp_redirect( apply_filters( 'wpsso_user_locale_redirect_url', $url, $user_locale ) );
+			wp_redirect( apply_filters( 'wpsso_user_locale_redirect_url', $redirect_url, $user_locale ) );
 
 			exit;
 		}

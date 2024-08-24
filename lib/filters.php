@@ -26,10 +26,7 @@ if ( ! class_exists( 'WpssoUlFilters' ) ) {
 
 			static $do_once = null;
 
-			if ( true === $do_once ) {
-
-				return;	// Stop here.
-			}
+			if ( $do_once ) return;	// Stop here.
 
 			$do_once = true;
 

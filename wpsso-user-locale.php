@@ -15,7 +15,7 @@
  * Requires PHP: 7.2.34
  * Requires At Least: 5.8
  * Tested Up To: 6.6.1
- * Version: 4.2.0
+ * Version: 4.3.0-dev.1
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -40,9 +40,6 @@ if ( ! class_exists( 'WpssoAbstractAddOn' ) ) {
 if ( ! class_exists( 'WpssoUl' ) ) {
 
 	class WpssoUl extends WpssoAbstractAddOn {
-
-		public $filters;	// WpssoUlFilters class object.
-		public $locale;		// WpssoUlLocale class object.
 
 		protected $p;	// Wpsso class object.
 
@@ -71,7 +68,7 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 		/*
 		 * Called by Wpsso->set_objects() which runs at init priority 10.
 		 */
-		public function init_objects() {
+		public function init_objects_preloader() {
 
 			$this->p =& Wpsso::get_instance();
 
@@ -85,8 +82,8 @@ if ( ! class_exists( 'WpssoUl' ) ) {
 				return;	// Stop here.
 			}
 
-			$this->locale  = new WpssoUlLocale( $this->p, $this );
-			$this->filters = new WpssoUlFilters( $this->p, $this );
+			new WpssoUlLocale( $this->p, $this );
+			new WpssoUlFilters( $this->p, $this );
 		}
 	}
 
