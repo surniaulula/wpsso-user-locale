@@ -12,7 +12,7 @@ Requires Plugins: wpsso
 Requires PHP: 7.2.34
 Requires At Least: 5.8
 Tested Up To: 6.6.1
-Stable Tag: 4.2.0
+Stable Tag: 4.3.0
 
 Quick and easy locale / language / region selector for the WordPress admin toolbar.
 
