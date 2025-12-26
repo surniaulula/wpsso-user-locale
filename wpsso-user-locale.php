@@ -13,7 +13,7 @@
  * Description: Quick and easy locale / language / region selector for the WordPress admin toolbar.
  * Requires Plugins: wpsso
  * Requires PHP: 7.4.33
- * Requires At Least: 5.9
+ * Requires At Least: 6.0
  * Tested Up To: 6.9
  * Version: 4.3.0
  *
